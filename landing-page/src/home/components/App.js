@@ -1,6 +1,15 @@
+import Navbar from "./Navbar";
+
+const styles = {
+
+}
+
 function App() {
   return (
-    <h1>Hello world</h1>
+    <div style={styles}>
+      <Navbar />
+    </div>
+    
   );
 }
 
