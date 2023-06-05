@@ -1,13 +1,44 @@
 body{
     margin: 0;
+    width: 100%;
+    overflow-y: hidden;
 }
 
 .navbar .links{
     display: flex;
     font-family: 'Inter', sans-serif;
+    margin-right: 70px;
 }
 
 .navbar .links a{
     font-size: 12px;
     text-decoration: none;
+    margin-right: 30px;
+
+}
+.logo img{
+    width: 70%;
+}
+.nav-btn{
+    display: flex;
+}
+
+.nav-btn button{
+    width: 150px;
+    height: 40px;
+    margin-left: 5%;
+    border-radius: 5px;
+}
+
+.nav-btn .button1{
+    background-color: #1A1D4A;
+    border-color: #6B7CF3;
+    border-width: thin;
+    color: white;
+    border-style: groove;
+}
+.nav-btn .button2{
+    background-color: #6B7CF3;
+    color: #fff;
+    border: 0;
 }

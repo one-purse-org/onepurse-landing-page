@@ -5,7 +5,8 @@ const styles = {
   color: "#fff",
   display: "flex",
   alignItems: "center",
-  padding: "30px 5px 25px 15px "
+  padding: "3% 0 5% 3%",
+  width: "100%"
 }
 
 function Navbar(){
@@ -23,8 +24,8 @@ function Navbar(){
             <a>Contact Us</a>
         </div>
         <div className="nav-btn">
-            <button type="button">Affliate Dashboard</button>
-            <button type="button">Download App</button>
+            <button type="button" className="button1">Affliate Dashboard</button>
+            <button type="button" className="button2">Download App</button>
         </div>
     </div>
     )
