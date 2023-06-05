@@ -2,22 +2,25 @@ import React from "react";
 
 const styles = {
   backgroundColor: "#1A1D4A",
-  color: "#fff"
+  color: "#fff",
+  display: "flex",
+  alignItems: "center",
+  padding: "30px 5px 25px 15px "
 }
 
 function Navbar(){
     return(
-    <div style={styles}>
+    <div style={styles} className="navbar">
         <div className="logo">
          <img src="logo.svg"/>
         </div>
         
         <div className="links">
-            <p>Home</p>
-            <p>About</p>
-            <p>Become an affliate</p>
-            <p>Faq</p>
-            <p>Contact Us</p>
+            <a>Home</a>
+            <a>About</a>
+            <a>Become an affliate</a>
+            <a>Faq</a>
+            <a>Contact Us</a>
         </div>
         <div className="nav-btn">
             <button type="button">Affliate Dashboard</button>
@@ -27,4 +30,4 @@ function Navbar(){
     )
 }
 
-export default Navbar;
+export default Navbar; 

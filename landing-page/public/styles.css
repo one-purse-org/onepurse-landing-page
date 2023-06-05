@@ -1,3 +1,13 @@
 body{
     margin: 0;
 }
+
+.navbar .links{
+    display: flex;
+    font-family: 'Inter', sans-serif;
+}
+
+.navbar .links a{
+    font-size: 12px;
+    text-decoration: none;
+}
