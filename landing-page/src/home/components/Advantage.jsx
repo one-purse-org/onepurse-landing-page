@@ -1,3 +1,5 @@
+import "../../styles/advantage.css"
+
 let text = [
     {
         key: 1,

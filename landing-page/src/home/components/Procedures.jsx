@@ -1,3 +1,5 @@
+import "../../styles/procedures.css"
+
 let text = [
     {
         key: 1,

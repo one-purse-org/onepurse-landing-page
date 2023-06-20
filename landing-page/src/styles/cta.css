@@ -1,0 +1,99 @@
+/* styles for cta jsx */
+
+.cta{  
+    display: flex;
+    background-color: #1A1D4A;
+    color: white;
+    padding: 12% 0 20px 2%;
+    position: relative;
+}
+
+.map img{
+    width: 100%;
+}
+.map{
+    justify-self:end;
+    text-align: right;
+    max-width: 50%;
+}
+
+.cta-text{
+    padding: 80px 20px 0 0;
+    max-width: 50%;
+}
+
+.cta-text button{
+    width: 145px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #1A1D4A;
+    border-color: white;
+    border-width: thin;
+    color: white;
+    border-style: groove;
+    padding-bottom: 2px;
+}
+
+.cta-text i{
+    font-size: 1.4rem;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.btn-div{
+    display: inline-block;
+    text-align: left;
+    padding-left: 8%
+}
+
+.google-play{
+    color: white
+}
+
+.get{
+    font-size: 0.5rem;
+    margin: 0;
+}
+
+.where{
+    margin: 0;
+    font-size: 1rem;
+}
+
+.apple{
+    margin-left: 3%;
+}
+
+.cta-text .p{
+    line-height: 1.5;
+    font-size: 0.9rem;
+}
+
+
+@media (max-width: 960px){
+    .map{
+        text-align: right;
+        max-width: 100%;
+    
+    }
+    .cta-text{
+        max-width: 100%;
+        text-align: center;
+        position: absolute;
+        bottom: 40%;
+        padding: 0 5%;
+    }
+
+    .cta-text .p{
+        font-size: 1.2rem;
+    }
+
+    .cta{  
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #1A1D4A;
+        color: white;
+        padding: 12% 2% 20px;
+    }
+
+}

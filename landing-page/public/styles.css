@@ -1,239 +1,15 @@
+html{
+    font-size: calc(12px + 0.390625vw);
+}
+
 body{
     margin: 0;
-    width: 100%;
+    max-width: 100%;
     font-family: 'Inter', sans-serif;
 }
 
-.navbar{
-    background-color: #1A1D4A;
-    color: #fff;
-    display: flex;
-    padding: 40px 0 20px 35px;
-    max-width: 100%
-  }
-  
-
-.links{
-    font-family: 'Inter', sans-serif;
-    margin-right: 70px;
-    padding-top: 5px;
-}
-
-.links a{
-    font-size: 12px;
-    text-decoration: none;
-    margin-left: 30px;
-    color: #fff;
-}
-
-.logo img{
-    width: 150px;
-}
 
 
-.nav-btn button{
-    width: 150px;
-    height: 40px;
-    margin-left: 20px;
-    border-radius: 5px;
-}
-
-.nav-btn .button1{
-    background-color: #1A1D4A;
-    border-color: #6B7CF3;
-    border-width: thin;
-    color: white;
-    border-style: groove;
-}
-.nav-btn .button2{
-    background-color: #6B7CF3;
-    color: #fff;
-    border: 0;
-}
-
-
-/* styles for cta jsx */
-
-.cta{  
-    display: flex;
-    background-color: #1A1D4A;
-    color: white;
-    padding: 12% 0 20px 35px;
-}
-
-.map img{
-    width: 100%;
-}
-.map{
-    justify-self:end;
-    text-align: right;
-    max-width: 50%;
-}
-
-.cta-text{
-    padding: 80px 20px 0 0;
-    max-width: 50%;
-}
-
-.cta-text button{
-    width: 150px;
-    height: 40px;
-    border-radius: 5px;
-    background-color: #1A1D4A;
-    border-color: white;
-    border-width: thin;
-    color: white;
-    border-style: groove;
-    padding-bottom: 2px;
-}
-
-.cta-text i{
-    font-size: 22px;
-    display: inline-block;
-    margin-bottom: 5px;
-}
-
-.btn-div{
-    display: inline-block;
-    text-align: left;
-    padding-left: 12px;
-}
-
-.google-play{
-    color: white
-}
-
-.get{
-    font-size: 8px;
-    margin: 0;
-}
-
-.where{
-    margin: 0;
-    font-size: 16px;
-}
-
-.apple{
-    margin-left: 20px;
-}
-
-.cta-text .p{
-    line-height: 1.5;
-}
-
-/* styles for procedures jsx */
-
-.phone img{
-    width: 100%;
-}
-
-.phone p{
-    font-weight: 500;
-    font-size: 16px;
-}
-
-.phone{
-    text-align: center;
-}
-
-.phones{
-    display: flex;
-}
-
-.tag{
-    width: 100%;
-    height: 54px;
-    border-radius: 5px;
-    background-color: #E2E4FF;
-    color: black;
-    border-color: #1A1D4A;
-    border-width: thin;
-    border-style: groove;
-    padding: 0 37px;
-    text-align: center;
-}
-
-.tag p{
-    font-weight: 600;
-    font-size: 28px;
-    margin: 10px;
-}
-
-.big-div .steps{
-    font-weight: 600;
-    font-size: 10px;
-}
-
-.big-div{
-    text-align: center;
-}
-
-.tag span{
-    color: #6B7CF3;
-}
-
-.procedure{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 45px 3px 50px;
-}
-
-/* styles for advantage jsx */
-
-.card-left{
-    width: 30%;
-}
-
-.card-right{
-    width: 90%;
-    text-align: left;
-    padding-right: 5%;
-}
-
-.card-right h3{
-    margin-bottom: 0;
-}
-
-.card-right p{
-    font-size: 11px;
-    font-weight: 500;
-}
-
-.advantage .card-div{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-
-
-.card-div .card{
-    display: flex;
-    width: 33%;
-    height: 160px;
-    border-radius: 5px;
-    background-color: #E2E4FF;
-    color: black;
-    border-color: #1A1D4A;
-    border-width: thin;
-    border-style: groove;
-    padding: 0 2%;
-    text-align: center;
-    margin: 20px 10px;
-}
-
-.advantage{
-    padding: 30px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #F0F1FF;
-}
-
-.advantage h1{
-    font-size: 2.2rem;
-}
 
 /* styles for advantage jsx */
 .testimony{
@@ -300,12 +76,21 @@ body{
     left: 25%;
 }
 
+@media (max-width:760px) {
+    .testimonies .person{
+        width: 85%;
+    }
+    .rectangle{
+        height: 800px;
+    }
+}
 
 
 /* styles for footer jsx */
 .rectangle2{
     position: absolute;
-    width: 90%;
+    width: 90vw;
+    height: 90vh;
     z-index: 1;
     top: -40%;
 }
@@ -317,14 +102,14 @@ body{
     z-index: 0;
     height: 400px;
     display: flex;
-    justify-content: center;
+    max-width: 97%;
 }
 
 
 .rectangle-text{
     z-index: 2;
     position: absolute;
-    top: -20%;
+    top: -14%;
     color: white;
     text-align: center;
 }
@@ -353,20 +138,96 @@ body{
     position: absolute;
     top: 72%;
     color: white;
+    width: 90%;
 }
 
 .footer .nav-links{
     display: flex;
-    justify-content: space-between;
-    padding-right: 540px;
-    padding-left: 20px;
+    justify-content: space-evenly;
+    width: 50%;
 }
 
 .social-links{
     display: flex;
     justify-content: space-between;
+    width: 25%;
 }
 
 .social-links i{
-    font-size: 16px;
+    font-size: 21px;
 }
+
+.rectangle-text h1{
+    font-size: 1.6rem;
+    padding: 0 20px;
+}
+
+.rectangle-text .paragraph{
+    font-size: 12px;
+    padding: 0 20px;
+}
+
+.footer-cta{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.links .nav-links a{
+    width: auto;   
+    margin-left: 0;
+    font-size: 0.8rem;
+}
+
+@media (max-width:768px) {
+    .rectangle2{
+        width: 90vw;
+        height: 80vh;
+    }
+}
+
+@media (max-width:635px) {
+    .footer .nav-links{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer .links{
+        top: 50%;
+    }
+
+    .links .nav-links a{
+        width: auto;   
+        margin-bottom: 25px;
+        font-size: 1rem;
+    }
+
+    .footer .social-links{
+        width: 40%;
+    }
+
+    .rectangle2{
+        width: 90vw;
+        height: 60vh;
+    }
+
+    .rectangle-text{
+        top: -18%;
+    }
+
+}
+
+@media (max-width:476px) {
+    .rectangle2{
+        width: 90vw;
+        height: 50vh;
+        top: -28%;
+    }
+
+    .footer-btn{
+        width: 140px
+    }
+
+}
+
+

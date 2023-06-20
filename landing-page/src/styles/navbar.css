@@ -1,0 +1,175 @@
+
+.navbar{
+    display: flex;
+    align-items: center;
+    background-color: #1A1D4A;
+    color: #fff;
+    display: flex;
+    padding: 40px 2% 20px;
+    max-width: 100%
+  }
+  
+
+.links{
+    font-family: 'Inter', sans-serif;
+    padding-bottom: 9px;
+    width: 50%;
+}
+
+.links a{
+    font-size: 0.77rem;
+    text-decoration: none;
+    margin-left: 5%;
+    width: 20%;
+    color: #fff;
+}
+
+.logo img{
+    width: 85%;
+}
+
+.logo{
+    width: 20%;
+}
+
+
+
+.navbar .nav-btn{
+    width: 30%;
+    padding-bottom: 5px;
+}
+
+.nav-btn button{
+    width: 47%;
+    font-size: 0.8rem;
+    height: 48px;
+    margin-left: 3%;
+    border-radius: 5px;
+}
+
+.nav-btn .button1{
+    background-color: #1A1D4A;
+    border-color: #6B7CF3;
+    border-width: thin;
+    color: white;
+    border-style: groove;
+}
+.nav-btn .button2{
+    background-color: #6B7CF3;
+    color: #fff;
+    border: 0;
+}
+
+.hamburger-menu{
+    display: none;
+}
+
+.to-cover{
+    display: none;
+   
+}
+
+.no-cover{
+    display: none;
+}
+
+.cover-screen{
+    display: none;
+}
+
+@media (max-width:960px) {
+    .over-flow{
+        overflow-y: hidden;
+    }
+
+    .navbar .no-cover{
+        display: none;
+    }
+
+    .close{
+        padding-right: 3%;
+        font-size: 1.8rem;
+    }
+
+    .to-cover{
+        display: block;
+    }
+    
+    .cover-screen{
+        z-index: 2;
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 30px;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: #1A1D4A;
+    }
+    .links-sm{
+        font-family: 'Inter', sans-serif;
+        padding-bottom: 9px;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 3%;
+    }
+    
+    .links-sm a{
+        margin-bottom: 21px;
+        font-size: 1rem;
+        text-decoration: none;
+        margin-left: 0%;
+        width: 100%;
+        color: #fff;
+    }
+    .hamburger-menu{
+        display: block;
+        font-size: 1.8rem;
+    }
+    .links{
+        display: none;
+    }
+
+    .navbar{
+        justify-content: space-between;
+    }
+
+    .navbar .nav-btn{
+        width: 50%;
+        padding-bottom: 5px;
+    }
+    
+    .nav-btn button{
+        width: 45%;
+        margin-left: 5%;
+        height: 48px;
+    }
+    .logo{
+        width: 28%;
+    }
+}
+
+
+@media (max-width:576px) {
+
+    .navbar{
+        justify-content: none;
+    }
+
+    .navbar .nav-btn{
+        width: 50%;
+        padding-bottom: 5px;
+    }
+    
+    .nav-btn button{
+        width: 45%;
+        margin-left: 5%;
+        height: 38px;
+        font-size: 0.6rem;
+    }
+    .logo{
+        width: 40%;
+    }
+}
