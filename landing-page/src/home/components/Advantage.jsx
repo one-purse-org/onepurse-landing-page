@@ -1,4 +1,4 @@
-import "../../styles/advantage.css"
+import "../../styles/home/advantage.css"
 
 let text = [
     {

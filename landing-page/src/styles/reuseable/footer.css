@@ -1,0 +1,140 @@
+/* styles for footer jsx */
+.rectangle2{
+    position: absolute;
+    width: 90vw;
+    height: 70vh;
+    z-index: 1;
+    top: -40%;
+}
+
+.footer{
+    position: relative;
+    background-color: #1A1D4A;
+    padding: 20px;
+    z-index: 0;
+    height: 400px;
+    display: flex;
+    max-width: 97%;
+}
+
+
+.rectangle-text{
+    z-index: 2;
+    position: absolute;
+    top: -14%;
+    color: white;
+    text-align: center;
+}
+
+.footer-btn{
+    width: 164px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: white;
+    color: #6B7CF3;
+    padding: 8px 0 40px;
+    border: 0;
+}
+
+.footer .download{
+    font-size: 22px;
+    display: inline-block;
+    margin-bottom: 5px;
+    color: #6B7CF3;
+}
+
+.footer .links{
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    position: absolute;
+    top: 72%;
+    color: white;
+    width: 90%;
+}
+
+.footer .nav-links{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+.social-links{
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+}
+
+.social-links i{
+    font-size: 21px;
+}
+
+.rectangle-text h1{
+    font-size: 1.6rem;
+    padding: 0 20px;
+}
+
+.rectangle-text .paragraph{
+    font-size: 12px;
+    padding: 0 20px;
+}
+
+.footer-cta{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.links .nav-links a{
+    width: auto;   
+    margin-left: 0;
+    font-size: 0.8rem;
+}
+
+@media (max-width:768px) {
+    .rectangle2{
+        height: 60vh;
+    }
+}
+
+@media (max-width:635px) {
+    .footer .nav-links{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer .links{
+        top: 60%;
+    }
+
+    .links .nav-links a{
+        width: auto;   
+        margin-bottom: 25px;
+        font-size: 1rem;
+    }
+
+    .footer .social-links{
+        width: 40%;
+    }
+
+    .rectangle2{
+        height: 60vh;
+    }
+
+    .rectangle-text{
+        top: -18%;
+    }
+
+}
+
+@media (max-width:476px) {
+    .rectangle2{
+        height: 50vh;
+        top: -28%;
+    }
+
+    .footer-btn{
+        width: 140px
+    }
+
+}

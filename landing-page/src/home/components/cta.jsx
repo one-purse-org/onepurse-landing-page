@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/cta.css"
+import "../../styles/home/cta.css"
 
 
 function Cta(){
@@ -24,7 +24,7 @@ function Cta(){
             </button>
         </div>
         <div className="map">
-            <img src="map.png" alt="map"/>
+            <img src="img/map.png" alt="map"/>
         </div>
     </div>
     )

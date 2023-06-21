@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Link } from 'react-router-dom';
-import "../../styles/navbar.css"
+import "../../styles/reuseable/navbar.css"
 import $ from "jquery"
 
 function hamburger(){

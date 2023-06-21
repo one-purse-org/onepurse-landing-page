@@ -1,29 +1,29 @@
-import "../../styles/procedures.css"
+import "../../styles/home/procedures.css"
 
 let text = [
     {
         key: 1,
         number: "1.",
         text: "Sign up with your details",
-        image: "phone1.png"
+        image: "img/phone1.png"
     },
     {
         key:2,
         number: "2.",
         text: "Enter your Affiliate code",
-        image: "phone2.png"
+        image: "img/phone2.png"
     },
     {
         key:3,
         number: "3.",
         text: "Enter Beneficiary Information",
-        image: "phone3.png"
+        image: "img/phone3.png"
     },
     {
         key:4,
         number: "4.",
         text: "Send money",
-        image: "phone4.png"
+        image: "img/phone4.png"
     }
 ]
 
