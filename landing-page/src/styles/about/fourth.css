@@ -1,0 +1,28 @@
+.fourth-div{
+    padding: 5% ;
+    padding-bottom: 250px;
+    background-color:  #F5F5F5;
+}
+
+.fourth-div .header{
+    margin-bottom: 3%;
+}
+
+.reasons div{
+    border: 1px solid rgba(0, 0, 0, 0.14);
+    background: #FFF;
+    padding-left: 7px;
+    width: 90%;
+    height: 45px;
+}
+
+.fourth-div h2{
+    font-size: 2rem;
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+}
+
+.fourth-div p{
+    font-size: 0.8rem;
+}

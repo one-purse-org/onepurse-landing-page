@@ -1,0 +1,39 @@
+.who-we-are, .what-we-do{
+    padding: 30px 5%;
+    display: flex;
+    max-width: 100%;
+}
+
+.who-we-are .img, .what-we-do .img{
+    width: 50%;
+}
+
+.who-we-are .text, .what-we-do .text{
+    width: 50%;
+}
+
+.who-we-are img, .what-we-do img {
+    width: 100%;
+}
+
+.what-we-do .text {
+    padding-left: 5%;
+}
+
+.what-we-do .text p{
+    width: 85%
+}
+
+.who-we-are h2, .what-we-do h2{
+    font-size: 2rem;
+}
+
+.who-we-are p, .what-we-do p{
+    font-size: 1rem;
+    line-height: 1.5;
+    width: 75%;
+}
+
+.second-div{
+    padding: 50px 0 170px 0;
+}

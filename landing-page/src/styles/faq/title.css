@@ -1,0 +1,30 @@
+.title-div h1{
+    font-size: 3rem;
+    padding-right: 5%;
+}
+.title-div .title-h1{
+    width: 50%;
+    padding-top: 20px;
+}
+
+.title-div .title-img{
+   width: 25%;
+}
+
+.title-div img{
+    width: 100%;
+}
+
+.title-div {
+    display: flex;
+    justify-content: center;
+    background-color: #1A1D4A;
+    color: white;
+    padding: 20px 2% 30px ;
+    max-width: 100%;
+}
+
+.title-div span{
+    color: #FFCC00;
+}
+

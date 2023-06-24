@@ -1,0 +1,30 @@
+.questions{
+    padding: 2% 2% 300px;
+    display: flex;
+}
+
+.questions .link{
+    width: 25%;
+}
+
+.questions .link p{
+    margin-bottom: 20px;
+    border-left: 0.09rem solid #6B7CF3;
+    line-height: 0.9;
+    padding-left: 8px;
+    padding-top: 1px;
+}
+
+.questions .question{
+    width: 70%;
+}
+
+.questions p{
+    font-size: 0.7rem;
+}
+
+.question-div{
+    border: 1px solid;
+    border-color: #c0c0c0;
+    padding: 10px 15px;
+}

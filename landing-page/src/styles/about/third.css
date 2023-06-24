@@ -1,0 +1,32 @@
+ .third-div{
+    background-color: #1A1D4A;
+    color: white;
+    padding: 5% 0 8% 5%;
+    position: relative;
+    max-width: 100%;
+ }
+
+
+.third-div h2{
+    font-size: 2rem;
+    color: #FFCC00;
+}
+
+.third-div p{
+    font-size: 0.8rem;
+    line-height: 1.5;
+    width: 60%;
+}
+
+
+.third-div img{
+    width: 45vh;
+}
+
+.third-div .img{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 66%;
+    bottom: -18%;
+}

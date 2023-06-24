@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Link } from 'react-router-dom';
 import "../../styles/reuseable/footer.css"
 
 
-const toShow ={
+const toShow = {
     display: "block"
 }
 
