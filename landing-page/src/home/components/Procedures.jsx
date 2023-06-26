@@ -29,7 +29,7 @@ let text = [
 
 function Card(props){
     return(<div className="phone">
-        <h1>{props.number}</h1>
+        <h2>{props.number}</h2>
         <p>{props.text}</p>
         <img src={props.image} alt=""/>
     </div>)
@@ -40,7 +40,7 @@ function Procedure(){
         <div className="procedure">
             <div className="big-div">
                 <div className="tag">
-                    <p>Start sending <span>money</span> today</p>
+                    <h2>Start sending <span>money</span> today</h2>
                 </div>
                 <p className="steps">Create your Onepurse account in 4 easy steps via our mobile app!</p>
             </div>

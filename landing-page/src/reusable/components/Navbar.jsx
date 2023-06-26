@@ -3,14 +3,12 @@ import "../../styles/reuseable/navbar.css"
 import $ from "jquery"
 
 function hamburger(){
-        console.log("close")
         $(".cover-screen").addClass("to-cover")
         $(".cover-screen").removeClass("no-cover")
         $("body").addClass("over-flow")
 }
 
 function close(){
-        console.log("close")
         $(".cover-screen").removeClass("to-cover")
         $(".cover-screen").addClass("no-cover")
         $("body").removeClass("over-flow")
@@ -19,6 +17,7 @@ function close(){
 function Navbar(props){
     return(
         <div className={props.color==="white"?"navbar-white navbar":"navbar"}>
+            <div className='div-container'>
             <div className="logo">
                 <img src={props.color==="white"?"img/Logo-white.png":"img/Logo.png"} alt="logo"/>
             </div>
@@ -45,8 +44,14 @@ function Navbar(props){
                     <Link to="/faq">Faq</Link>
                     <Link to="/contact">Contact Us</Link>
                 </div>
+                <div className="nav-btn-sm">
+                    <button type="button" className={props.color==="white"?"button1 button1-white" : "button1"}>Affliate Dashboard</button>
+                    <button type="button" className="button2">Download App</button>
+                </div>
                 <i class="fa-solid fa-x close" onClick={close}></i>
             </div>
+            </div>
+            
         </div>
        
 
