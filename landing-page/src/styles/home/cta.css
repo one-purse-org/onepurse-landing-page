@@ -1,10 +1,15 @@
 /* styles for cta jsx */
 
+.contain-cta{
+    background-color: #1A1D4A;
+    max-width: 100%;
+}
+
 .cta{  
     
     background-color: #1A1D4A;
     color: white;
-    padding: 10px 0 60px 20px;
+    padding: 12% 0 60px 20px;
     max-width: 100%;
 }
 
@@ -19,24 +24,28 @@
 
 .map{
     justify-self: end;
-    max-width: 50%;
+    width: 50%;
 }
 
 .cta-text{
-    padding: 80px 20px 0 0;
-    max-width: 50%;
+    padding: 8% 20px 0 0;
+    width: 50%;
+    
 }
 
 .cta-text button{
-    width: 145px;
-    height: 40px;
+    width: 211px;
+    padding: 0px 10px;
+    padding-left: 31px;
     border-radius: 5px;
     background-color: #1A1D4A;
     border-color: white;
+    display: inline-flex;
+    height: 60px;
+    align-items: center;
     border-width: thin;
     color: white;
     border-style: groove;
-    padding-bottom: 2px;
 }
 
 .cta-text i{
@@ -56,13 +65,14 @@
 }
 
 .get{
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     margin: 0;
 }
 
 .where{
     margin: 0;
     font-size: 1rem;
+    font-weight: 600;
 }
 
 .apple{
@@ -71,34 +81,30 @@
 
 .cta-text .p{
     line-height: 1.5;
-    font-size: 0.9rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: 
+    rgba(255, 255, 255, 1);
 }
 
 
 @media (max-width: 960px){
-    .map{
-        display: none;
-    
-    }
 
-    .cta{
-        background-image: url("/public/img/map.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding-left: 0;
-        padding-top: 60px;
-        height: 200px;
+    .cta-text button{
+        width: 176px;
+        padding: 0px 10px;
+        padding-left: 31px;   
+        height: 50px;     
     }
 
     .cta-text{
-        max-width: 90%;
+        width: 100%;
         text-align: center;
-        margin: auto;
         padding: 0;
     }
 
     .cta-text .p{
-        font-size: 1.2rem;
+        font-size: 1.8rem;
     }
 
     .cta-container{
@@ -107,36 +113,83 @@
         max-width: 90%;
         margin: auto;
         margin-top: 20px;
+        flex-wrap: wrap;
     }
-
-}
-
-@media (max-width: 475px){
-    .cta{ 
-        background-size: contain;
+    .map{
+        width: 100%;
         padding-top: 40px;
     }
-    .cta button{
-        width: 139px;
-    }
-    .cta-container{
-        margin-top: 0;
-        max-width: 100%;
-    }
+}
+
+
+@media (max-width: 600px){
     .cta-text .p{
-        font-size: 1.2rem;
+        font-size: 16px;
+    }
+    .cta-text button{
+        width: 150px;    
+        height: 42px;
+        padding: 0px 10px;
+        padding-left: 20px;   
+        height: 50px;  
+    }
+
+    .get{
+        font-size: 8px;
+    }
+    
+    .where{
+        font-size: 12px;
+    }
+
+
+}
+@media (max-width:365px) {
+    .cta-text button{
+        width: 113px;    
+        height: 42px;
+        padding-left: 10px;
+        padding-right: 0;
+    }
+}
+
+/* 
+@media (max-width: 475px){
+    .cta-text .p{
+        font-size: 1.4rem;
+    }
+
+    
+    .cta-text button{
+        width: 140px;    
+        padding-left: 10px;
     }
 
 }
 
 @media (max-width: 360px){
-    .cta button{
-        width: 118px;
-    }
-    .cta{ 
-        padding-top: 20px;
-    }
     .cta-text .p{
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
-}
+
+    
+    .cta-text button{
+        width: 110px;  
+        padding: 0 6px; 
+        height: 40px; 
+    }
+
+    .get{
+        font-size: 8px;
+        margin: 0;
+    }
+    
+    .where{
+        margin: 0;
+        font-size: 12px;
+    }
+
+    .cta-text i{
+        font-size: 1.2rem;
+    }
+} */

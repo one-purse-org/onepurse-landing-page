@@ -35,13 +35,14 @@
 
 .tag h2,.phone h2{
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 2.7rem;
     margin: auto;
 }
 
 .big-div .steps{
     font-weight: 500;
     font-size: 16px;
+    padding: 0 20px;
 }
 
 .big-div{
@@ -60,25 +61,38 @@
     max-width: 100%;
 }
 
-@media (max-width: 650px) {
-    .phone p{
-        font-size: 14px;
+@media (max-width: 600px) {
+    .phone p, .big-div .steps{
+        font-size: 12px;
         height: 30px;
+      
     }
 
     .tag h2,.phone h2{
-        font-size: 2.5rem;
+        font-size: 1.5rem;
     }
 
-    .big-div .steps{
-        font-weight: 500;
-        font-size: 14px;
+    .phone img{
+        width: 60%;
     }
+    
+    .phone{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .phones{
+        display: flex;
+        max-width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
 
 
 }
 
-@media (max-width: 540px) {
+/* @media (max-width: 540px) {
     .tag h2, .phone h2{
         font-size: 2.1rem;
     }
@@ -119,4 +133,4 @@
     .phone p{
         font-size: 8px
     }
-}
+} */

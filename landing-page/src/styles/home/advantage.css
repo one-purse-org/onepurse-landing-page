@@ -83,11 +83,16 @@
 
 @media (max-width:768px) {
     .card-div .card{
-        width: 70%;
+        align-items: center;
+        padding: 10px 20px;
+        margin: 10px auto;
+        width: 50%;
+        flex-direction: column;
+        margin-bottom: 40px;
     }
 
     .advantage h1{
-        font-size: 1.8rem;
+        font-size: 2.4rem;
         font-weight: 600;
     }
 
@@ -95,21 +100,32 @@
         font-size: 14px
     }
 
+    .card-left{
+        width: auto;
+        display: block;
+        margin: 0;
+    }
     
+    .card-right{
+        width: auto;
+        display: block;
+        text-align: center;
+        padding: 0;
+    }
+
 }
 
 
 @media (max-width:600px) {
     .card-div .card{
         width: 80%;
+        margin-bottom: 40px;
     }
+   
 }
 
 @media (max-width:400px) {
-    .card-div .card {
-        padding: 10px 8px 10px 13px;
-    }
-
+  
     .advantage h1{
         font-size: 1.4rem;
         font-weight: 600;

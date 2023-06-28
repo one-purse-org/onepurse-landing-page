@@ -57,9 +57,10 @@
 .nav-btn button{
     font-size: 0.8rem;
     margin-left: 15px;
-    width: 150px;
+    width: 175px;
     height: 50px;
     border-radius: 5px;
+    padding: 0 14px;
 }
 
 .nav-btn .button1{

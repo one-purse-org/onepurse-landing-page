@@ -1,40 +1,60 @@
 /* styles for footer jsx */
-.rectangle2{
-    position: absolute;
-    width: 90vw;
-    height: 70vh;
-    z-index: 1;
-    top: -40%;
-}
 
 .footer{
     position: relative;
     background-color: #1A1D4A;
-    padding: 20px;
-    z-index: 0;
+    max-width: 100%;
     height: 400px;
-    display: flex;
-    max-width: 97%;
+    padding-bottom: 200px;
 }
 
-
-.rectangle-text{
-    z-index: 2;
-    position: absolute;
-    top: -14%;
+.footer-cta{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: 90%;
+    background-size: cover;
+    border-radius: 22px;
+    margin: auto;
+    background-image: url("/public/img/Rectangle103.png");
     color: white;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    bottom: 30%;
     text-align: center;
 }
 
+.footer-cta h1{
+    font-size: 2.2rem;
+    font-weight: 600;
+    padding: 0 20px;
+    line-height: 1;
+    margin: 0;
+}
+
+.footer-cta .paragraph{
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    padding: 20px 40px;
+}
+
+
 .footer-btn{
-    width: 164px;
-    height: 40px;
-    border-radius: 10px;
+    width: 180px;
+    padding: 0px 10px;
+    padding-left: 10px;
+    border-radius: 5px;
     background-color: white;
     color: #6B7CF3;
-    padding: 8px 0 40px;
+    display: inline-flex;
+    height: 50px;
+    align-items: center;
+    border-style: groove;
     border: 0;
 }
+
 
 .footer .download{
     font-size: 22px;
@@ -43,89 +63,104 @@
     color: #6B7CF3;
 }
 
+
+
 .footer .links{
     display: flex;
     justify-content: space-between;
-    z-index: 2;
-    position: absolute;
-    top: 72%;
     color: white;
-    width: 90%;
+    max-width: 90%;
+    margin: auto;
 }
 
 .footer .nav-links{
     display: flex;
-    justify-content: space-evenly;
-    width: 50%;
 }
 
 .social-links{
     display: flex;
-    justify-content: space-between;
-    width: 25%;
 }
 
 .social-links i{
-    font-size: 21px;
+    font-size: 16px;
+    margin-right: 2px;
 }
 
-.rectangle-text h1{
-    font-size: 1.6rem;
-    padding: 0 20px;
-}
-
-.rectangle-text .paragraph{
-    font-size: 12px;
-    padding: 0 20px;
-}
-
-.footer-cta{
-    width: 100%;
-    display: flex;
-    justify-content: center;
+.social-links a{
+    height: 0;
 }
 
 .links .nav-links a{
     width: auto;   
     margin-left: 0;
-    font-size: 0.8rem;
+    margin-right: 30px;
+    font-size: 14px;
+    font-weight: 400;
 }
 
-@media (max-width:768px) {
-    .rectangle2{
-        height: 60vh;
-    }
-}
 
-@media (max-width:635px) {
+
+@media (max-width:600px) {
+    
+
     .footer .nav-links{
-        display: flex;
         flex-direction: column;
     }
 
-    .footer .links{
-        top: 60%;
-    }
 
     .links .nav-links a{
-        width: auto;   
-        margin-bottom: 25px;
-        font-size: 1rem;
+        margin-bottom: 20px;
+        font-size: 14px;
     }
 
-    .footer .social-links{
-        width: 40%;
+    .footer .social-links a{
+        margin-left: 12px;
     }
 
-    .rectangle2{
+    .social-links{
+        padding-bottom: 40px;
+        align-items: flex-end;
+    }
+
+    .footer-btn{
+        width: 150px;    
+        height: 42px;
+        padding: 0px 10px;
+        padding-left: 20px;   
+        height: 50px;  
+}
+
+    .footer-btn .get{
+        font-size: 11px;
+    }
+
+    .footer-btn .where{
+        font-size: 14px;
+    }
+
+    
+    .footer-cta h1{
+        font-size: 1.8rem;
+        font-weight: 600;
+        padding: 0 20px;
+        line-height: 1;
+        margin: 0;
+    }
+
+    .footer-cta .paragraph{
+        font-size: 12px;
+        padding: 20px 40px;
+    }
+    /* .rectangle2{
         height: 60vh;
     }
 
     .rectangle-text{
         top: -18%;
-    }
+    } */
 
 }
+/* 
 
 @media (max-width:476px) {
     .rectangle2{
@@ -137,4 +172,4 @@
         width: 140px
     }
 
-}
+} */

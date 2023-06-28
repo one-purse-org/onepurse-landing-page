@@ -4,11 +4,13 @@ import "../../styles/home/cta.css"
 
 function Cta(){
     return(
-    <div className="cta">
+    <div className="contain-cta">
+<div className="cta">
         <div className="cta-container">
             <div className="cta-text">
-                <p className="p">You might be miles away from home but getting money across to your loved ones shouldn't be a hassle</p>
+                <p className="p">You might be miles away from home but getting money across to your loved ones shouldn't be a hassle.</p>
                 <button type="button">
+                    
                     <i className="fa-brands fa-google-play google-play"></i>
                     <div className="btn-div">
                         <p className="get">Get it on</p>
@@ -30,6 +32,8 @@ function Cta(){
         </div>
         
     </div>
+    </div>
+    
     )
     
 

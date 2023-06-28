@@ -5,6 +5,11 @@
     position: relative;
 }
 
+.person .testimony-body{
+    font-size: 14px;
+    font-weight: 400;
+}
+
 .testimony span{
     color: #6B7CF3;
 }
@@ -39,16 +44,17 @@
 .testimony-right{
     width: 90%;
     text-align: left;
-    padding-right: 2%;
-    padding-left: 2%;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 .testimony-name{
     font-weight: 700;
+    font-size: 14px;
 }
 
 .testimony-tag{
-    font-size: 12px;
+    font-size: 10px;
 }
 
 .rectangle{
