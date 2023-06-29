@@ -43,11 +43,12 @@ function Navbar(props){
                     <Link to="/affliate">Become an affliate</Link>
                     <Link to="/faq">Faq</Link>
                     <Link to="/contact">Contact Us</Link>
+                    <div className="nav-btn-sm">
+                        <button type="button" className={props.color==="white"?"button1 button1-white" : "button1"}>Affliate Dashboard</button>
+                        <button type="button" className="button2">Download App</button>
+                    </div>
                 </div>
-                <div className="nav-btn-sm">
-                    <button type="button" className={props.color==="white"?"button1 button1-white" : "button1"}>Affliate Dashboard</button>
-                    <button type="button" className="button2">Download App</button>
-                </div>
+               
                 <i class="fa-solid fa-x close" onClick={close}></i>
             </div>
             </div>
