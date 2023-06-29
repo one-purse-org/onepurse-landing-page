@@ -4,16 +4,16 @@
     position: relative;
     background-color: #1A1D4A;
     max-width: 100%;
-    height: 400px;
-    padding-bottom: 200px;
+    height: 500px;
+    padding-bottom: 0px;
 }
 
 .footer-cta{
     display: flex;
     justify-content: center;
     width: 90%;
-    height: 90%;
     background-size: cover;
+    height: 70%;
     border-radius: 22px;
     margin: auto;
     background-image: url("/public/img/Rectangle103.png");
@@ -71,6 +71,8 @@
     color: white;
     max-width: 90%;
     margin: auto;
+    position: relative;
+    bottom: 100px;
 }
 
 .footer .nav-links{
@@ -101,10 +103,34 @@
 
 
 @media (max-width:600px) {
-    
+
+    .footer{
+        height: auto;
+    }
+
+    .footer-cta{
+       
+        width: 100%;
+        height: auto;
+        border-radius: 0%;
+        margin: auto;
+        background-image: none;
+        background-color: #F0F1FF;
+        color: black;
+        align-items: center;
+        flex-direction: column;
+        padding: 40px 2%;
+        text-align: center;
+    }
 
     .footer .nav-links{
         flex-direction: column;
+    }
+
+    .footer .links{
+        position:relative;
+        bottom: 0px;
+        padding: 40px 0;
     }
 
 

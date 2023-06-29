@@ -29,8 +29,9 @@ function Cta(){
             <div className="map">
                 <img src="img/map.png" alt="map"/>
             </div>
+           
         </div>
-        
+      
     </div>
     </div>
     

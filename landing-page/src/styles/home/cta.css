@@ -89,7 +89,9 @@
 
 
 @media (max-width: 960px){
-
+    .cta{
+        padding-left: 0;
+    }
     .cta-text button{
         width: 176px;
         padding: 0px 10px;

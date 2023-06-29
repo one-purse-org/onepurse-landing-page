@@ -31,7 +31,7 @@
 
 
 
-.card-div .card{
+.card-div ._card{
     display: flex;
     width: 38%;
     align-items: center;
@@ -82,10 +82,9 @@
 }
 
 @media (max-width:768px) {
-    .card-div .card{
+    .card-div ._card{
         align-items: center;
         padding: 10px 20px;
-        margin: 10px auto;
         width: 50%;
         flex-direction: column;
         margin-bottom: 40px;
@@ -117,7 +116,7 @@
 
 
 @media (max-width:600px) {
-    .card-div .card{
+    .card-div ._card{
         width: 80%;
         margin-bottom: 40px;
     }

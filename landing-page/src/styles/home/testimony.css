@@ -23,14 +23,13 @@
 .testimonies .person{
     display: flex;
     width: 43%;
-    height: 225px;
     border-radius: 5px;
     background-color: #1A1D4A;
     color: white;
     border-color: #6B7CF3;
     border-width: thin;
     border-style: groove;
-    padding: 20px 2% 0;
+    padding: 20px 2%;
     border: 2px;
     text-align: center;
     margin: 20px 10px;
@@ -69,11 +68,54 @@
     left: 25%;
 }
 
+.testimony h2{
+    font-size: 2.2rem;
+    font-weight: 600;
+    padding: 0 15px;
+}
+
+.testimony-carousel{
+    display: none;
+}
+
 @media (max-width:760px) {
-    .testimonies .person{
-        width: 85%;
+
+    .testimony-carousel{
+        display: block;
+    }
+
+    .testimonies{
+        display: none;
     }
     .rectangle{
-        height: 800px;
+        display: none;
     }
+
+    .testimony{
+        background-color: #1A1D4A;
+        color: white;
+        padding-top: 60px;
+        padding-bottom: 100px;
+    }
+
+    .testimony h2{
+        font-size: 1.6rem;
+        font-weight: 600;
+        padding: 0 15px;
+    }
+
+    .carousel-inner{
+        margin: auto;
+        width: 80%;
+    }
+
+    .testimony-body{
+        font-size: 16px;
+    }
+
+    .carousel{
+        padding-top: 100px;
+    }
+
 }
+

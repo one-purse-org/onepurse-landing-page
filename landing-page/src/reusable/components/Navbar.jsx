@@ -16,7 +16,7 @@ function close(){
 
 function Navbar(props){
     return(
-        <div className={props.color==="white"?"navbar-white navbar":"navbar"}>
+        <div className={props.color==="white"?"navbar-white navbar":"_navbar"}>
             <div className='div-container'>
             <div className="logo">
                 <img src={props.color==="white"?"img/Logo-white.png":"img/Logo.png"} alt="logo"/>

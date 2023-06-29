@@ -28,7 +28,7 @@ let text = [
 ]
 
 function Card(props){
-    return(<div className="card">
+    return(<div className="_card">
         <div className="card-left">
             <div className="icons">
                 {props.icon}
@@ -56,6 +56,7 @@ function Advantage(){
                         return <Card icon={text.icon} title={text.title} body={text.body} />
                     })}
             </div>
+            
         </div>
     )
 }

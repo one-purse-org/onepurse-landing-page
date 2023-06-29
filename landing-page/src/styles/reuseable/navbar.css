@@ -6,7 +6,7 @@
 }
 
 
-.navbar{
+._navbar{
     max-width: 100%;
     background-color: #1A1D4A;
     color: #fff;
@@ -48,7 +48,7 @@
 
 
 
-.navbar .nav-btn{
+._navbar .nav-btn{
     width: auto;
     margin-left: auto;
     padding-bottom: 5px;
@@ -109,7 +109,7 @@
         overflow-y: hidden;
     }
 
-    .navbar .no-cover{
+    ._navbar .no-cover{
         display: none;
     }
 
@@ -158,7 +158,7 @@
         display: none;
     }
 
-    .navbar .nav-btn{
+    ._navbar .nav-btn{
         display: none;
     }
 
