@@ -5,16 +5,12 @@ import $ from "jquery"
 function hamburger(){
         $(".cover-screen").addClass("to-cover")
         $(".cover-screen").removeClass("no-cover")
-        $("body").addClass("over-flow")
-        $(".nav-btn").addClass("no-cover")
 }
 
 function close(){
     console.log("work")
         $(".cover-screen").removeClass("to-cover")
         $(".cover-screen").addClass("no-cover")
-        $("body").removeClass("over-flow")
-        $(".nav-btn").remove("no-cover")
 }
 
 function Navbar(props){
@@ -37,9 +33,13 @@ function Navbar(props){
             </div>
             <div className="nav-btn">
                 <button type="button" className={props.color==="white"?"button1 button1-white" : "button1"}>Affliate Dashboard</button>
-                <button type="button" className="button2">Download App</button>
+                <button type="button" className="button2">&nbsp;&nbsp;&nbsp;Download App&nbsp;&nbsp;&nbsp;</button>
             </div>
             <div className='cover-screen no-cover'>
+
+                <div onClick={close}>
+                    <i class="fa-solid fa-x close"></i>
+                </div>
                 <div className="links-sm">
                     <Link to="/">Home</Link>
                     <Link to="/about">About</Link>
@@ -48,12 +48,10 @@ function Navbar(props){
                     <Link to="/contact">Contact Us</Link>
                     <div className="nav-btn-sm">
                         <button type="button" className={props.color==="white"?"button1 button1-white" : "button1"}>Affliate Dashboard</button>
-                        <button type="button" className="button2">Download App</button>
+                        <button type="button" className="button2">&nbsp;&nbsp;&nbsp;Download App&nbsp;&nbsp;&nbsp;</button>
                     </div>
                 </div>
-                <div onClick={close}>
-                    <i class="fa-solid fa-x close"></i>
-                </div>
+                
                 
             </div>
             </div>
