@@ -1,0 +1,55 @@
+.affliate-fourth-component{
+    background-color: rgba(240, 241, 255, 1);
+    padding: 10px 2% 20px;
+    text-align: center;
+}
+
+.affliate-fourth-component h2{
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: hsl(236, 30%, 22%);
+    margin: 60px 0;
+}
+
+.affliate-fourth-component-card-div{
+    display: flex;
+    max-width: 80%;
+    justify-content: space-between;
+    flex-wrap: wrap ;
+    margin: auto;
+}
+
+.affliate-fourth-component-card{
+    max-width: 40%;
+    margin: 20px 0;
+    text-align: left;
+}
+
+
+.affliate-fourth-component-card h4{
+    font-size: 20px;
+    font-weight: 600px;
+    margin-bottom: 10px;
+}
+
+.affliate-fourth-component-card p{
+    font-weight: 400;
+}
+
+@media (max-width:760px) {
+    .affliate-fourth-component-card-div{
+        flex-direction: column;
+    }
+
+    .affliate-fourth-component h2{
+        margin-bottom: 20px;
+    }
+
+    
+    .affliate-fourth-component-card{
+        max-width: 85%;
+        text-align: center;
+        margin-bottom: 20px;
+        
+    }
+}

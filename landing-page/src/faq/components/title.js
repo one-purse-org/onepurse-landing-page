@@ -5,7 +5,7 @@ function Title(){
         <div className="title-div">
             <div className="title-h1">
                 <h1>
-                    Frequent Asked <br/> <span>Questions</span>
+                    Frequent Asked <span>Questions</span>
                 </h1>
             </div>
             <div className="title-img">

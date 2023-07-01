@@ -6,17 +6,20 @@ function hamburger(){
         $(".cover-screen").addClass("to-cover")
         $(".cover-screen").removeClass("no-cover")
         $("body").addClass("over-flow")
+        $(".nav-btn").addClass("no-cover")
 }
 
 function close(){
+    console.log("work")
         $(".cover-screen").removeClass("to-cover")
         $(".cover-screen").addClass("no-cover")
         $("body").removeClass("over-flow")
+        $(".nav-btn").remove("no-cover")
 }
 
 function Navbar(props){
     return(
-        <div className={props.color==="white"?"navbar-white navbar":"_navbar"}>
+        <div className={props.color==="white"?"navbar-white _navbar":"_navbar"}>
             <div className='div-container'>
             <div className="logo">
                 <img src={props.color==="white"?"img/Logo-white.png":"img/Logo.png"} alt="logo"/>
@@ -26,7 +29,7 @@ function Navbar(props){
                 <Link className={props.color==="white"&&"link-white"} to="/">Home</Link>
                 <Link className={props.color==="white"&&"link-white"} to="/about">About</Link>
                 <Link className={props.color==="white"&&"link-white"} to="/affliate">Become an affliate</Link>
-                <Link className={props.color==="white"&&"link-white"} to="/faq">Faq</Link>
+                <Link className={props.color==="white"&&"link-white"} to="/FAQ">FAQ</Link>
                 <Link className={props.color==="white"&&"link-white"} to="/contact">Contact Us</Link>
             </div>
             <div className='hamburger-menu' onClick={hamburger}>
@@ -48,8 +51,10 @@ function Navbar(props){
                         <button type="button" className="button2">Download App</button>
                     </div>
                 </div>
-               
-                <i class="fa-solid fa-x close" onClick={close}></i>
+                <div onClick={close}>
+                    <i class="fa-solid fa-x close"></i>
+                </div>
+                
             </div>
             </div>
             

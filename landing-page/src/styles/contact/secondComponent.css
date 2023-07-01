@@ -1,0 +1,59 @@
+.secondComponent{
+    padding: 40px 5%;
+}
+
+.secondComponent h5{
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.form-div input, .form-div textarea{
+    background-color: rgba(245, 245, 245, 1);
+    border:  1px solid #000;
+    border-radius: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 80%;
+}
+
+.form-div textarea{
+    height: 220px;
+}
+
+.form-div button{
+    background-color: rgba(107, 124, 243, 1);
+    padding: 7px 20px;
+}
+
+.customer-support{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.customer-support p{
+    width: 70%;
+}
+
+.customer-support button{
+    width: auto;
+    background-color: rgba(54, 187, 34, 1);
+}
+
+
+@media (max-width:760px){
+    .customer-support{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+    }    
+
+    .form-div input, .form-div textarea{
+        width: 100%;
+    }
+
+    .customer-support button{
+        width: 70%;
+    }
+}

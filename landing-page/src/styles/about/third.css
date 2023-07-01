@@ -1,32 +1,56 @@
  .third-div{
     background-color: #1A1D4A;
     color: white;
-    padding: 5% 0 8% 5%;
+    padding: 60px 2% ;
     position: relative;
     max-width: 100%;
+    display: flex;
+    align-items: center;
  }
+
+.third-div .text{
+    max-width: 70%;
+}
 
 
 .third-div h2{
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: #FFCC00;
 }
 
 .third-div p{
-    font-size: 0.8rem;
+    font-size: 16px;
+    font-weight: 400;
     line-height: 1.5;
-    width: 60%;
+    width: 80%;
 }
 
 
 .third-div img{
-    width: 45vh;
+    width: 100%;
 }
 
 .third-div .img{
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    left: 66%;
-    bottom: -18%;
+    width: 30%;
+}
+
+
+@media (max-width:760px) {
+    .third-div{
+        flex-direction: column;
+    }
+
+    .third-div p{
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .third-div .text{
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .third-div .img{
+        width: 60%;
+    }
 }

@@ -4,25 +4,41 @@
     background-color:  #F5F5F5;
 }
 
+.fourth-div-container{
+    max-width: 75%;
+}
+
 .fourth-div .header{
-    margin-bottom: 3%;
+    margin-bottom: 40px;
+    width: 90%;
 }
 
 .reasons div{
     border: 1px solid rgba(0, 0, 0, 0.14);
     background: #FFF;
     padding-left: 7px;
-    width: 90%;
-    height: 45px;
+    padding-top: 10px;
+    width: 100%;
+    padding-right: 10px;
 }
 
 .fourth-div h2{
-    font-size: 2rem;
-    line-height: 1;
+    font-size: 1.8rem;
+    line-height: 1.5;
     padding: 0;
     margin: 0;
+    margin-bottom: 10px;
+    font-weight: 600;
 }
 
 .fourth-div p{
-    font-size: 0.8rem;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+@media (max-width:760px) {
+    .fourth-div{
+        padding-bottom: 100px;
+    }
+    
 }

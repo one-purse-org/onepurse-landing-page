@@ -3,7 +3,7 @@ import "../../styles/reuseable/footer.css"
 
 
 const toShow = {
-    display: "block"
+    display: "flex"
 }
 
 const noShow = {
@@ -12,15 +12,10 @@ const noShow = {
 
 
 function Footer(props){
-    let styles
-    if (props.display === "show"){
-        styles = toShow
-    }else{
-        styles = noShow
-    }
+  
     return (
-        <div className="footer">
-            <div className="footer-cta">
+        <div className={props.display==="show"? "footer" : "footer no-cta-footer"}>
+            <div className="footer-cta" style={props.display==="show" ? toShow : noShow}>
                 <h1>Send money to your loved ones today</h1>
                 <p style={{lineHeight:1.5}} className='paragraph'>Download the Onepurse app and quickly transfer money <br /> to your friends and loved ones. It’s that simple.</p>
                 <div style={{display:'flex'}}>
@@ -43,12 +38,17 @@ function Footer(props){
                 
             </div>
            
+       
+            <div className="logo footer-logo" style={props.display==="show" ? {display:"none"} : {display:"block"}}>
+                    <img src="img/Logo.png" alt="logo"/>
+            </div>
+          
             
-            <div className='links'>
+            <div className= {props.display==="show"? "links" : "links no-cta-links"}>
                 <div className='nav-links'>
                     <Link to="/about">About</Link>
                     <Link to="/affliate">Become an affliate</Link>
-                    <Link to="/faq">Faq</Link>
+                    <Link to="/FAQ">FAQ</Link>
                     <Link to="/contact">Contact Us</Link>
                 </div>
                 <div className='social-links'>
