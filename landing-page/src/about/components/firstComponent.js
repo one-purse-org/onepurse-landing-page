@@ -3,7 +3,7 @@ import "../../styles/about/first.css"
 function First(){
     return (
         <div className="first-div">
-            <div className="first-div-container">
+            <div className="first-div-container container-c">
                 <div className="first-div-text">
                     <h1>
                         Send money <br/> <span>Internationally</span>

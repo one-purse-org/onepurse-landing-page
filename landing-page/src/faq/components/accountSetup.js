@@ -1,6 +1,4 @@
-import "../../styles/faq/question.css"
-
-let questions = [
+let accountSetup = [
     {
         key:1,
         head: "Why do you require my ID?",
@@ -88,40 +86,4 @@ let questions = [
 ]
 
 
-
-function Accordion(props){
-    return(
-        <div class="accordion accordion-flush" id={props.target + "-div"}>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target={"#" + props.target}>
-                    {props.head}
-                </button>
-                </h2>
-                <div id={props.target} class="accordion-collapse collapse">
-                <div class="accordion-body">
-                    {props.body}
-                </div>
-                </div>
-            </div>
-        </div>
-        
-    )
-}
-
-function Questions(){
-    return(
-        <div className="questions">
-            <div className="link">
-                <p>Account Setup</p>
-                <p>Sending Money</p>
-                <p>Security</p>
-            </div>
-            <div className="question">
-                {questions.map(question=> <Accordion head={question.head} body={question.body} target={question.target} /> )}
-            </div>
-        </div>
-    )
-};
-
-export default Questions;
+export default accountSetup;

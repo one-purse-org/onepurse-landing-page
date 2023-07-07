@@ -49,6 +49,9 @@ function Card(props){
 function Advantage(){
     return(
         <div className="advantage">
+        <div className="container-c">
+
+      
             <h1 className="heading">The Onepurse Advantage</h1>
             <div className="card-div">
               
@@ -56,7 +59,7 @@ function Advantage(){
                         return <Card icon={text.icon} title={text.title} body={text.body} />
                     })}
             </div>
-            
+            </div>
         </div>
     )
 }

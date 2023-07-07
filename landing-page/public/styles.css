@@ -8,3 +8,22 @@ body{
     font-family: 'Inter', sans-serif;
     background-color: rgba(245, 245, 245);
 }
+
+@media (min-width: 1280px){
+    .container-c {
+        max-width: 1280px!important;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        margin: auto;
+    }
+}
+
+@media (min-width: 1536px){
+    .container-c {
+        max-width: 1536px!important;
+        padding-right: 6rem;
+        padding-left: 6rem;
+        margin:auto;
+        position: relative;
+    }
+}

@@ -16,10 +16,13 @@
     width: 100%;
 }
 
-.title-div {
+.title-div-container{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.title-div {
     background-color: #1A1D4A;
     color: white;
     padding: 20px 5% 30px ;
@@ -31,4 +34,20 @@
 }
 
 
+@media (max-width:760px){
+    .title-div-container{
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .title-div .title-h1{
+        text-align: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .title-div .title-img{
+       width: 50%;
+    }
+
+}

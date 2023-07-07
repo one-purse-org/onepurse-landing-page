@@ -51,7 +51,7 @@ function Questions(props){
 
 function FifthComponent(){
     return(
-        <div className="fifth-component-div">
+        <div className="fifth-component-div container-c">
             <h2 className="fifth-component-div-h2">Affiliate FAQ</h2>
             <div className="fifth-component-div-questions">
                 {questions.map(question => <Questions head={question.head}  body={question.body}  target={question.target}/>)}

@@ -3,7 +3,7 @@ import "../../styles/about/second.css"
 function Second(){
     return (
         <div className="second-div">
-            <div className="second-div-container">
+            <div className="second-div-container container-c">
                 <div className="who-we-are">
                     <div className="text">
                         <h2>Who We Are</h2>

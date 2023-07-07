@@ -73,6 +73,7 @@ function CardCarousel(props){
 function Testimony(){
    return(
     <div className="testimony">
+    <div className="container-c">
         <h2>Here's what our <span>customers</span> <br/> say about Onepurse</h2>
         <div className="testimonies">
             {text.map(person => {return <Card name={person.name} icon={person.icon} body={person.body} tag={person.tag}/>})}
@@ -103,6 +104,7 @@ function Testimony(){
                     <span className="carousel-control-next-icon" aria-hidden="true"></span>
                     <span className="visually-hidden">Next</span>
                 </button>
+            </div>
             </div>
     </div>
     

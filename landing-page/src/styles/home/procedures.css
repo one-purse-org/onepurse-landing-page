@@ -31,6 +31,7 @@
     border-style: groove;
     padding: 5px 30px;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .tag h2,.phone h2{
@@ -41,7 +42,7 @@
 
 .big-div .steps{
     font-weight: 500;
-    font-size: 16px;
+    font-size: 18px;
     padding: 0 20px;
 }
 
@@ -67,13 +68,17 @@
         padding: 0 15px;
     }
     
-    .phone p, .big-div .steps{
-        font-size: 16px;
+    .phone p{
+        font-size: 14px;
         height: 30px;
     }
 
+    .big-div .steps{
+        font-size: 16px;
+    }
+
     .tag h2,.phone h2{
-        font-size: 2.4rem;
+        font-size: 2.1rem;
     }
 
     .phone img{

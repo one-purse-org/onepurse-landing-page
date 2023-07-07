@@ -3,6 +3,9 @@ import "../../styles/contact/secondComponent.css"
 function SecondComponent(){
     return(
         <div className="secondComponent">
+        <div className="container-c">
+
+        
             <h5>Fill in the form below.</h5>
             <form>
                 <div className="form-div">
@@ -21,6 +24,7 @@ function SecondComponent(){
                     Customer support hours are between 7am EST to 7pm EST. You can contact us on Whatsapp by clicking on the whatsapp logo.
                 </p>                
                 <button className="btn btn-success"><i className="fa-brands fa-whatsapp"></i> Contact Us</button>
+            </div>
             </div>
         </div>
     )

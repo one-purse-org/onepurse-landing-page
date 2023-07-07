@@ -35,11 +35,12 @@ function Circle(props){
 function ThirdComponent(){
     return(
         <div className="third-component">
+        <div className="container-c">
             <h2>How Does the <span>Onepurse Affiliate <br/>Program</span> Work?</h2>
             <div className="circles-container">
                 {cicle.map(circleCard =>  <Circle number={circleCard.number} text={circleCard.text}/>)}
             </div>
-            
+            </div>
         </div>
     )
 }

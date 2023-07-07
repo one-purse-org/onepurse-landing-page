@@ -1,12 +1,12 @@
 /* styles for advantage jsx */
 .testimony{
     text-align: center;
-    padding: 30px 0 300px ;
+    padding: 60px 0 300px ;
     position: relative;
 }
 
 .person .testimony-body{
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
 }
 
@@ -22,7 +22,7 @@
 
 .testimonies .person{
     display: flex;
-    width: 43%;
+    width: 47%;
     border-radius: 5px;
     background-color: #1A1D4A;
     color: white;
@@ -36,7 +36,7 @@
 }
 
 .testimony-left{
-    width: 21%;
+    width: 20%;
     padding-top: 20px;
 }
 
@@ -49,11 +49,11 @@
 
 .testimony-name{
     font-weight: 700;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .testimony-tag{
-    font-size: 10px;
+    font-size: 9px;
 }
 
 .rectangle{
@@ -69,7 +69,7 @@
 }
 
 .testimony h2{
-    font-size: 2.2rem;
+    font-size: 2.4rem;
     font-weight: 600;
     padding: 0 15px;
 }
@@ -99,20 +99,15 @@
     }
 
     .testimony h2{
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         font-weight: 600;
         padding: 0 15px;
     }
 
     .carousel-inner{
         margin: auto;
-        width: 80%;
+        width: 90%;
     }
-
-    .person .testimony-body{
-        font-size: 16px;
-    }
-
     .carousel{
         padding-top: 100px;
     }

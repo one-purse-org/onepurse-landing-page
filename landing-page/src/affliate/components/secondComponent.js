@@ -3,6 +3,9 @@ import "../../styles/affliate/secondComponent.css"
 function SecondComponent(){
     return(
         <div className="affliate-second-component">
+        <div className="container-c">
+
+        
             <div className="affliate-second-component-text">
                 <div className="affliate-second-component-text-container">
                     <h2>What is the <span>Onepurse</span> Affiliate Program?</h2>
@@ -15,6 +18,7 @@ function SecondComponent(){
             <div className="affliate-second-component-image">
                 <img src="img/image-of-smiling-women.png" alt="two women smiling"></img>
             </div>
+        </div>
         </div>
     )
 }

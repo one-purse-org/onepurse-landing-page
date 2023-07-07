@@ -6,8 +6,11 @@
     padding: 70px 0 100px;
 }
 
-.affliate-second-component-text{
+.affliate-second-component{
     background-color:rgba(26, 29, 74, 1);
+}
+
+.affliate-second-component-text{
     color: #fff;
 }
 
@@ -48,4 +51,5 @@
     .affliate-second-component-text-container{
         width: 96%
     }
+    
 }

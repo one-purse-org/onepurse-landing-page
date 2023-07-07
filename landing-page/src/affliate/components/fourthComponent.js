@@ -36,10 +36,14 @@ function Card(props){
 function FourthComponent(){
     return(
         <div className="affliate-fourth-component">
+        <div className="container-c">
+
+       
             <h2>What’s in it for you?</h2>
             <div className="affliate-fourth-component-card-div">
                 {card.map(cardText => <Card head={cardText.head} body={cardText.body}/>)}
             </div>
+        </div>
         </div>
     )
 }

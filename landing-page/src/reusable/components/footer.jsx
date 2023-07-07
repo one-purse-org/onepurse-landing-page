@@ -15,6 +15,9 @@ function Footer(props){
   
     return (
         <div className={props.display==="show"? "footer" : "footer no-cta-footer"}>
+        <div className='container-c' style={{height:"100%"}}>
+
+        
             <div className="footer-cta" style={props.display==="show" ? toShow : noShow}>
                 <h1>Send money to your loved ones today</h1>
                 <p style={{lineHeight:1.5}} className='paragraph'>Download the Onepurse app and quickly transfer money <br /> to your friends and loved ones. It’s that simple.</p>
@@ -58,6 +61,7 @@ function Footer(props){
                     <a href='twitter.com'><i class="fa-brands fa-twitter"></i></a>
                     <a href='instagram'><i class="fa-brands fa-instagram"></i></a>
                 </div>
+            </div>
             </div>
         </div>
     )

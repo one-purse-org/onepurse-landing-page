@@ -1,5 +1,8 @@
 .questions{
     padding: 2% 2% 300px;
+}
+
+.questions-container{
     display: flex;
 }
 
@@ -9,10 +12,14 @@
 
 .questions .link p{
     margin-bottom: 20px;
-    border-left: 0.09rem solid #6B7CF3;
-    line-height: 0.9;
+    height: 31px;
+    line-height: 1;
     padding-left: 8px;
-    padding-top: 1px;
+    padding-top: 7px;
+}
+.questions .link p:hover{
+    cursor: pointer;
+    color: #6B7CF3;
 }
 
 .questions .question{
@@ -27,6 +34,10 @@
     border: 1px solid;
     border-color: #c0c0c0;
     padding: 10px 15px;
+}
+
+.active{
+    border-left: 0.09rem solid #6B7CF3;
 }
 
 @media (max-width:760px) {

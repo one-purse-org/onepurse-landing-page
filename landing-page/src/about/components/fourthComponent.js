@@ -4,7 +4,7 @@ function Fourth(){
     return(
         
         <div className="fourth-div">
-            <div className="fourth-div-container">
+            <div className="fourth-div-container container-c">
                 <div className="header">
                     <h2>
                         Why We Exist

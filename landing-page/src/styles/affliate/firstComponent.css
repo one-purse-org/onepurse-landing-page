@@ -1,7 +1,10 @@
 .affliate-first-component{
     padding: 70px 2% 100px;
+    max-width: 100%; 
+}
+
+.affliate-first-component-container{
     display: flex;
-    max-width: 100%;
     justify-content: space-between;
     align-items: center;
 }
@@ -35,7 +38,7 @@
 
 
 @media (max-width:760px) {
-    .affliate-first-component{
+    .affliate-first-component-container{
         flex-direction: column;
     }
 

@@ -38,6 +38,7 @@
 
 @media (max-width:760px) {
     .affliate-fourth-component-card-div{
+        align-items: center;
         flex-direction: column;
     }
 

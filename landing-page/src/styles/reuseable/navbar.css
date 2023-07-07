@@ -32,6 +32,10 @@
     color: #fff;
 }
 
+.links a:hover{
+    opacity: 0.7;
+}
+
 .links .link-white{
     color: black;
 }
@@ -71,6 +75,10 @@
     border-style: groove;
 }
 
+.nav-btn button:hover{
+    box-shadow: 0px 3px 19px black;
+}
+
 .nav-btn .button1-white{
     background-color: white;
     color: black;
@@ -101,7 +109,7 @@
     display: none;
 }
 
-@media (max-width:960px) {
+@media (max-width:1024px) {
     .div-container{
         margin: auto;
         width: 90%;
@@ -137,6 +145,7 @@
         background-color: rgb(26,29,74, 1);
         flex-direction: column;
         align-items: flex-end;
+        color: #fff;
     }
     .links-sm{
         font-family: 'Inter', sans-serif;
@@ -152,6 +161,11 @@
         text-decoration: none;
         color: #fff;
     }
+
+    .links-sm a:hover{
+        opacity: 0.7;
+    }
+
     .hamburger-menu{
         display: block;
         font-size: 1.8rem;

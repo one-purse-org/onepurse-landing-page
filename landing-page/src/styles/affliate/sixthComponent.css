@@ -3,12 +3,15 @@
 }
 
 .affliate-cta{
-    display: flex;
     max-width: 100%;
-    justify-content: space-between;
     padding: 20px 5%;
-    background-color: rgba(26, 29, 74, 1);
     color: #fff;
+    background-color: rgba(26, 29, 74, 1);
+}
+
+.affliate-cta-container{
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -62,10 +65,13 @@
 }
 
 @media (max-width:760px) {
-    .affliate-cta{
+    .affliate-cta-container{
         justify-content: space-between;
         align-items: start;
         flex-direction: column;
+    }
+
+    .affliate-cta{
         padding: 60px 10%;
         padding-top: 50px;
         padding-bottom: 60px;

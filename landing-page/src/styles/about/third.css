@@ -4,9 +4,13 @@
     padding: 60px 2% ;
     position: relative;
     max-width: 100%;
+    
+ }
+
+.third-div-container{
     display: flex;
     align-items: center;
- }
+}
 
 .third-div .text{
     max-width: 70%;
@@ -36,7 +40,7 @@
 
 
 @media (max-width:760px) {
-    .third-div{
+    .third-div-container{
         flex-direction: column;
     }
 

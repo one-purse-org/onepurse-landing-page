@@ -1,17 +1,17 @@
-.third-component{
+.contact-third-component{
     padding: 60px 0 20px 20px;
     background-color: rgba(26, 29, 74, 1);
     color: #fff;
     text-align: left;
 }
 
-.third-component p{
+.contact-third-component p{
    width: 95%;
 }
 
 
 @media (max-width:760px) {
-    .third-component{
+    .contact-third-component{
         text-align: center;
     }
 }

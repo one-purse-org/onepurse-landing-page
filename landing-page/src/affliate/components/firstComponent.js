@@ -3,6 +3,9 @@ import "../../styles/affliate/firstComponent.css"
 function FirstComponent(){
     return(
         <div className="affliate-first-component">
+            <div className="container-c affliate-first-component-container">
+
+           
             <div className="affliate-first-component-tag">
                 <h2>
                     Earn up to <span>$1000 in passive income</span> as a Onepurse Affiliate.
@@ -14,7 +17,7 @@ function FirstComponent(){
             <div className='affliate-first-component-img'>
                 <img src="img/image-of-lady-with-phone.png" alt="image-of-girl" />
             </div>
-            
+            </div>
         </div>
     )
 }
