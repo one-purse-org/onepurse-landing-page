@@ -106,11 +106,16 @@
 
     .carousel-inner{
         margin: auto;
-        width: 90%;
+        width: 80%;
     }
     .carousel{
-        padding-top: 100px;
+        padding-top: 65px;
     }
 
 }
 
+@media (min-width: 1536px){
+    .rectangle{
+       top: 35%;
+    }
+}

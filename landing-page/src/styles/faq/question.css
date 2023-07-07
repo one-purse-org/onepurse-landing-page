@@ -36,7 +36,7 @@
     padding: 10px 15px;
 }
 
-.active{
+.questions .active{
     border-left: 0.09rem solid #6B7CF3;
 }
 
