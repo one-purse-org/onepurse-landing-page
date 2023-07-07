@@ -55,11 +55,11 @@ function Footer(props){
                     <Link to="/contact">Contact Us</Link>
                 </div>
                 <div className='social-links'>
-                    <a href='facebook.com'><i class="fa-brands fa-facebook"></i></a>
-                    <a href='whatsapp.com'><i class="fa-brands fa-whatsapp"></i></a>
-                    <a href='linkedIn.com'><i class="fa-brands fa-linkedin"></i></a>
-                    <a href='twitter.com'><i class="fa-brands fa-twitter"></i></a>
-                    <a href='instagram'><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                    <a href='https://whatsapp.com'><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href='https://linkedIn.com'><i class="fa-brands fa-linkedin"></i></a>
+                    <a href='https://twitter.com'><i class="fa-brands fa-twitter"></i></a>
+                    <a href='https://instagram.com'><i class="fa-brands fa-instagram"></i></a>
                 </div>
             </div>
             </div>
