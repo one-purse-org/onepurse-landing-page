@@ -1,4 +1,3 @@
-import Navbar from "../../reusable/components/Navbar";
 import Footer from "../../reusable/components/footer";
 import First from "./firstComponent";
 import Second from "./secondCompenent";
@@ -8,7 +7,6 @@ import Fourth from "./fourthComponent";
 function About(){
     return (
         <div>
-            <Navbar/>
             <First/>
             <Second/>
             <Third/>

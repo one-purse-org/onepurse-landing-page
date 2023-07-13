@@ -5,20 +5,20 @@ import $ from "jquery"
 function hamburger(){
         $(".cover-screen").addClass("to-cover")
         $(".cover-screen").removeClass("no-cover")
+        $("body").addClass("noScroll")
 }
 
 function close(){
-    console.log("work")
         $(".cover-screen").removeClass("to-cover")
         $(".cover-screen").addClass("no-cover")
+        $("body").removeClass("noScroll")
 }
+
 
 function Navbar(props){
     return(
         <div className={props.color==="white"?"navbar-white _navbar":"_navbar"}>
         <div className='container-c'>
-
-        
             <div className='div-container'>
                 <Link className="logo" to="/">
                     <img src={props.color==="white"?"img/Logo-white.png":"img/Logo.png"} alt="logo"/>
@@ -44,11 +44,11 @@ function Navbar(props){
                         <i class="fa-solid fa-x close"></i>
                     </div>
                     <div className="links-sm">
-                        <Link to="/">Home</Link>
-                        <Link to="/about">About</Link>
-                        <Link to="/affliate">Become an affliate</Link>
-                        <Link to="/faq">Faq</Link>
-                        <Link to="/contact">Contact Us</Link>
+                        <Link onClick={close} to="/">Home</Link>
+                        <Link onClick={close} to="/about">About</Link>
+                        <Link onClick={close} to="/affliate">Become an affliate</Link>
+                        <Link onClick={close} to="/faq">Faq</Link>
+                        <Link onClick={close} to="/contact">Contact Us</Link>
                         <div className="nav-btn-sm">
                             <button type="button" className={props.color==="white"?"button1 button1-white" : "button1"}>Affliate Dashboard</button>
                             <button type="button" className="button2">&nbsp;&nbsp;&nbsp;Download App&nbsp;&nbsp;&nbsp;</button>

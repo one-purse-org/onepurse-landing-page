@@ -1,9 +1,12 @@
 import React from "react";
 import "../../styles/home/cta.css"
-
+import Navbar  from "../../reusable/components/Navbar";
 
 function Cta(){
     return(
+        <div className="cta-nav-container">
+
+        <Navbar/>
     <div className="contain-cta">
 <div className="cta">
         <div className="cta-container">
@@ -34,7 +37,7 @@ function Cta(){
       
     </div>
     </div>
-    
+    </div>
     )
     
 

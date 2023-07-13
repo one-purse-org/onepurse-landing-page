@@ -8,13 +8,18 @@
     margin-bottom: 30px;
 }
 
+.form-div{
+    width: 95%;
+    margin: auto;
+}
+
 .form-div input, .form-div textarea{
     background-color: rgba(245, 245, 245, 1);
     border:  1px solid #000;
     border-radius: 0;
     padding-top: 15px;
     padding-bottom: 15px;
-    width: 80%;
+    width: 100%;
 }
 
 .form-div textarea{
@@ -27,6 +32,8 @@
 }
 
 .customer-support{
+    margin: auto;
+    width: 95%;
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
@@ -34,11 +41,22 @@
 
 .customer-support p{
     width: 70%;
+    color: #0F0101;
 }
 
 .customer-support button{
     width: auto;
     background-color: rgba(54, 187, 34, 1);
+    color: #F9FEF9;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 0;
+    padding: 24px 20px;
+}
+.customer-support button i {
+    font-size: 32px;
+    margin-right: 7px;
 }
 
 
@@ -48,10 +66,6 @@
         display: flex;
         flex-direction: column;
     }    
-
-    .form-div input, .form-div textarea{
-        width: 100%;
-    }
 
     .customer-support button{
         width: 70%;

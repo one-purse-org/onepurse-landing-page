@@ -13,11 +13,15 @@
     font-size: 2.4rem;
     font-weight: 600;
     margin-bottom: 30px;
+    color: 
+    rgba(38, 41, 73, 1);;
 }
 
 .affliate-first-component-tag p{
     font-size: 16px;
     font-weight: 400;
+    color: 
+    rgba(38, 41, 73, 1);
 }
 
 .affliate-first-component-tag span{
@@ -40,6 +44,10 @@
 @media (max-width:760px) {
     .affliate-first-component-container{
         flex-direction: column;
+    }
+
+    .affliate-first-component{
+        padding-top: 25px;
     }
 
 

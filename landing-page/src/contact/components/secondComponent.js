@@ -6,9 +6,10 @@ function SecondComponent(){
         <div className="container-c">
 
         
-            <h5>Fill in the form below.</h5>
+            
             <form>
                 <div className="form-div">
+                    <h5>Fill in the form below.</h5>
                     <input placeholder="Full Name" class="form-control mb-3"></input>
                     <input placeholder="Email" class="form-control mb-3"></input>
                     <input placeholder="Phone Number" class="form-control mb-3"></input>

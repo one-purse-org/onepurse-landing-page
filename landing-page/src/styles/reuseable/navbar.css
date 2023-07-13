@@ -46,7 +46,7 @@
 
 .logo{
     width: auto;
-    margin-right: 15px;
+    margin-right: 50px;
 }
 
 
@@ -59,7 +59,8 @@
 
 .nav-btn button{
     border-radius: 5px;
-    padding: 14px 24px;
+    padding: 14px 0;
+    width: 190px;
     font-size: 16px;
 }
 
@@ -109,7 +110,12 @@
     display: none;
 }
 
+
+
 @media (max-width:1024px) {
+    .noScroll{
+        overflow-y: hidden;
+    }
     .div-container{
         margin: auto;
         width: 90%;
@@ -181,8 +187,9 @@
 
     .nav-btn-sm button{
         font-size: 16px;
-        padding: 14px 24px;     
+        padding: 14px 0px;     
         border-radius: 5px;
+        width: 170px;
     }
 
     .nav-btn-sm .button1{

@@ -10,21 +10,32 @@
     width: 25%;
 }
 
-.questions .link p{
+.questions .link a{
     margin-bottom: 20px;
     height: 31px;
     line-height: 1;
     padding-left: 8px;
     padding-top: 7px;
+    color: rgba(0, 0, 0, 0.81);
+    border: 0;
 }
-.questions .link p:hover{
-    cursor: pointer;
-    color: #6B7CF3;
+
+.list-group-item{
+    background-color: unset;
+}
+
+.list-group-item.active{
+    color: #6B7CF3 !important;
+    background-color: unset;
 }
 
 .questions .question{
     width: 70%;
+    height: 300px;
+    overflow-y: auto;
 }
+
+
 
 .questions p{
     font-size: 16px;
@@ -36,8 +47,12 @@
     padding: 10px 15px;
 }
 
-.questions .active{
+.active-scroll-spy {
     border-left: 0.09rem solid #6B7CF3;
+}
+
+.accordion-button{
+    color:rgba(0, 0, 0, 0.78);
 }
 
 @media (max-width:760px) {

@@ -1,8 +1,13 @@
 /* styles for cta jsx */
 
 .contain-cta{
-    background-color: #1A1D4A;
     max-width: 100%;
+}
+
+.cta-nav-container{
+    background-color: #1A1D4A;
+    margin: 0;
+    padding: 0;
 }
 
 .cta{  

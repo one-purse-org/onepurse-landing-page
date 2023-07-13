@@ -7,6 +7,7 @@
     font-size: 2.4rem;
     font-weight: 600;
     margin-bottom: 50px;
+    color: rgba(0, 0, 0, 0.87);
 }
 
 .third-component span{
@@ -21,10 +22,7 @@
     justify-content: space-between;
 }
 
-.circle-number{
-    font-size: 32px;
-    font-weight: 600;
-}
+
 
 .circle-text{
     font-size: 16px;
@@ -32,6 +30,7 @@
 }
 
 .circle-number{
+    font-weight: 600;
     font-size: 32px;
     display: flex;
     justify-content: center;
@@ -42,6 +41,8 @@
     font-weight: 600;
     background: rgba(107, 124, 243, 0.15);
     margin-bottom: 10px;
+    color: 
+    rgba(38, 41, 73, 1);
 }
 
 .circle-number p{
@@ -63,14 +64,11 @@
 
 .circle-text{
     width: 80%;
+    color: rgba(0, 0, 0, 0.78);;
 }
 
 @media (max-width:600px) {
     .circle-text{
-        width: 55%;
-    }
-
-    .circle{
         width: 100%;
     }
 }

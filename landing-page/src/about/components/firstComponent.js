@@ -1,8 +1,9 @@
 import "../../styles/about/first.css"
-
+import Navbar from "../../reusable/components/Navbar"
 function First(){
     return (
         <div className="first-div">
+            <Navbar/>
             <div className="first-div-container container-c">
                 <div className="first-div-text">
                     <h1>

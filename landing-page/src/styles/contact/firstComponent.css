@@ -6,9 +6,9 @@
     padding: 60px 0;
     display: flex;
     align-items: center;
-    max-width: 90%;
+    width: 82%;
     margin: auto;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .firstComponent-div-container-text{
@@ -17,6 +17,7 @@
 
 .firstComponent-div-container-img{
     width: 30%;
+    text-align: end;
 }
 
 .firstComponent-div-container-text h1{
@@ -29,6 +30,10 @@
     font-size: 16px;
     font-weight: 400;
     color: #fff;
+}
+
+.firstComponent-div-container-img img{
+    width: 200px;
 }
 
 @media (max-width:760px) {

@@ -9,7 +9,7 @@ function Home() {
     return (
         
         <div className="home-body">
-            <Navbar/>
+            {/* <Navbar/> */}
             <Cta />
             <Procedure />
             <Advantage />

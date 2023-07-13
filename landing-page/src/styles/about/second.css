@@ -10,6 +10,7 @@
 
 .who-we-are .text, .what-we-do .text{
     width: 50%;
+    color: rgba(39, 41, 72, 1);
 }
 
 .who-we-are img, .what-we-do img {
