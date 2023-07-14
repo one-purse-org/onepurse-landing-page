@@ -10,23 +10,10 @@
     width: 25%;
 }
 
-.questions .link a{
-    margin-bottom: 20px;
-    height: 31px;
+.questions .link p{
+    margin-bottom: 30px;
     line-height: 1;
-    padding-left: 8px;
-    padding-top: 7px;
     color: rgba(0, 0, 0, 0.81);
-    border: 0;
-}
-
-.list-group-item{
-    background-color: unset;
-}
-
-.list-group-item.active{
-    color: #6B7CF3 !important;
-    background-color: unset;
 }
 
 .questions .question{
@@ -34,8 +21,6 @@
     height: 300px;
     overflow-y: auto;
 }
-
-
 
 .questions p{
     font-size: 16px;
@@ -48,7 +33,10 @@
 }
 
 .active-scroll-spy {
-    border-left: 0.09rem solid #6B7CF3;
+    border-left: 0.15rem solid #6B7CF3;
+    height: 14px;
+    line-height: 1;
+    padding-left: 8px;
 }
 
 .accordion-button{

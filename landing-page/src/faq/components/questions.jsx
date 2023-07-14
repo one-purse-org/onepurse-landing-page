@@ -1,11 +1,11 @@
 import "../../styles/faq/question.css"
 import questions from "./faqQuestion";
-
-
-
+import ScrollSpy from "react-ui-scrollspy";
+import { useRef } from "react"
 
 
 function Accordion(props){
+
     return(
         <div className="accordion accordion-flush">
             <div className="accordion-item">
@@ -26,15 +26,17 @@ function Accordion(props){
 }
 
 function Questions(){
+    const myElementRef = useRef(null);
     return(
         <div className="questions">
         <div className="container-c questions-container">
-            <div className="link list-group" id="list-example">
-                <a href="#first" className='faqQuestions list-group-item list-group-item-action'>Account Setup</a>
-                <a href="#second" className='faqQuestions list-group-item list-group-item-action'>Sending Money</a>
-                <a href="#third" className='faqQuestions list-group-item list-group-item-action'>Security</a>
+            <div className="link">
+                <p data-to-scrollspy-id="first" className='faqQuestions'>Account Setup</p>
+                <p data-to-scrollspy-id="second" className='faqQuestions'>Sending Money</p>
+                <p data-to-scrollspy-id="third" className='faqQuestions'>Security</p>
             </div>
-            <div className="question scrollspy-example" data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" tabindex="0">
+            <div className="question" ref={myElementRef}>
+            <ScrollSpy parentScrollContainerRef = {myElementRef} >
                 <div id="first">
                     {questions.slice(0, 11).map(question=> <Accordion key={question.key} head={question.head} body={question.body} target={question.target} /> )}
                 </div>
@@ -44,9 +46,9 @@ function Questions(){
                 <div id="third">
                     {questions.slice(21, 30).map(question=> <Accordion key={question.key} head={question.head} body={question.body} target={question.target} /> )}
                 </div>
-                
+            </ScrollSpy>
             </div>
-            </div>
+        </div>
         </div>
     )
 };
