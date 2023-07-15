@@ -36,15 +36,15 @@ function Questions(){
                 <p data-to-scrollspy-id="third" className='faqQuestions'>Security</p>
             </div>
             <div className="question" ref={myElementRef}>
-            <ScrollSpy parentScrollContainerRef = {myElementRef} >
+            <ScrollSpy parentScrollContainerRef = {myElementRef} updateHistoryStack={false} offsetTop={-360}>
                 <div id="first">
-                    {questions.slice(0, 11).map(question=> <Accordion key={question.key} head={question.head} body={question.body} target={question.target} /> )}
+                    {questions.slice(0, 10).map(question=> <Accordion key={question.key} head={question.head} body={question.body} target={question.target} /> )}
                 </div>
                 <div id="second">
-                    {questions.slice(11,21).map(question=> <Accordion key={question.key} head={question.head} body={question.body} target={question.target} /> )}
+                    {questions.slice(10, 20).map(question=> <Accordion key={question.key} head={question.head} body={question.body} target={question.target} /> )}
                 </div>
                 <div id="third">
-                    {questions.slice(21, 30).map(question=> <Accordion key={question.key} head={question.head} body={question.body} target={question.target} /> )}
+                    {questions.slice(20, 30).map(question=> <Accordion key={question.key} head={question.head} body={question.body} target={question.target} /> )}
                 </div>
             </ScrollSpy>
             </div>
