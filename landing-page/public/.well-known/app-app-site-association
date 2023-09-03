@@ -1,0 +1,13 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "J4B4WBHK5M.com.onepurse.app",
+                "paths": [
+                    "*"
+                ]
+            }
+        ]
+    }
+}
