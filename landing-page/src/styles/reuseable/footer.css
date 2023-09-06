@@ -6,6 +6,10 @@
     padding-bottom: 0px;
 }
 
+.footer-container{
+    padding: 1rem!important;
+}
+
 .footer-cta{
     display: flex;
     justify-content: center;

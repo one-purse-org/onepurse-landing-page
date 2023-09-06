@@ -1,65 +1,129 @@
-.secondComponent{
+/* .secondComponent{
     padding: 40px 5%;
 }
+ */
 
-.secondComponent h5{
-    font-size: 22px;
-    font-weight: 600;
-    margin-bottom: 30px;
-}
 
 .form-div{
-    width: 95%;
-    margin: auto;
+    padding: 50px 70px;
+    background-color: rgba(243, 244, 255, 1);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    box-shadow: 7px 4px 40px 0 rgba(0, 0, 0, 0.05);
 }
 
+
+
+.contact-label{
+    color: rgba(15, 15, 15, 1);
+    font-weight: 500;
+}
+
+
+.form-div ::placeholder {
+    color:rgba(211, 211, 211, 1);
+    font-size: 16px;
+    }
+    
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgba(211, 211, 211, 1)
+    }
+    
+    ::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgb(220, 199, 199)
+    }
+
+
 .form-div input, .form-div textarea{
-    background-color: rgba(245, 245, 245, 1);
-    border:  1px solid #000;
-    border-radius: 0;
+    border-radius: 8px;
     padding-top: 15px;
     padding-bottom: 15px;
     width: 100%;
+    border-color: white;
 }
 
 .form-div textarea{
     height: 220px;
 }
 
+.contact-form-button-div{
+    display: flex;
+    justify-content: right;
+    margin-top: 25px;
+}
+
 .form-div button{
     background-color: rgba(107, 124, 243, 1);
+    color: rgba(255, 255, 255, 1);
     padding: 7px 20px;
+    border: 0;
+    border-radius: 8px;
+    padding: 10px;
+    width: 215px;
+    height: 56px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.form-div button:hover{
+    cursor:pointer;
+}
+
+.form-customersupport{
+    position: relative;
+    height: 1150px;
+}
+
+.form-customersupport-absolute{
+    position: absolute;
+    top: -65px;
+    /* right: 17%; */
+    height: 1150px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-customersupport-absolute form{
+    width: 70%;
 }
 
 .customer-support{
     margin: auto;
     width: 95%;
     margin-top: 50px;
-    display: flex;
-    justify-content: space-between;
+    text-align: center;
 }
 
 .customer-support p{
-    width: 70%;
-    color: #0F0101;
+    font-size: 16px;
+    color: rgba(128, 128, 128, 1);
+    margin: 20px 0;
+}
+
+.customer-support .hours-p{
+    margin-bottom: 50px;
 }
 
 .customer-support button{
-    width: auto;
+    width:176px;
+    height:56px;
     background-color: rgba(54, 187, 34, 1);
-    color: #F9FEF9;
+    color: rgba(249, 254, 249, 1);
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    height: 0;
-    padding: 24px 20px;
+    padding:16px;
+    border: 0;
+    border-radius: 8px;
 }
 .customer-support button i {
     font-size: 32px;
     margin-right: 7px;
 }
 
-
+/* 
 @media (max-width:760px){
     .customer-support{
         margin-top: 50px;
@@ -67,7 +131,4 @@
         flex-direction: column;
     }    
 
-    .customer-support button{
-        width: 70%;
-    }
-}
+} */

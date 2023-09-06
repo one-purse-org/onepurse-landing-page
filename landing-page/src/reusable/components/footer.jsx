@@ -12,8 +12,7 @@ const noShow = {
 }
 
 function scrollToTop(){
-        window.scrollTo(0,0)
-        
+        window.scrollTo(0,0)      
 }
 
 
@@ -21,7 +20,7 @@ function Footer(props){
   
     return (
         <div className={props.display==="show"? "footer" : "footer no-cta-footer"}>
-        <div className='container-c' style={{height:"100%"}}>
+        <div className='footer-container container-c' style={{height:"100%"}}>
 
         
             <div className="footer-cta" style={props.display==="show" ? toShow : noShow}>
@@ -48,17 +47,21 @@ function Footer(props){
             </div>
            
        
+            
+            
+            <div className= {props.display==="show"? "links" : "links no-cta-links"}>
             <div className="logo footer-logo" style={props.display==="show" ? {display:"none"} : {display:"block"}}>
                     <img src="img/Logo.png" alt="logo"/>
             </div>
           
-            
-            <div className= {props.display==="show"? "links" : "links no-cta-links"}>
                 <div className='nav-links'>
                     <Link onClick={scrollToTop} to="/about">About</Link>
-                    <Link onClick={scrollToTop} to="/affliate">Become an affliate</Link>
+                    <Link onClick={scrollToTop} to="/">Business</Link>
                     <Link onClick={scrollToTop} to="/FAQ">FAQ</Link>
-                    <Link onClick={scrollToTop} to="/contact">Contact Us</Link>
+                    <Link onClick={scrollToTop} to="/">Privacy Policy</Link>
+                    <Link onClick={scrollToTop} to="/">Terms of Use</Link>
+                    <Link onClick={scrollToTop} to="/affliate">Support</Link>
+                    <Link onClick={scrollToTop} to="/affliate">Blog</Link>
                 </div>
                 <div className='social-links'>
                     <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>

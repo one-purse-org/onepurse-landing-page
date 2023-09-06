@@ -12,18 +12,56 @@ body{
 @media (min-width: 1280px){
     .container-c {
         max-width: 1280px!important;
-        padding-right: 1rem;
-        padding-left: 1rem;
-        margin: auto;
+        padding-right: 2rem!important;
+        padding-left: 2rem!important;
+        margin: auto!important;
     }
 }
 
 @media (min-width: 1536px){
     .container-c {
         max-width: 1536px!important;
-        padding-right: 6rem;
-        padding-left: 6rem;
-        margin:auto;
+        padding-right: 2rem!important;
+        padding-left: 2rem!important;
+        margin:auto!important;
         position: relative;
     }
 }
+
+@media (min-width: 0px){
+    .container-c {
+        max-width: 0!important;
+        padding-right: 0.5rem!important;
+        padding-left: 0.5rem!important;
+        margin: auto!important;
+    }
+}
+
+ @media (min-width: 576px){
+    .container-c {
+        max-width: 576px!important;
+        padding-right: 0.5rem!important;
+        padding-left: 0.5rem!important;
+        margin:auto!important;
+        position: relative;
+    }
+}
+/*
+@media (min-width: 1280px){
+    .container-c {
+        max-width: 1280px!important;
+        padding-right: 2rem!important;
+        padding-left: 2rem!important;
+        margin: auto!important;
+    }
+}
+
+@media (min-width: 1536px){
+    .container-c {
+        max-width: 1536px!important;
+        padding-right: 2rem!important;
+        padding-left: 2rem!important;
+        margin:auto!important;
+        position: relative;
+    }
+} */
