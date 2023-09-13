@@ -8,7 +8,7 @@ function SecondComponent(){
    
     return(
         <div className="secondComponent">
-            <div className="container-c form-customersupport">
+            <div className="container form-customersupport">
                 <div className="form-customersupport-absolute">
                         <form>
                             <div className="form-div">
@@ -21,7 +21,7 @@ function SecondComponent(){
                                 <label for="subject" className="contact-label">Subject</label>
                                 <input id="subject" placeholder="Enter subject" class="form-control mb-3"></input>
                                 <label for="message" className="contact-label">Message</label>
-                                <textarea id="message" class="form-control mb-3"></textarea>
+                                <textarea cols={3} id="message" class="form-control mb-3"></textarea>
                                 <div className="contact-form-button-div">
                                     <button>Submit</button>
                                 </div>

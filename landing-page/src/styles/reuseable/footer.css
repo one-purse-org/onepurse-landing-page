@@ -1,207 +1,33 @@
-.footer{
-    position: relative;
-    background-color: #1A1D4A;
-    max-width: 100%;
-    height: 500px;
-    padding-bottom: 0px;
+.footer-links{
+text-align: left;
 }
 
-.footer-container{
-    padding: 1rem!important;
+.footer-links .nav-links a{ 
+    font-size: 14px;
+    color: #FFFFFF;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
 }
 
-.footer-cta{
-    display: flex;
-    justify-content: center;
-    width: 90%;
-    background-size: cover;
-    height: 90%;
-    border-radius: 22px;
-    margin: auto;
-    background-image: url("/public/img/Rectangle103.png");
-    color: white;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-    bottom: 30%;
-    text-align: center;
+.footer-links .nav-links {
+    padding: 30px;
+    text-align: left;
 }
 
-.no-cta-footer{
-    height: auto;
-    padding: 40px 20px;
+.footer-links .social-links i{ 
+    font-size: 14px;
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
-.footer-cta h1{
-    font-size: 2.4rem;
-    font-weight: 600;
-    padding: 0 20px;
-    line-height: 1;
-    margin: 0;
-}
-
-.footer-cta .paragraph{
-    padding: 0;
-    margin: 0;
-    font-size: 16px;
-    padding: 20px 40px;
-}
-
-
-.footer-btn{
-    width: 202px;
-    padding: 12px 0;
-    padding-left: 20px;
-    border-radius: 5px;
-    background-color: white;
-    color: #6B7CF3;
-    display: inline-flex;
-    margin: 7px;
-    align-items: center;
-    border-style: groove;
-    border: 0;
-}
-
-
-.footer .download{
-    font-size: 22px;
-    display: inline-block;
-    margin-bottom: 5px;
-    color: #6B7CF3;
-}
-
-
-
-.footer .links{
+.footer-links .social-links{
     display: flex;
     justify-content: space-between;
-    color: white;
-    max-width: 90%;
-    margin: auto;
-    position: relative;
-    bottom: 100px;
+    column-gap: 10px;
 }
 
-.footer .no-cta-links{
-    margin-top: 30px;
-    position: static;
-    max-width: 100%;
-}
-
-.footer .nav-links{
-    display: flex;
-}
-
-.social-links{
-    display: flex;
-}
-
-.social-links i{
-    font-size: 16px;
-    margin-right: 2px;
-}
-
-.social-links a{
-    height: 0;
-}
-
-.links .nav-links a{
-    width: auto;   
-    margin-left: 0;
-    margin-right: 30px;
-    font-size: 14px;
-    font-weight: 400;
-}
-
-
-
-@media (max-width:760px) {
-
-    .footer{
-        height: auto;
-    }
-
-    .footer-cta{
-        width: 100%;
-        height: auto;
-        border-radius: 0%;
-        margin: auto;
-        background-image: none;
-        background-color: #F0F1FF;
-        color: black;
-        align-items: center;
-        flex-direction: column;
-        padding: 70px 2%;
-        text-align: center;
-    }
-
-    .no-cta-footer{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        padding-bottom: 0;
-    }
-
-
-    .footer .nav-links{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer .links{
-        position:relative;
-        bottom: 0px;
-        padding: 40px 0;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer .no-cta-links{
-        padding-top: 0;
-    }
-
-    .links .nav-links a{
-        margin-bottom: 20px;
-        margin-right: 0;
-        font-size: 14px;
-    }
-    .footer .social-links i{
-        margin: 0px;
-    }
-
-    .social-links{
-        padding-bottom: 40px;
-        justify-content: center;
-        width: 20%;
-    }
-
-    .footer-btn{
-        width: 150px;    
-        height: 42px;
-        padding: 0px 10px;
-        padding-left: 20px;   
-        height: 50px;  
-}
-
-    .footer-btn .get{
-        font-size: 11px;
-    }
-
-    .footer-btn .where{
-        font-size: 14px;
-    }
-
-    
-    .footer-cta h1{
-        font-size: 1.8rem;
-        font-weight: 600;
-        padding: 0 20px;
-        line-height: 1;
-        margin: 0;
-    }
-
-    .footer-cta .paragraph{
-        font-size: 16px;
-        padding: 20px 40px;
-    }
+.footer-logo img{
+    width: 150px;
 }

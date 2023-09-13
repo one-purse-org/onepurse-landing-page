@@ -3,9 +3,9 @@ import Footer from "../../reusable/components/footer";
 function ThirdComponent(){
     return(
         <div className="contact-third-component">
-        <div className="container-c">
+        <div className="container">
             <div className="contact-contact">
-                <div>
+                <div className="mb-3">
                     <p className="contact-title">
                         Phone number
                     </p>
@@ -13,7 +13,7 @@ function ThirdComponent(){
                         +17205463284 
                     </p>
                 </div>
-                <div>
+                <div className="mb-3">
                     <p className="contact-title">
                         Email address
                     </p>
@@ -21,7 +21,7 @@ function ThirdComponent(){
                         support@onepurse.co 
                     </p>
                 </div>
-                <div>
+                <div className="mb-3">
                     <p className="contact-title">
                         Address
                     </p>

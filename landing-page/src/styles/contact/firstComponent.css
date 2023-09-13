@@ -50,7 +50,7 @@
     }
 
     .firstComponent-div-container-text{
-        width: 47%;
+        width: 50%;
     }
     .firstComponent-div-container-img img{
         width: 150px;
@@ -92,17 +92,62 @@
     
 }
 
+@media (max-width:240px) {
+    .firstComponent-div-container-text p{
+        font-size: 7px;
+    }
+    .firstComponent-div-container {
+        padding: 8px 0.8rem 24px;
+    }
 
-@media (max-width:149px) {
+    .firstComponent-div-container-text h1{
+        font-size: 20px;
+    }
+
+    .firstComponent-div-container-img img{
+        width: 58px;
+    }
+
+    ._navbar .div-container{
+        padding: 20px 0.4rem 20px;
+    }
+
+}
+
+
+@media (max-width:120px) {
     .firstComponent-div-container-text h1{
         font-size: 16px;
     }
 
     .firstComponent-div-container-text p{
-        font-size: 8px;
+        font-size: 5px;
     }
 
     .firstComponent-div-container-img img{
         width: 45px;
     }
+
+    ._navbar .div-container{
+        padding: 8px 0.4rem 13px;
+    }
+    .firstComponent-div-container-img {
+        margin-bottom: 10px;
+    }
+    .logo img {
+        width: 46px;
+    }
+
+    .hamburger-menu-img {
+         width: 7px;
+    }
+
+    .firstComponent-div-container {
+        text-align: center;
+        padding: 0 0.4rem 0 !important;
+    }
+
+    .firstComponent-div-container-text h1 {
+        font-size: 13px;
+    }    
 }

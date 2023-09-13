@@ -241,7 +241,7 @@
 
     }
     
-@media (max-width:279px) {
+@media (max-width:240px) {
     .hamburger-menu-img{
         width: 10px;
     }
@@ -261,15 +261,7 @@
 
 }
 
-@media (max-width:149px) {
-    .hamburger-menu-img{
-        width: 5px;
-    }
-
-    .logo img{
-        width:40px;
-    }
-
+@media (max-width:120px){
     .container-fluid{
         padding: 0 5px;
     }

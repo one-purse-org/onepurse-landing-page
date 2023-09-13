@@ -6,8 +6,8 @@ function Contact(){
     return(
         <div>
             <FirstComponent/>
-            {/* <SecondComponent/>
-            <ThirdComponent/> */}
+            {/* <SecondComponent/> */}
+            {/* <ThirdComponent/> */}
         </div>
         
     )
