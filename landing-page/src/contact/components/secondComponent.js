@@ -7,10 +7,9 @@ import { useState, useEffect } from "react";
 function SecondComponent(){
    
     return(
-        <div className="secondComponent">
-            <div className="container form-customersupport">
+        <div className="secondComponent form-customersupport">
                 <div className="form-customersupport-absolute">
-                        <form>
+                        <form className="container">
                             <div className="form-div">
                                 <label for="fullname" className="contact-label">Full Name</label>
                                 <input id="fullname" placeholder="Enter Full Name" class="form-control mb-3"></input>
@@ -36,8 +35,7 @@ function SecondComponent(){
                             Feel free to reach out to us through WhatsApp by simply clicking on the WhatsApp logo. We're here to assist you every step of the way.
                         </p>                
                         <button><i className="fa-brands fa-whatsapp"></i> Contact Us</button>
-                    </div>        
-                </div>          
+                    </div>                
                 
             </div>
         </div>

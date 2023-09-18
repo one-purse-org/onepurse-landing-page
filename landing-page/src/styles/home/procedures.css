@@ -1,68 +1,78 @@
 
 /* styles for procedures jsx */
-
-.phone img{
-    width: 100%;
-}
-
-.phone p{
-    font-weight: 500;
-    font-size: 16px;
-    margin: 0;
-    height: 40px;
-}
-
-.phone{
-    text-align: center;
-}
-
-.phones{
-    display: flex;
-    max-width: 100%;
-    margin-top: 2rem;
-}
-
-.tag{
-    border-radius: 5px;
-    background-color: #E2E4FF;
-    color: black;
-    border-color: #1A1D4A;
-    border-width: thin;
-    border-style: groove;
-    padding: 5px 30px;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.tag h2,.phone h2{
-    font-weight: 700;
-    font-size: 2.7rem;
+.phone-procedure-container{
+    width: 300px;
     margin: auto;
 }
 
-.big-div .steps{
+.procedure .big-div .steps{
     font-weight: 500;
-    font-size: 18px;
+    margin: 16px auto 0;
+    font-size: 16px;
+    width: 75%;
     padding: 0 20px;
+    color: #0F0F0F;
 }
 
-.big-div{
+.procedure .big-div{
     text-align: center;
 }
 
-.tag span{
+.procedure .big-div h2{
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.procedure .big-div span{
     color: #6B7CF3;
 }
 
 .procedure{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 45px 3px 50px;
+    padding: 45px 1.5rem 50px;
     max-width: 100%;
 }
 
-@media (max-width: 600px) {
+.arrow-absolute{
+    z-index: -1;
+    left: -16px;
+    bottom: 40px;
+}
+
+.phone-images{
+    text-align: center;
+}
+
+.phone-images img{
+    width: 240px;
+}
+
+.phone-numbers .numberings{
+    display: flex;
+    margin: 35px 0;
+    font-weight: 500;
+    align-items: center;
+}
+
+.phone-numbers .numberings .number{
+    border-radius: 8px;
+    width: 32px;
+    background-color: #6B7CF3;
+    color: #ffff;
+    padding: 7px;
+    text-align: center;
+    margin-right: 25px;
+}
+
+.phone-numbers .numberings .text{
+    color: #0F0F0F;
+}
+
+.numbers-vertical{
+    height: 230px;
+    left: 16px;
+}
+
+/* @media (max-width: 600px) {
     .big-div{
         max-width: 100%;
         padding: 0 15px;
@@ -99,7 +109,7 @@
 
 
 
-}
+} */
 
 /* @media (max-width: 540px) {
     .tag h2, .phone h2{

@@ -1,125 +1,41 @@
-/* styles for advantage jsx */
-
-.card-left{
-    width: 30%;
-    display: flex;
-    align-items: center;
-    margin-right: 10px;
-}
-
-.card-right{
-    text-align: left;
-    padding-left: 10px;
-}
-
-.card-right h3{
-    margin-bottom: 0;
-    font-weight: 600;
-    font-size: 1.4rem;
-}
-
-.card-right p{
-    font-size: 16px;
-    font-weight: 400;
-    width: 100%;
-}
-
-.advantage .card-div{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-
-
-.card-div ._card{
-    display: flex;
-    width: 45%;
-    align-items: center;
-    border-radius: 5px;
-    background-color: #E2E4FF;
-    color: black;
-    border-color: #1A1D4A;
-    border-width: 1.6px;
-    border-style: solid;
-    padding: 10px 20px 10px 40px;
-    text-align: center;
-    margin: 20px 10px;
-}
-
 .advantage{
-    padding: 60px 0;
-    text-align: center;
-    background-color: #F0F1FF;
+    background-color: #6B7CF3;
+    color: #ffff;
+    padding: 20px 1rem 20px;
+}
+
+.advantage .advantage-container{
+    margin-left: 0;
 }
 
 .advantage h1{
-    font-size: 2.4rem;
+    text-align: center;
+    font-size: 28px;
     font-weight: 600;
+    margin: auto;
 }
 
-.advantage .card-div{
-    max-width: 100%;
-}
-
-.icons .icon{
-    font-size: 20px;
-}
-
-.icons .icon-img{
-    width:  20px;
-}
-
-.icons{
-    background-color: #1A1D4A;
-    border-radius: 100%;
-    width: 45px;
-    color: white;
-    height: 45px;
+.advantage ._card{
+    margin: 50px 0;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
-@media (max-width:768px) {
-    .card-div ._card{
-        align-items: center;
-        padding: 10px 20px;
-        width: 80%;
-        flex-direction: column;
-        margin-bottom: 40px;
-    }
-
-    .advantage h1{
-        font-size: 1.8rem;
-        font-weight: 600;
-    }
-
-    .card-right p{
-        margin-top: 6px;
-        font-size: 14px
-    }
-
-    .card-right h3{
-        margin-bottom: 5px;
-        font-size: 16px;
-        font-weight: 600;
-    }
-
-    .card-left{
-        width: auto;
-        display: block;
-        margin: 0;
-        margin-bottom: 10px;
-    }
-    
-    .card-right{
-        width: auto;
-        display: block;
-        text-align: center;
-        padding: 0;
-    }
-
+.advantage ._card .card-right{
+    margin-left: 20px;
 }
 
+._card .card-right h3{
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 20px;
+}
 
+._card .card-right p{
+    font-size: 14px
+}
+
+.advantage .advantage-vertical{
+    height: 123%;
+    top: -107px;
+}

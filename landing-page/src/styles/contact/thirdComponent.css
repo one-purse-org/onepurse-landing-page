@@ -41,9 +41,59 @@ hr{
     font-size: 16px;
 }
 
-@media (max-width:760px) {
-    .contact-third-component{
-        text-align: center;
+@media (min-width:760px) {
+    .contact-contact{
+        flex-direction: row;
+        justify-content: space-between;
+        width: 88%;
     }
+
+    .contact-third-component .machnet {
+        width: 70%;
+    }
+}
+
+@media (max-width:240px) {
+    .contact-third-component{
+        padding-left: 0.4rem;
+        padding-top: 40px;
+    }
+
+    .contact-details {
+        font-size: 8px;
+        line-height: 1;
+    }
+    .contact-title{
+        font-size: 12px;
+        line-height: 1;
+    }
+
+    .contact-third-component .machnet {
+        font-size: 8px;
+    }
+
+    .mb-3 {
+        margin-bottom: 0.1rem!important;
+    }
+
+    .me-3{
+        margin-right: 0.1rem!important;
+    }
+
+}
+
+@media (max-width:120px) {
+    .contact-third-component .machnet {
+        font-size: 6px;
+    }
+
+    .contact-details {
+        font-size: 6px;
+    }
+    .contact-title{
+        font-size: 10px;
+    }
+
+
 }
 

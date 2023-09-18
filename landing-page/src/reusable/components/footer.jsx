@@ -4,7 +4,7 @@ import "../../styles/reuseable/footer.css"
 
 
 const toShow = {
-    display: "flex"
+    display: "block"
 }
 
 const noShow = {
@@ -20,34 +20,17 @@ function Footer(props){
   
     return (
         <div className={props.display==="show"? "footer" : "footer no-cta-footer"}>
-        <div className='footer-container container'>
-
-        
-            <div className="footer-cta" style={props.display==="show" ? toShow : noShow}>
-                <h1>Send money to your loved ones today</h1>
-                <p style={{lineHeight:1.5}} className='paragraph'>Download the Onepurse app and quickly transfer money <br /> to your friends and loved ones. It’s that simple.</p>
-                <div style={{textAlign:"center"}}>
-                    <button type="button" className='footer-btn'>
-                        <i className="fa-brands fa-google-play google-play download"></i>
-                        <div className="btn-div">
-                            <p className="get">Get it on</p>
-                            <p className="where">Google Play</p>
-                        </div>
-                        
-                    </button>
-                    <button type="button" className="apple footer-btn">
-                        <i className="fa-brands fa-apple download"></i>
-                        <div className="btn-div">
-                            <p className="get">Download on the</p>
-                            <p className="where">App Store</p>
-                        </div>
-                    </button>
+        <div className='footer-container container-fluid'>
+            <div className="footer-cta position-relative" style={props.display==="show" ? toShow : noShow}>
+                <div className='footer-cta-image position-absolute'>
+                    <img src='img/Rectangle103.png'></img>
+                </div>
+                <div>
+                    <h1>Let <span>Onepurse</span> handle your foreign exchange, seamlessly</h1>
                 </div>
                 
             </div>
            
-       
-            
             
             <div className= {props.display==="show"? "footer-links" : "footer-links no-cta-links"}>
             <div className="footer-logo" >

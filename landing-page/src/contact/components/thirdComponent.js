@@ -5,7 +5,7 @@ function ThirdComponent(){
         <div className="contact-third-component">
         <div className="container">
             <div className="contact-contact">
-                <div className="mb-3">
+                <div className="mb-3 me-4">
                     <p className="contact-title">
                         Phone number
                     </p>
@@ -13,7 +13,7 @@ function ThirdComponent(){
                         +17205463284 
                     </p>
                 </div>
-                <div className="mb-3">
+                <div className="mb-3 me-4">
                     <p className="contact-title">
                         Email address
                     </p>
@@ -21,7 +21,7 @@ function ThirdComponent(){
                         support@onepurse.co 
                     </p>
                 </div>
-                <div className="mb-3">
+                <div className="mb-3 me-4">
                     <p className="contact-title">
                         Address
                     </p>
@@ -35,7 +35,7 @@ function ThirdComponent(){
                 <hr/>
             </div>
             <div>
-                <p className="machnet">The banking services of the Onepurse Platform are powered by Machnet. Machnet is a financial technology company and not a bank. Banking services are provided by Machnet's partner banks who are Member FDIC. Machnet provides the Bank services through its banking software provider, Synapse. To report a complaint relating to the bank services, email help@synapsefi.com."</p>
+                <p className="machnet mb-5">The banking services of the Onepurse Platform are powered by Machnet. Machnet is a financial technology company and not a bank. Banking services are provided by Machnet's partner banks who are Member FDIC. Machnet provides the Bank services through its banking software provider, Synapse. To report a complaint relating to the bank services, email help@synapsefi.com."</p>
             </div>
         </div>
         <Footer/>
