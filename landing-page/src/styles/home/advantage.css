@@ -39,3 +39,46 @@
     height: 123%;
     top: -107px;
 }
+
+.advantage .advantage-vertical-second{
+    display: none;
+}
+
+@media (min-width:760px) {
+
+    .advantage h1{
+        text-align: left;
+        font-size: 48px;
+        margin: auto;
+    }
+
+    ._card .card-right h3{
+        font-size: 36px
+    }
+    
+    ._card .card-right p{
+        font-size: 16px
+    }
+
+    .advantage ._card{
+        width: 47%;
+    }
+
+
+    .advantage .card-div{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .advantage .advantage-vertical-second{
+        display: block; 
+        height: 123%;
+        top: -107px;
+        left: 590px;
+    }
+
+    .advantage .advantage-container{
+        margin-left: auto;
+    }
+}

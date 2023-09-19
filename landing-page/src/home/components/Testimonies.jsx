@@ -76,7 +76,7 @@ function Testimony(){
                 
             </div>
         </div>
-        <Footer display="show" />
+        <Footer display="" />
     </div>
     
    )

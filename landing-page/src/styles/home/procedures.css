@@ -21,6 +21,7 @@
 .procedure .big-div h2{
     font-size: 28px;
     font-weight: 600;
+    color: #1A1D4A;
 }
 
 .procedure .big-div span{
@@ -29,16 +30,19 @@
 
 .procedure{
     padding: 45px 1.5rem 50px;
+    background-color: white;
 }
 
 .arrow-absolute{
-    z-index: -1;
+    z-index: 0;
     left: -16px;
     bottom: 40px;
 }
 
 .phone-images{
     text-align: center;
+    position: relative;
+    z-index: 1;
 }
 
 .phone-images img{
@@ -54,10 +58,10 @@
 
 .phone-numbers .numberings .number{
     border-radius: 8px;
-    width: 32px;
+    width: 39px;
     background-color: #6B7CF3;
     color: #ffff;
-    padding: 7px;
+    padding: 7px 12px;
     text-align: center;
     margin-right: 25px;
 }
@@ -71,84 +75,23 @@
     left: 16px;
 }
 
-/* @media (max-width: 600px) {
-    .big-div{
-        max-width: 100%;
-        padding: 0 15px;
-    }
-    
-    .phone p{
-        font-size: 14px;
-        height: 30px;
-    }
-
-    .big-div .steps{
-        font-size: 16px;
-    }
-
-    .tag h2,.phone h2{
-        font-size: 2.1rem;
-    }
-
-    .phone img{
-        width: 60%;
-    }
-    
-    .phone{
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    
-    .phones{
+@media (min-width:760px) {
+    .phone-procedure{
         display: flex;
-        max-width: 100%;
-        flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .phone-procedure-container{
+        width: auto;
+        margin: 0px;
     }
 
-
-
-} */
-
-/* @media (max-width: 540px) {
-    .tag h2, .phone h2{
-        font-size: 2.1rem;
+    .numbers-vertical {
+        top: 43px;
     }
-
-
-
+    .numberings{
+        position: relative;
+        z-index: 1;
+    }
 }
-
-
-
-@media (max-width: 460px) {
-    
-    .phone p{
-        font-size: 10px;
-        height: 25px;
-    }
-
-    .tag h2, .phone h2{
-        font-size: 1.8rem;
-    }
-   
-}
-
-@media (max-width: 460px) {
-    
-    .phone p{
-        font-size: 10px;
-        height: 25px;
-    }
-    
-    .tag h2, .phone h2{
-        font-size: 1.8rem;
-    }  
-}
-
-@media (max-width: 340px) {
-    
-    .phone p{
-        font-size: 8px
-    }
-} */

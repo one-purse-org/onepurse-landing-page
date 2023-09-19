@@ -32,7 +32,7 @@ function Navbar(props){
                     <Link className={props.color==="white"&&"link-white"} to="/contact">Contact Us</Link>
                 </div>
                 <div className='hamburger-menu' onClick={hamburger}>
-                    <img src='img/hamburger.png' className='hamburger-menu-img'></img>
+                    <img src='img/hamburger.svg' className='hamburger-menu-img'></img>
                 </div>
                 <div className="nav-btn">
                     <button type="button" className={props.color==="white"?"button1 button1-white" : "button1"}>Affliate Dashboard</button>

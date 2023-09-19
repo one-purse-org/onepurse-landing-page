@@ -48,13 +48,18 @@ function Advantage(){
     return(
         <div className="advantage">
             
-                <h1 className="heading">Why Choose Onepurse</h1>
+                <h1 className="heading container">Why Choose Onepurse</h1>
                 <div className="container advantage-container">
-                    <div className="card-div position-relative">
+                    <div className="position-relative">
                             <img src="img/advantage-vertical.svg" className="position-absolute advantage-vertical"></img>
-                            {text.map(function(text){
-                                return <Card icon={text.icon} title={text.title} body={text.body} />
-                            })}
+                            <img src="img/advantage-vertical.svg" className="position-absolute advantage-vertical-second"></img>
+                            
+                            <div className="card-div ">
+                                {text.map(function(text){
+                                    return <Card icon={text.icon} title={text.title} body={text.body} />
+                                })}
+                            </div>
+                            
                     </div>
                 </div>
         </div>

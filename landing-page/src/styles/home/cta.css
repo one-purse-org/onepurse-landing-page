@@ -2,11 +2,10 @@
     padding:0;
     margin:0;
     background-color: #1A1D4A;
-    /* background-image:url("../../../public/img/rectangle.svg");
-    background-repeat: no-repeat;
-    height: 721px;
-    background-position: 0px -350%;
-    background-size: cover; */
+}
+
+.map .map-2{
+    display: none;
 }
 
 .map img{
@@ -23,12 +22,8 @@
 }
 
 .background{
-    /* background-image:url("../../../public/img/rectangle.svg");
-    background-size: cover;
-    background-position: 3px 0px;*/
     height: 400px; 
     background-color: #1A1D4A;
-    
 }
 
 .cta-text h1{
@@ -42,10 +37,54 @@
     background-color: #6B7CF3;
     color: #ffff;
     border-radius:8px;
-    padding:10px;
+    padding:12px 31px;
     gap:10px;
-    width: 148px;
-    height: 48px;
     border: 0;
     margin-top: 10px;
+}
+
+@media (min-width:1027px) {
+    .cta-text h1{
+        font-size: 50px;
+    }
+
+    .background{
+        padding-top: 5%;
+    }
+}
+
+@media (min-width:760px) {
+    .map .map-1{
+        display: none;
+    }
+
+    .map .map-2{
+        display: block;
+    }
+
+    .cta-text p{
+        font-size: 20px;
+    }
+
+    .cta-container{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        margin-top: 30px;
+        padding-bottom: 60px;
+    }
+
+    .cta-text{
+        width: 100%;
+        top: 0;
+        position: static!important;
+    }
+    
+    .background{
+        width: 50%;
+        height: auto;
+    }
+    .map{
+        width: 50%;
+    }
 }
