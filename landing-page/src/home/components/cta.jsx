@@ -10,7 +10,7 @@ function Cta(){
                 <div className="cta-container">
                     <div className="map">
                         <img className="map-1" src="img/map.svg" alt="map"/>
-                        <img className="map-2"src="img/map-1.svg"/>
+                        <img className="map-2"src="img/WorldMap1.png"/>
                     </div>
                     <div className="background">
                         <div className="container ms-0 ps-4 position-relative" >

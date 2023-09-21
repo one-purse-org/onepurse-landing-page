@@ -34,6 +34,29 @@ text-align: left;
     width: 150px;
 }
 
+.footer-container .footer-cta{
+    height: 70px;
+}
+
+.footer-container .footer-cta-image{
+    width: 100%;
+    top: -460%;
+    text-align: center;
+}
+
+.footer-container .footer-cta-image img{
+    width: 100%;
+}
+
+.footer-container .footer-cta-content{
+    position: absolute;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+
 @media (min-width:760px) {
     .footer-links{
         text-align: center;

@@ -21,6 +21,7 @@
 }
 
 .testimony .person .testimony-text{
+    text-align: left;
     color: #0F0F0F;
     font-size: 14px;
     margin-bottom: 35px;
@@ -38,6 +39,17 @@
 .person .person-identity .testimony-right{
     line-height: 14px;
     padding-top: 14px;
+    text-align: left;
+}
+
+.person .testimony-right .testimony-tag{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.person .testimony-right .testimony-name{
+    font-weight: 500;
+    font-size: 14px;
 }
 
 .testimony .person{
@@ -58,5 +70,42 @@
 
 .testimony .footer{
     background-color: #1A1D4A;
-    padding: 30px 1rem;
+    padding: 0px 1rem 30px;
+    margin-top: 400px;
+}
+
+.testimony .carousel-desktop{
+    display: none;
+}
+
+.carousel.carousel-slider{
+    padding-bottom: 50px;
+}
+
+.testimony .carousel-status{
+    display: none;
+}
+
+.testimony .carousel .control-dots .dot.selected{
+    background-color: #6B7CF3;
+}
+
+.testimony .carousel .control-dots .dot{
+    background: none;
+    opacity: 1;
+    background-color: rgba(107, 124, 243, 0.2);
+    box-shadow: none;
+}
+
+@media (min-width:760px) {
+    .carousel-mobile{
+        display: none;
+    }
+    .testimony .carousel-desktop{
+        display: block;
+    }
+
+    .carousel .person{
+        margin: auto 10px;
+    }
 }

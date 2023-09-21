@@ -23,9 +23,9 @@ function Footer(props){
         <div className='footer-container container-fluid'>
             <div className="footer-cta position-relative" style={props.display==="show" ? toShow : noShow}>
                 <div className='footer-cta-image position-absolute'>
-                    <img src='img/Rectangle103.png'></img>
+                    <img src='img/footer-cta.svg'></img>
                 </div>
-                <div>
+                <div className='footer-cta-content'>
                     <h1>Let <span>Onepurse</span> handle your foreign exchange, seamlessly</h1>
                 </div>
                 

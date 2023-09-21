@@ -54,6 +54,7 @@
     margin: 35px 0;
     font-weight: 500;
     align-items: center;
+    position: relative;
 }
 
 .phone-numbers .numberings .number{
