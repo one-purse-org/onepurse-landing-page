@@ -51,7 +51,7 @@
     z-index: 1;
     width: 100%;
     margin: auto;
-    height: 730px;
+
     overflow-y: scroll;
 }
 
@@ -91,6 +91,10 @@
     padding: 8px;
 }
 
+.phone-numbers .numberings .procedure-active-number{
+    background-color:rgba(26, 29, 74, 1)
+}
+
 .phone-numbers .numberings .text{
     color: #0F0F0F;
 }
@@ -108,12 +112,12 @@
 @media (min-width:760px) {
     .phone-procedure{
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
         margin-top: 30px;
     }
     .phone-procedure-container{
-        width: auto;
+        width: 70%;
         margin: 0px;
     }
 
@@ -123,6 +127,9 @@
     .numberings{
         position: relative;
         z-index: 1;
+    }
+    .arrow-absolute{
+        bottom: 140px;
     }
 }
 

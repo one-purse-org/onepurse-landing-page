@@ -1,29 +1,6 @@
 import "../../styles/home/procedures.css"
 import $ from "jquery"
-import { useEffect } from "react";
-
-const overscrollContainer = $('.phone-images');
-const targetDiv1 = $('.procedure-img1');
-const targetDiv2 = $('.procedure-img2');
-const targetDiv3 = $('.procedure-img3');
-const targetDiv4 = $('.procedure-img4');
-
-overscrollContainer.on("scroll", handleScroll)
-
-function handleScroll(){
-    const containerTop = overscrollContainer.scrollTop;
-    console.log(overscrollContainer.clientHeight)
-    const containerBottom = containerTop + overscrollContainer.clientHeight;
-    const divTop = targetDiv4.offsetTop;
-    const divBottom = divTop + targetDiv4.clientHeight;
-
-    // Check if the div is in view
-    if (divTop >= containerTop && divBottom <= containerBottom) {
-        console.log('The div is in view.');
-    } else {
-        console.log('The div is out of view.');
-    }
-}
+import { useEffect, useState } from "react";
 
 let text = [
     {
@@ -63,8 +40,8 @@ function Card(props){
 function Numbers(props){
     return(
         <div className="numberings">
-            <div className="number">
-                <p>{props.number}</p>
+            <div className= {`${props.class} number`}>
+                <p> {props.number}</p>
             </div>
             <div className="text">
                 <p>{props.text}</p>
@@ -75,6 +52,49 @@ function Numbers(props){
 }
 
 function Procedure(){
+    const [imageHeight, setImageHeight] = useState(0);
+    const overscrollContainer = $('.phone-images');
+    const targetDiv2 = $('.procedure-number-2');
+    const targetDiv3 = $('.procedure-number-3');
+    const targetDiv4 = $('.procedure-number-4'); 
+
+  useEffect(() => {
+    // Function to update image height
+    function updateImageHeight() {
+      const procedureImage = document.querySelector(".procedure-img1");
+      if (procedureImage) {
+        const heightOfImage = procedureImage.clientHeight ;
+        setImageHeight(heightOfImage);
+      }
+    }
+
+    function handleScroll(){
+        console.log("dh")
+        
+        let scrolled = overscrollContainer.scrollTop()
+        console.log("scrolled - " + scrolled)
+        console.log("height - ", imageHeight * 3)
+
+        scrolled >= imageHeight ? targetDiv2.addClass("procedure-active-number") : targetDiv2.removeClass("procedure-active-number")
+        scrolled >= imageHeight * 2 ? targetDiv3.addClass("procedure-active-number") : targetDiv3.removeClass("procedure-active-number")
+        scrolled + 30 >= imageHeight * 3 ? targetDiv4.addClass("procedure-active-number") : targetDiv4.removeClass("procedure-active-number")
+    }
+
+    // Update image height on load and resize
+    window.addEventListener("load", updateImageHeight);
+    window.addEventListener("resize", updateImageHeight);
+    window.addEventListener("beforeunload", updateImageHeight)
+    overscrollContainer.on("scroll", handleScroll)
+
+    // Clean up event listeners on component unmount
+    return () => {
+      window.removeEventListener("load", updateImageHeight);
+      window.removeEventListener("resize", updateImageHeight);
+    };
+  }, []);
+
+  
+
     return(
         <div className="procedure">
             <div className=" container">
@@ -88,7 +108,7 @@ function Procedure(){
                             <div className="arrow-absolute position-absolute">
                                 <img src="img/arrow-procedure.svg"></img>
                             </div>
-                            <div className="phone-images">
+                            <div className="phone-images" style={{height:imageHeight+"px"}}>
                                 <img src="img/phone1.png" className="procedure-img1"></img>
                                 <img src="img/phone1.png" className="procedure-img2"></img>
                                 <img src="img/phone1.png" className="procedure-img3"></img>
@@ -97,19 +117,12 @@ function Procedure(){
                         </div>
                         <div className="phone-numbers position-relative">
                             <img src="img/numbers-vertical.svg" className="position-absolute numbers-vertical" />
-                            <Numbers number="1." text="Sign up with your details"/>
-                            <Numbers number="2." text="Enter your Affiliate code"/>
-                            <Numbers number="3." text="Enter Beneficiary Information"/>
-                            <Numbers number="4." text="Send Money" />
+                            <Numbers class="procedure-active-number procedure-number-1" number="1." text="Sign up with your details"/>
+                            <Numbers class="procedure-number-2" number="2." text="Enter your Affiliate code"/>
+                            <Numbers class="procedure-number-3" number="3." text="Enter Beneficiary Information"/>
+                            <Numbers class="procedure-number-4" number="4." text="Send Money" />
                         </div>
                 </div>
-                {/* <div className="phones">
-                    {
-                        text.map((phone) => {
-                        return <Card number={phone.number} text={phone.text} image={phone.image}/>
-                        })
-                    }
-                </div> */}
             </div>
         </div>
     )
