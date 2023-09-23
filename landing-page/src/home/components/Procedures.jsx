@@ -39,10 +39,10 @@ function Numbers(props){
     return(
         <div className="numberings">
             <div className="number">
-            {props.number}
+                <p>{props.number}</p>
             </div>
             <div className="text">
-                {props.text}
+                <p>{props.text}</p>
             </div>
         </div>
         

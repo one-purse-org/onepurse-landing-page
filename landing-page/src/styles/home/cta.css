@@ -88,3 +88,45 @@
         width: 50%;
     }
 }
+
+@media (max-width:300px) {
+    .cta-text h1 {
+        font-size: 23px;
+    }
+    
+    
+    .cta-text p{
+        font-size: 10px;
+    }
+
+    .cta-text .get-started {
+        font-size: 10px;
+        border-radius: 4px;
+        padding: 6px 13px;
+    }
+
+    .background{
+        height: 250px;
+    }
+}
+
+@media (max-width:200px) {
+    .cta-text h1 {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    .cta-text p{
+        font-size: 5px;
+        margin-bottom: 0;
+    }
+
+    .cta-text .get-started {
+        font-size: 5px;
+        padding: 5px 11px;
+        border: 3px;
+    }
+    .background{
+        height: 150px;
+    }
+}

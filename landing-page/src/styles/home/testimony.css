@@ -68,12 +68,6 @@
     left: 22px;
 }
 
-.testimony .footer{
-    background-color: #1A1D4A;
-    padding: 0px 1rem 30px;
-    margin-top: 400px;
-}
-
 .testimony .carousel-desktop{
     display: none;
 }
@@ -107,5 +101,26 @@
 
     .carousel .person{
         margin: auto 10px;
+    }
+}
+
+@media (max-width:300px) {
+    .testimony h2{
+        font-size: 16px;
+    }
+
+    .testimony .person .testimony-text{
+        font-size: 9px;
+    }
+
+    .person .testimony-right .testimony-tag {
+        font-size: 13px;
+    }
+    .person .testimony-right .testimony-name {
+        font-size: 9px;
+    }
+
+    .testimony .person {
+        padding: 25px 30px
     }
 }

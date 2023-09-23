@@ -19,24 +19,12 @@ function scrollToTop(){
 function Footer(props){
   
     return (
-        <div className={props.display==="show"? "footer" : "footer no-cta-footer"}>
+        <div className="footer">
         <div className='footer-container container-fluid'>
-            <div className="footer-cta position-relative" style={props.display==="show" ? toShow : noShow}>
-                <div className='footer-cta-image position-absolute'>
-                    <img src='img/footer-cta.svg'></img>
+            <div className= "footer-links">
+                <div className="footer-logo" >
+                        <img src="img/Logo.png" alt="logo"/>
                 </div>
-                <div className='footer-cta-content'>
-                    <h1>Let <span>Onepurse</span> handle your foreign exchange, seamlessly</h1>
-                </div>
-                
-            </div>
-           
-            
-            <div className= {props.display==="show"? "footer-links" : "footer-links no-cta-links"}>
-            <div className="footer-logo" >
-                    <img src="img/Logo.png" alt="logo"/>
-            </div>
-          
                 <div className='nav-links'>
                     <Link onClick={scrollToTop} to="/">About</Link>
                     <Link onClick={scrollToTop} to="/">Business</Link>

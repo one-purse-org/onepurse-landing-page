@@ -1,8 +1,9 @@
 
 /* styles for procedures jsx */
 .phone-procedure-container{
-    width: 300px;
+    width: 100%;
     margin: auto;
+    text-align: center;
 }
 
 .procedure .big-div .steps{
@@ -34,24 +35,31 @@
 }
 
 .arrow-absolute{
+    width: 100%;
     z-index: 0;
-    left: -16px;
+    left: 0px;
     bottom: 40px;
+}
+
+.arrow-absolute img{
+    width: 100%;
 }
 
 .phone-images{
     text-align: center;
     position: relative;
     z-index: 1;
+    width: 100%;
+    margin: auto;
 }
 
 .phone-images img{
-    width: 240px;
+    width: 73%;
 }
 
 .phone-numbers .numberings{
     display: flex;
-    margin: 35px 0;
+    margin: 25px 0;
     font-weight: 500;
     align-items: center;
     position: relative;
@@ -59,21 +67,28 @@
 
 .phone-numbers .numberings .number{
     border-radius: 8px;
-    width: 39px;
+    width: 32px;
+    height: 32px;
     background-color: #6B7CF3;
     color: #ffff;
-    padding: 7px 12px;
+    vertical-align: middle;
     text-align: center;
     margin-right: 25px;
+    padding: 8px;
 }
 
 .phone-numbers .numberings .text{
     color: #0F0F0F;
 }
 
-.numbers-vertical{
+.phone-numbers .numberings .text p{
+    padding-top: 14px;
+}
+
+.numbers-vertical{    
     height: 230px;
     left: 16px;
+    top: 16px;
 }
 
 @media (min-width:760px) {
@@ -94,5 +109,34 @@
     .numberings{
         position: relative;
         z-index: 1;
+    }
+}
+
+@media (max-width:300px) {
+    .procedure .big-div .steps {
+        font-size: 10px;
+        padding: 0 5px;
+    }
+
+    .procedure .big-div h2 {
+        font-size: 18px;
+    }
+
+    .phone-numbers .numberings p{
+        font-size: 10px;
+    }
+
+    .numbers-vertical{    
+        height: 198px
+    }
+
+    .phone-numbers .numberings{
+        margin: 17px 0;
+    }
+}
+
+@media (max-width:231px) {
+    .numbers-vertical{    
+        height: 235px
     }
 }

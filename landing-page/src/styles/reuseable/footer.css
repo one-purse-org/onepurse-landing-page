@@ -1,5 +1,5 @@
 .footer-links{
-text-align: left;
+    text-align: left;
 }
 
 .footer-links .nav-links a{ 
@@ -34,25 +34,9 @@ text-align: left;
     width: 150px;
 }
 
-.footer-container .footer-cta{
-    height: 70px;
-}
-
-.footer-container .footer-cta-image{
-    width: 100%;
-    top: -460%;
-    text-align: center;
-}
-
-.footer-container .footer-cta-image img{
-    width: 100%;
-}
-
-.footer-container .footer-cta-content{
-    position: absolute;
-    text-align: center;
-    display: flex;
-    justify-content: center;
+.footer{
+    background-color: #1A1D4A;
+    padding: 65px 1rem 30px;
 }
 
 

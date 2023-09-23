@@ -2,8 +2,7 @@ import "../../styles/home/testimony.css"
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import Footer from "../../reusable/components/footer";
-
-
+import FooterCta from "../../reusable/components/footer-cta";
 
 let text = [
     {
@@ -39,9 +38,6 @@ let text = [
 function Card(props){
     return(
     <div className="person position-relative">
-        {/* <div className="position-absolute testimony-quote">
-            <img src="img/testimony-quote.svg"></img>
-        </div> */}
         <div className="testimony-text">
             <p className="testimony-body">
                 {props.body}
@@ -91,14 +87,12 @@ function Testimony(){
                             <Card icon={text[2].icon} name={text[2].name} body={text[2].body} tag={text[2].tag}/>
                             <Card icon={text[3].icon} name={text[3].name} body={text[3].body} tag={text[3].tag}/>
                         </div>
-                        
-                        
-                        
                     </Carousel>
                 </div>
             </div>
         </div>
-        <Footer display="" />
+        <FooterCta/>
+        <Footer/>
     </div>
     
    )
