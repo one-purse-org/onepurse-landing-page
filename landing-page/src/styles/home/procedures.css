@@ -51,7 +51,21 @@
     z-index: 1;
     width: 100%;
     margin: auto;
+    height: 730px;
+    overflow-y: scroll;
 }
+
+.phone-images::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide the overscroll progress indicator for Firefox */
+.phone-images {
+    scrollbar-width: thin; /* "thin" or "none" to hide the scrollbar */
+    -ms-overflow-style: none; /* Hide scrollbar in IE and Edge */
+    scrollbar-color: transparent transparent; /* Optional: Set scrollbar color to transparent in Firefox */
+}
+
 
 .phone-images img{
     width: 73%;

@@ -1,4 +1,29 @@
 import "../../styles/home/procedures.css"
+import $ from "jquery"
+import { useEffect } from "react";
+
+const overscrollContainer = $('.phone-images');
+const targetDiv1 = $('.procedure-img1');
+const targetDiv2 = $('.procedure-img2');
+const targetDiv3 = $('.procedure-img3');
+const targetDiv4 = $('.procedure-img4');
+
+overscrollContainer.on("scroll", handleScroll)
+
+function handleScroll(){
+    const containerTop = overscrollContainer.scrollTop;
+    console.log(overscrollContainer.clientHeight)
+    const containerBottom = containerTop + overscrollContainer.clientHeight;
+    const divTop = targetDiv4.offsetTop;
+    const divBottom = divTop + targetDiv4.clientHeight;
+
+    // Check if the div is in view
+    if (divTop >= containerTop && divBottom <= containerBottom) {
+        console.log('The div is in view.');
+    } else {
+        console.log('The div is out of view.');
+    }
+}
 
 let text = [
     {
@@ -64,7 +89,10 @@ function Procedure(){
                                 <img src="img/arrow-procedure.svg"></img>
                             </div>
                             <div className="phone-images">
-                                <img src="img/phone1.png"></img>
+                                <img src="img/phone1.png" className="procedure-img1"></img>
+                                <img src="img/phone1.png" className="procedure-img2"></img>
+                                <img src="img/phone1.png" className="procedure-img3"></img>
+                                <img src="img/phone1.png" className="procedure-img4"></img>
                             </div>
                         </div>
                         <div className="phone-numbers position-relative">

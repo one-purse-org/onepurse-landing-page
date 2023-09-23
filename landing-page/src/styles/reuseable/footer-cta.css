@@ -37,14 +37,38 @@
 .footer-cta-content a{
     color: none;
     text-decoration: none;
+    margin: 15px 0;
 }
 
 .footer-cta-content .footer-cta-button{
     display: contents;
 }
 
-.footer-cta-content .footer-cta-button a{
-    margin: 20px 0;
+@media (min-width:480px) {
+    .footer-cta-content a{
+        margin: 20px 0;
+    } 
+
+    .footer-cta-content h1{
+        font-size: 30px;
+        width: 80%;
+    }
+
+}
+
+@media (max-width:390px) {
+    .footer-cta-content .footer-cta-button a{
+        margin: 7px 0;
+    }
+}
+
+@media (max-width:300px) {
+    .footer-cta-content .footer-cta-button a img{
+        width: 70%;
+    }
+     .footer-cta-content h1{
+        font-size: 16px;
+    }
 }
 
 /* .footer-cta-content button{
