@@ -46,7 +46,7 @@ function Navbar(props){
                                     <img src="img/Logo-white.png" alt="logo"/>
                                 </Link>
                                 <div onClick={close}>
-                                    <i class="fa-solid fa-x close"></i>
+                                    <img src='img/close.png'></img>
                                 </div>
                             </div>
                             <div className="links-sm">

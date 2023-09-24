@@ -53,11 +53,11 @@ function Numbers(props){
 
 function Procedure(){
     const [imageHeight, setImageHeight] = useState(0);
-    const overscrollContainer = $('.phone-images');
-    const targetDiv2 = $('.procedure-number-2');
-    const targetDiv3 = $('.procedure-number-3');
-    const targetDiv4 = $('.procedure-number-4'); 
-
+    const overscrollContainer = document.querySelector('.phone-images');
+    const targetDiv2 = document.querySelector('.procedure-number-2');
+    const targetDiv3 = document.querySelector('.procedure-number-3');
+    const targetDiv4 = document.querySelector('.procedure-number-4'); 
+    console.log(overscrollContainer)
   useEffect(() => {
     // Function to update image height
     function updateImageHeight() {
@@ -67,24 +67,8 @@ function Procedure(){
         setImageHeight(heightOfImage);
       }
     }
-
-    function handleScroll(){
-        console.log("dh")
-        
-        let scrolled = overscrollContainer.scrollTop()
-        console.log("scrolled - " + scrolled)
-        console.log("height - ", imageHeight * 3)
-
-        scrolled >= imageHeight ? targetDiv2.addClass("procedure-active-number") : targetDiv2.removeClass("procedure-active-number")
-        scrolled >= imageHeight * 2 ? targetDiv3.addClass("procedure-active-number") : targetDiv3.removeClass("procedure-active-number")
-        scrolled + 30 >= imageHeight * 3 ? targetDiv4.addClass("procedure-active-number") : targetDiv4.removeClass("procedure-active-number")
-    }
-
     // Update image height on load and resize
-    window.addEventListener("load", updateImageHeight);
     window.addEventListener("resize", updateImageHeight);
-    window.addEventListener("beforeunload", updateImageHeight)
-    overscrollContainer.on("scroll", handleScroll)
 
     // Clean up event listeners on component unmount
     return () => {
@@ -93,6 +77,25 @@ function Procedure(){
     };
   }, []);
 
+    function handleScroll(){
+        console.log("sh")
+        let scrolled = overscrollContainer.scrollTop
+        console.log("scrolled - " + scrolled)
+        console.log("height - ", imageHeight * 3)
+
+        scrolled >= imageHeight ? targetDiv2.classList.add("procedure-active-number") : targetDiv2.classList.remove("procedure-active-number")
+        scrolled >= imageHeight * 2 ? targetDiv3.classList.add("procedure-active-number") : targetDiv3.classList.remove("procedure-active-number")
+        scrolled + 30 >= imageHeight * 3 ? targetDiv4.classList.add("procedure-active-number") : targetDiv4.classList.remove("procedure-active-number")
+    }
+
+    function updateImageHeight() {
+        console.log("change")
+      const procedureImage = document.querySelector(".procedure-img1");
+      if (procedureImage) {
+        const heightOfImage = procedureImage.clientHeight ;
+        setImageHeight(heightOfImage);
+      }
+    }
   
 
     return(
@@ -108,7 +111,7 @@ function Procedure(){
                             <div className="arrow-absolute position-absolute">
                                 <img src="img/arrow-procedure.svg"></img>
                             </div>
-                            <div className="phone-images" style={{height:imageHeight+"px"}}>
+                            <div className="phone-images" style={{height:imageHeight+"px"}} onLoad={updateImageHeight} onScroll={handleScroll}>
                                 <img src="img/phone1.png" className="procedure-img1"></img>
                                 <img src="img/phone1.png" className="procedure-img2"></img>
                                 <img src="img/phone1.png" className="procedure-img3"></img>
