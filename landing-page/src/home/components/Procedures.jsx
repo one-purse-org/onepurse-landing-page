@@ -1,5 +1,4 @@
 import "../../styles/home/procedures.css"
-import $ from "jquery"
 import { useEffect, useState } from "react";
 
 let text = [
@@ -78,10 +77,7 @@ function Procedure(){
   }, []);
 
     function handleScroll(){
-        console.log("sh")
         let scrolled = overscrollContainer.scrollTop
-        console.log("scrolled - " + scrolled)
-        console.log("height - ", imageHeight * 3)
 
         scrolled >= imageHeight ? targetDiv2.classList.add("procedure-active-number") : targetDiv2.classList.remove("procedure-active-number")
         scrolled >= imageHeight * 2 ? targetDiv3.classList.add("procedure-active-number") : targetDiv3.classList.remove("procedure-active-number")

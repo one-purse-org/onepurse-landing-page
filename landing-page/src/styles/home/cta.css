@@ -2,6 +2,7 @@
     padding:0;
     margin:0;
     background-color: #1A1D4A;
+    /* background-image: url("../../../public/img/cta-bg.png"); */
 }
 
 .map .map-2{
@@ -46,6 +47,7 @@
 .cta .div-container{
     padding-bottom: 40px;
     padding-top: 20px;
+    align-items: baseline;
 }
 
 @media (min-width:1027px) {
@@ -89,6 +91,12 @@
         width: 50%;
         height: auto;
     }
+
+    .background .container{
+        padding-left: 4.5rem!important;
+    }
+    
+
     .map{
         width: 50%;
     }
@@ -133,5 +141,12 @@
     }
     .background{
         height: 150px;
+    }
+}
+
+@media (max-width:1400px) {
+    .cta-container{
+        margin-right: 0;
+        padding-right: 0;
     }
 }

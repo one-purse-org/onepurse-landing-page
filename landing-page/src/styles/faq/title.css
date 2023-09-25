@@ -1,53 +1,71 @@
-.title-div h1{
-    font-size: 2.6rem;
-    padding-right: 5%;
-    font-weight: 600;
-}
-.title-div .title-h1{
-    width: 50%;
-    padding-top: 20px;
-}
-
-.title-div .title-img{
-   width: 25%;
-}
-
-.title-div img{
-    width: 100%;
-}
-
 .title-div-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 10px 2rem 60px;
+}
+
+.title-div-container .container{
+    text-align: center;
 }
 
 .title-div {
     background-color: #1A1D4A;
     color: white;
-    padding: 20px 5% 30px ;
     max-width: 100%;
 }
 
-.title-div span{
-    color: #FFCC00;
+.title-div .title-h1{
+    width: 70%;
+    margin: 20px auto;
 }
 
+.title-div-container h1{
+    font-size: 32px;
+    font-weight: 600;
+    color: rgba(107, 124, 243, 1);
+}
 
-@media (max-width:760px){
-    .title-div-container{
-        flex-direction: column;
+.title-div-container img{
+    width: 136px;
+}
+
+.faq .contact-third-component{
+    margin-top: 0;
+}
+
+.faq .contact-third-component .footer{
+    display: none;
+}
+
+@media (min-width:760px) {
+    .title-div-container .container{
+        display: flex;
+        flex-direction: row;
+        text-align: left;
         align-items: center;
     }
 
-    .title-div .title-h1{
-        text-align: center;
-        width: 100%;
-        margin-bottom: 20px;
-    }
-    
-    .title-div .title-img{
-       width: 50%;
+    .title-div-container img{
+        width: 200px;
     }
 
+    .title-div-container .title-h1{
+        width: 60%;
+        margin-left: 30px;
+    }
+
+    .title-div-container .title-h1 h1{
+        font-size: 64px;
+    }
+}
+
+@media (max-width:290px) {
+    .title-div-container h1{
+        font-size: 28px;
+    }
+    .title-div .title-h1{
+        width: 95%;
+    }
+
+    .title-div-container{
+        padding-bottom: 45px;
+    }
 }

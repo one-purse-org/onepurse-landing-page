@@ -1,7 +1,11 @@
 .advantage{
-    background-color: #6B7CF3;
     color: #ffff;
-    padding: 20px 1rem 20px;
+    padding: 25% 1rem 2%;
+    background-image: url("../../../public/img/advantage-sm.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #ffff;
+    background-position-x: 95%;
 }
 
 .advantage .advantage-container{
@@ -45,6 +49,11 @@
 }
 
 @media (min-width:760px) {
+    .advantage{
+        background-image: url("../../../public/img/advantage-lg.png");
+        background-position-x: 100%;
+        padding: 13% 1rem 5%
+    }
 
     .advantage h1{
         text-align: left;

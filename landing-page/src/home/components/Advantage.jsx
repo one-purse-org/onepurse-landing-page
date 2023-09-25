@@ -47,7 +47,6 @@ function Card(props){
 function Advantage(){
     return(
         <div className="advantage">
-            
                 <h1 className="heading container">Why Choose Onepurse</h1>
                 <div className="container advantage-container">
                     <div className="position-relative">

@@ -1,8 +1,5 @@
 import "../../styles/faq/question.css"
 import questions from "./faqQuestion";
-import ScrollSpy from "react-ui-scrollspy";
-import { useRef } from "react"
-
 
 function Accordion(props){
 
@@ -26,29 +23,67 @@ function Accordion(props){
 }
 
 function Questions(){
-    const myElementRef = useRef(null);
+    
+   
+
+    function handleScroll(){
+        let questionsContainer = document.querySelector(".question-container");
+        let scrolled = questionsContainer.scrollTop;
+
+        let questionContainerOne = document.querySelector(".first-question");
+        let questionContainerTwo = document.querySelector(".second-question");
+        let questionContainerThree = document.querySelector(".third-question");
+    
+        let questionContainerOneHeight = questionContainerOne.clientHeight;
+        let questionContainerTwoHeight = questionContainerTwo.clientHeight;
+        let questionContainerThreeHeight = questionContainerThree.clientHeight;
+
+        scrolled < questionContainerOneHeight && performChange()
+        scrolled >= questionContainerOneHeight && performChange("one");
+        scrolled >= questionContainerOneHeight + questionContainerTwoHeight && performChange("two")
+    }
+
+    function performChange(theScrolledOne){
+        let questionContainerOne = document.querySelector(".faqQuestionOne");
+        let questionContainerTwo = document.querySelector(".faqQuestionTwo");
+        let questionContainerThree = document.querySelector(".faqQuestionThree");
+        if (theScrolledOne === "one"){
+            console.log("worl")
+            questionContainerTwo.classList.add("active-scroll")
+            questionContainerOne.classList.remove("active-scroll")
+            questionContainerThree.classList.remove("active-scroll")
+        }else if(theScrolledOne === "two"){
+            questionContainerThree.classList.add("active-scroll")
+            questionContainerOne.classList.remove("active-scroll")
+            questionContainerTwo.classList.remove("active-scroll")
+        }else{
+            console.log("also-work")
+            questionContainerThree.classList.remove("active-scroll")
+            questionContainerOne.classList.add("active-scroll")
+            questionContainerTwo.classList.remove("active-scroll")
+        }
+    }
+
     return(
         <div className="questions">
-        <div className="container-c questions-container">
-            <div className="link">
-                <p data-to-scrollspy-id="first" className='faqQuestions'>Account Setup</p>
-                <p data-to-scrollspy-id="second" className='faqQuestions'>Sending Money</p>
-                <p data-to-scrollspy-id="third" className='faqQuestions'>Security</p>
+            <div className="container questions-container">
+                <div className="link">
+                    <p  className='faqQuestions active-scroll faqQuestionOne'>Account Setup</p>
+                    <p  className='faqQuestions faqQuestionTwo'>Sending Money</p>
+                    <p  className='faqQuestions faqQuestionThree'>Security</p>
+                </div>
+                <div className="question-container" onScroll={handleScroll}>
+                    <div className="first-question">
+                        {questions.slice(0, 10).map(question=> <Accordion key={question.key} head={question.head} body={question.body} target={question.target} /> )}
+                    </div>
+                    <div className="second-question">
+                        {questions.slice(10, 20).map(question=> <Accordion key={question.key} head={question.head} body={question.body} target={question.target} /> )}
+                    </div>
+                    <div className="third-question">
+                        {questions.slice(20, 30).map(question=> <Accordion key={question.key} head={question.head} body={question.body} target={question.target} /> )}
+                    </div>
+                </div>
             </div>
-            <div className="question" ref={myElementRef}>
-            <ScrollSpy parentScrollContainerRef = {myElementRef} updateHistoryStack={false} offsetTop={-360}>
-                <div id="first">
-                    {questions.slice(0, 10).map(question=> <Accordion key={question.key} head={question.head} body={question.body} target={question.target} /> )}
-                </div>
-                <div id="second">
-                    {questions.slice(10, 20).map(question=> <Accordion key={question.key} head={question.head} body={question.body} target={question.target} /> )}
-                </div>
-                <div id="third">
-                    {questions.slice(20, 30).map(question=> <Accordion key={question.key} head={question.head} body={question.body} target={question.target} /> )}
-                </div>
-            </ScrollSpy>
-            </div>
-        </div>
         </div>
     )
 };
