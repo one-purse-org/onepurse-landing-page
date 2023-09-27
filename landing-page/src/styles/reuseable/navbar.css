@@ -86,9 +86,8 @@
     margin: 0 1rem 0;
     padding-left: 0;
     padding-right: 0;
-    padding: 30px 1rem 40px;
+    padding: 30px 1rem 0px;
     display: flex;
-    align-items: center;
 }
 
 @media (min-width:0px) {
@@ -238,6 +237,10 @@
 
     ._navbar .nav-btn{
         display: flex;
+    }
+
+    .div-container{
+        align-items: baseline;
     }
 
     }

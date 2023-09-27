@@ -1,4 +1,4 @@
-.third-div img{
+.our-story-image img{
     width: 100%;
     top: -335px;
 }
@@ -7,39 +7,101 @@
     width: 350px;
 }
 
-.our-mission-container{
-    padding: 40px 1rem 350px;
+.ourmissionmask{
+    display: none;
 }
 
-.our-journey-container{
+
+.our-journey-content{
     padding: 350px 1rem 40px;
 }
 
 .our-mission{
     background-color: rgba(107, 124, 243, 1);
     color: rgba(255, 255, 255, 1);
+    padding: 40px 1rem 350px;
 }
 
-.our-mission-container h2, .our-journey-container h2{
+.our-mission-container h2, .our-journey-content h2{
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 30px;
 }
 
-.our-journey-container p{
+.our-journey-content p{
     color: rgba(26, 29, 74, 1);
 }
 
-.our-journey-container h2{
+.our-journey-content h2{
     color: rgba(26, 29, 74, 1);
 }
 
-.our-journey-container span{
+.our-journey-content span{
     color: rgba(107, 124, 243, 1)
 }
 
 .our-journey{
     background-color: rgba(255, 255, 255, 1);
+}
+
+@media (min-width:768px) {
+    .ourmissionmask{
+        display: block;
+        width: 52%;
+    }
+
+    .ourmissionmask img{
+        width: 100%;
+    }
+
+    .ourmissioncontent{
+        width: 48%;
+        padding: 20px 0;
+    }
+
+    .ourmissioncontent h2, .our-journey-content h2{
+        font-size: 32px;
+    }
+
+    .our-mission-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        --bs-gutter-x: 0;
+    }
+
+    .our-mission{
+        padding: 0;
+        padding-right: 2rem;
+    }
+
+    .our-story-image{
+        width: 50%;
+    }
+
+    .our-story-image img {
+        width: 90%;
+        top: -27%;
+        left: -20px;
+    }
+
+    .our-journey-container{
+        display: flex;
+    }
+    .our-journey-content{
+        padding: 70px 0rem 200px;
+        padding-right: 2rem;
+        width: 50%;
+    }
+
+}
+
+@media (min-width:1024px) {
+    .our-story-image img {
+        width: 70%;
+        top: -35%;
+        left: -20px;
+    }
 }
 
 @media (max-width:360px) {
@@ -55,30 +117,30 @@
         padding: 40px 0.5rem 210px;
     }
 
-    .our-journey-container{
+    .our-journey-content{
         padding: 210px 0.5rem 40px;
     }
 
 }
 
 @media (max-width:300px) {
-    .our-mission-container h2, .our-journey-container h2{
+    .our-mission-container h2, .our-journey-content h2{
         font-size: 20px;
         margin-bottom: 25px;
     }
     
-    .our-mission-container p, .our-journey-container p{
+    .our-mission-container p, .our-journey-content p{
         font-size: 12px;
     }
 }
 
 @media (max-width:200px) {
-    .our-mission-container h2, .our-journey-container h2{
+    .our-mission-container h2, .our-journey-content h2{
         font-size: 16px;
         margin-bottom: 15px;
     }
     
-    .our-mission-container p, .our-journey-container p{
+    .our-mission-container p, .our-journey-content p{
         font-size: 9px;
     }
 
@@ -95,7 +157,7 @@
         padding: 40px 0.2rem 110px;
     }
 
-    .our-journey-container{
+    .our-journey-content{
         padding: 110px 0.2rem 40px;
     }
 

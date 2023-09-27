@@ -10,7 +10,7 @@
 .second-div-container h2{
     color: rgba(107, 124, 243, 1);
     font-size: 24px;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 .second-div-container p{
@@ -25,6 +25,36 @@
 .second-div-container{
     padding: 0 1rem;
 }
+
+@media (min-width:760px) {
+    .second-div-container h2{
+        color: rgba(107, 124, 243, 1);
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+    
+    .second-div-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .second-div-container .text{
+        width: 40%;
+    }
+
+    .second-div-container .text h2{
+        margin-bottom: 13px;
+    }
+
+    .second-div-container .img{
+        width: 50%;
+    }
+
+
+
+}
+
 
 @media (max-width:300px) {
     .second-div-container{

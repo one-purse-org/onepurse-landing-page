@@ -5,7 +5,7 @@
 }
 
 .first-div-container{
-  padding-left: 1rem;
+  padding: 0 1rem;
 }
 
 
@@ -13,6 +13,7 @@
     font-size: 32px;
     font-weight: 600;
     margin-bottom: 15px;
+    width: 90%;
 }
 
 .first-div-text span{
@@ -21,6 +22,50 @@
 
 .first-div-img img{
     width: 100%;
+}
+
+.first-div-img .guywithphonelg{
+    display: none;
+}
+
+@media (min-width:768px) {
+    .first-div-img .guywithphonelg{
+        display: inline-block;
+    }
+
+    .first-div-img .guywithphone{
+        display: none;
+    }
+
+    .first-div-container{
+        display: flex;
+        align-items: end;
+    }
+
+    .first-div-container .first-div-text{
+        width: 45%;
+    }
+
+    .first-div-container .first-div-img{
+        margin-left: auto;
+        width: 55%;
+    }
+}
+
+@media (min-width:992px) {
+    .first-div-container .first-div-text{
+        padding-bottom: 7%;
+    }
+
+    .first-div-container .first-div-text h1{
+        font-size: 42px;
+    }
+
+    .first-div-container{
+
+        align-items: end;
+    }
+
 }
 
 @media (max-width:200px) {

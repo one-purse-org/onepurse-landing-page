@@ -65,6 +65,10 @@
     width: 190px;
 }
 
+@media (min-width:768px) {
+    
+}
+
 @media (max-width: 360px) {
 
     #about .footer-cta .footer-cta-content h1{

@@ -25,11 +25,10 @@ function Navbar(props){
                 </Link>
                 
                 <div className="links">
-                    <Link className={props.color==="white"&&"link-white"} to="/">Home</Link>
-                    <Link className={props.color==="white"&&"link-white"} to="/about">About</Link>
-                    <Link className={props.color==="white"&&"link-white"} to="/affliate">Become an affliate</Link>
-                    <Link className={props.color==="white"&&"link-white"} to="/FAQ">FAQ</Link>
-                    <Link className={props.color==="white"&&"link-white"} to="/contact">Contact Us</Link>
+                    <Link onClick={close} to="/affliate">Become an affliate</Link>
+                    <Link onClick={close} to="/faq">Faq</Link>
+                    <Link onClick={close} to="/contact">Contact Us</Link>
+                    <Link onClick={close} to="/about">About</Link>
                 </div>
                 <div className='hamburger-menu' onClick={hamburger}>
                     <img src='img/hamburger.svg' className='hamburger-menu-img'></img>
@@ -54,7 +53,6 @@ function Navbar(props){
                                 <Link onClick={close} to="/faq">Faq</Link>
                                 <Link onClick={close} to="/contact">Contact Us</Link>
                                 <Link onClick={close} to="/about">About</Link>
-                                
                             </div>
                     </div>  
                     <hr className='cover-screen-horizontal-rule'/>
