@@ -1,73 +1,54 @@
-.who-we-are, .what-we-do{
-    padding: 30px 0;
-    display: flex;
-    align-items: center;
-}
-
-.who-we-are .img, .what-we-do .img{
-    width: 50%;
-}
-
-.who-we-are .text, .what-we-do .text{
-    width: 50%;
-    color: rgba(39, 41, 72, 1);
-}
-
-.who-we-are img, .what-we-do img {
+.second-div-container img{
     width: 100%;
 }
 
-.what-we-do .text {
-    padding-left: 5%;
+.second-div-container .img{
+    text-align: center;
 }
 
-.what-we-do .text p{
-    width: 100%
+
+.second-div-container h2{
+    color: rgba(107, 124, 243, 1);
+    font-size: 24px;
+    padding-bottom: 30px;
 }
 
-.who-we-are h2, .what-we-do h2{
-    font-size: 1.8rem;
-    font-weight: 600;
-}
-
-.who-we-are p, .what-we-do p{
-    font-size: 1rem;
-    line-height: 1.5;
-    width: 75%;
+.second-div-container p{
+    color:rgba(26, 29, 74, 1);
 }
 
 .second-div{
     padding: 50px 0 60px 0;
-    background-color: rgb(240, 241, 255);
+    background-color: rgba(255, 255, 255, 1)
 }
 
 .second-div-container{
-    margin: auto;
-    max-width: 90%;
+    padding: 0 1rem;
 }
 
-@media (max-width:760px) {
-    .who-we-are .img, .what-we-do .img{
-        width: 100%;
-    }
-    
-    .who-we-are .text, .what-we-do .text{
-        width: 100%;
+@media (max-width:300px) {
+    .second-div-container{
+        padding: 0 0.5rem;
     }
 
-    .who-we-are, .what-we-do{
-        padding: 30px 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .what-we-do{
-        
-        flex-direction: column-reverse;
+    .second-div-container h2{
+        font-size: 20px;
+        padding-bottom: 25px;
     }
 
-    
-.what-we-do .text {
-    padding-left: 0;
+    .second-div-container p{
+        font-size: 12px;
+    }
 }
+
+
+@media (max-width:200px) {
+    .second-div-container h2{
+        font-size: 15px;
+        padding-bottom: 15px;
+    }
+
+    .second-div-container p{
+        font-size: 9px;
+    }
 }

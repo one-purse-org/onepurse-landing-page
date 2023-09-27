@@ -1,64 +1,102 @@
- .third-div{
-    background-color: #1A1D4A;
-    color: white;
-    padding: 60px 5% ;
-    position: relative;
-    max-width: 100%;
-    
- }
-
-.third-div-container{
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-
-.third-div .text{
-    max-width: 50%;
-}
-
-
-.third-div h2{
-    font-size: 1.8rem;
-    color: #FFCC00;
-}
-
-.third-div p{
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-    color: rgba(245, 245, 245, 1);
-}
-
-
 .third-div img{
     width: 100%;
+    top: -335px;
 }
 
-.third-div .img{
-    width: 250px;
-    right: 5%;
-    position: absolute;
+.our-story-image{
+    width: 350px;
 }
 
+.our-mission-container{
+    padding: 40px 1rem 350px;
+}
 
-@media (max-width:760px) {
-    .third-div-container{
-        flex-direction: column;
+.our-journey-container{
+    padding: 350px 1rem 40px;
+}
+
+.our-mission{
+    background-color: rgba(107, 124, 243, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+.our-mission-container h2, .our-journey-container h2{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.our-journey-container p{
+    color: rgba(26, 29, 74, 1);
+}
+
+.our-journey-container h2{
+    color: rgba(26, 29, 74, 1);
+}
+
+.our-journey-container span{
+    color: rgba(107, 124, 243, 1)
+}
+
+.our-journey{
+    background-color: rgba(255, 255, 255, 1);
+}
+
+@media (max-width:360px) {
+    .our-story-image{
+        width: 200px;
     }
 
-    .third-div p{
-        width: 100%;
-        font-size: 14px;
+    .third-div img{
+        top: -200px;
+    }
+    
+    .our-mission-container{
+        padding: 40px 0.5rem 210px;
     }
 
-    .third-div .text{
-        text-align: center;
-        max-width: 100%;
+    .our-journey-container{
+        padding: 210px 0.5rem 40px;
     }
 
-    .third-div .img{
-        width: 60%;
-        position: static;
+}
+
+@media (max-width:300px) {
+    .our-mission-container h2, .our-journey-container h2{
+        font-size: 20px;
+        margin-bottom: 25px;
     }
+    
+    .our-mission-container p, .our-journey-container p{
+        font-size: 12px;
+    }
+}
+
+@media (max-width:200px) {
+    .our-mission-container h2, .our-journey-container h2{
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    
+    .our-mission-container p, .our-journey-container p{
+        font-size: 9px;
+    }
+
+    .our-story-image{
+        width: 100px;
+    }
+
+    .third-div img{
+        top: -100px;
+    }
+
+     
+    .our-mission-container{
+        padding: 40px 0.2rem 110px;
+    }
+
+    .our-journey-container{
+        padding: 110px 0.2rem 40px;
+    }
+
 }

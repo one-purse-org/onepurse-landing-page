@@ -4,6 +4,14 @@ import { Carousel } from 'react-responsive-carousel';
 import Footer from "../../reusable/components/footer";
 import FooterCta from "../../reusable/components/footer-cta";
 
+let ctaImgMd = "img/footer-cta.svg"
+let ctaImgLg = "img/footer-cta-lg.svg";
+let footerContent = <div className='footer-cta-content position-absolute'><h1>Let <span>Onepurse</span> handle your foreign exchange, seamlessly</h1>
+<div className="footer-cta-button">
+    <a href="/"><img src="img/googleplay.svg"></img></a>
+    <a href="/"><img src="img/appstorebuttton.svg"></img></a>
+</div></div>
+
 let text = [
     {
         key: 1,
@@ -91,7 +99,7 @@ function Testimony(){
                 </div>
             </div>
         </div>
-        <FooterCta/>
+        <FooterCta ctaImgMd={ctaImgMd} footerContent={footerContent} ctaImgLg={ctaImgLg}/>
         <Footer/>
     </div>
     
@@ -99,34 +107,3 @@ function Testimony(){
 }
 
 export default Testimony;
-
-
-{/* <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol> 
-                <div class="carousel-inner">
-                    <div className="carousel-item active">
-                        <Card icon={text[0].icon} name={text[0].name} body={text[0].body} tag={text[0].tag}/>
-                    </div>
-                    <div className="carousel-item">
-                        <Card icon={text[1].icon} name={text[1].name} body={text[1].body} tag={text[1].tag}/>
-                    </div>
-                    <div className="carousel-item">
-                        <Card icon={text[2].icon} name={text[2].name} body={text[2].body} tag={text[2].tag}/>
-                    </div>
-                    <div className="carousel-item">
-                        <Card icon={text[3].icon} name={text[3].name} body={text[3].body} tag={text[3].tag}/>
-                    </div>
-                </div>
-                <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div> */}
