@@ -65,8 +65,68 @@
     width: 190px;
 }
 
-@media (min-width:768px) {
+@media (min-width:760px) {
+    #about .footer-cta .footer-cta-content {
+        top: -11%;
+    }
+    #about .footer-cta .footer-cta-content h1{
+        margin-bottom: 2%;
+    }
     
+    #about .footer-cta .footer-cta-content p{
+        font-size: 16px;
+        width: 70%;
+        margin: 0 auto 2%;
+    }
+
+    #about .footer-cta .footer-cta-image {
+        left: 7.5vw;
+    }
+
+    #about .footer-cta .footer-cta-image img {
+        width: 85vw;
+    }
+
+    #about .footer-cta-content {
+        height: 180%;
+    }
+    .fourth-div {
+        background-color: rgba(255, 255, 255, 1);
+    }
+
+    .fourth-div .fourth-div-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .about-reasons{
+        width: 40%;
+    }
+
+    .smilingblackgirl{
+        width: 48%;
+    }
+
+    .fourth-div .header h2{
+        font-size: 32px;
+    }
+
+    .reasons p{
+        font-size: 16px;
+    }
+
+    #about .footer-cta{
+        background-color: rgba(255, 255, 255, 1);
+    }
+
+    #about .footer-cta .footer-cta-content .footer-cta-button a{
+        width: 169px;
+        margin: 0 10px;
+    }
+    #about .footer-cta .footer-cta-button a img{
+        width: 100%;
+    }
 }
 
 @media (max-width: 360px) {
