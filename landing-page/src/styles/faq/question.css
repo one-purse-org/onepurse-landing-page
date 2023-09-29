@@ -44,7 +44,7 @@
     color: rgba(15, 15, 15, 1)
 }
 
-.accordion .accordion-item button{
+.questions .accordion .accordion-item button{
     background-color: rgba(243, 244, 255, 1);
     display: flex;
     flex-direction: row-reverse;
@@ -56,6 +56,12 @@
     height: 60px;
     font-size: 14px;
     color: rgba(15, 15, 15, 1);
+}
+
+.accordion .accordion-item button{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
 }
 
 .accordion-body{
@@ -70,7 +76,6 @@
     background-repeat: no-repeat;
     background-position-y: -1px;
 }
-
 
 .active-scroll {
     border-bottom: 2px solid rgba(107, 124, 243, 1);

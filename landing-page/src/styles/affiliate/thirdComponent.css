@@ -1,0 +1,101 @@
+.affiliate-third-component{
+    background-image: url("../../../public/img/affiliate-third-container.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(26, 29, 74, 1);
+    padding: 90px 1rem 30px;
+}
+
+.affiliate-third-component-container h2{
+    font-size: 24px;
+    font-weight: 600px;
+    margin: auto;
+    text-align: center;
+    color: #ffff;
+    margin-bottom: 30px;
+}
+
+.affiliate-third-component-container h2 span{
+    color: rgba(26, 29, 74, 1);
+}
+
+.affiliate-step{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.affiliate-number{
+    width: 20%;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.affiliate-number p{
+    padding-top: 20px;
+    height: 58px;
+    width: 58px;
+    border-radius: 8px;
+    color: #ffff;
+    background: linear-gradient(180deg, #1A1D4A 0%, rgba(26, 29, 74, 0.79) 100%);
+}
+
+.affiliate-text{
+    width: 80%;
+}
+
+.affiliate-text p{
+    color: #ffff;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.affiliate-thirdComponent-vertical{
+    width: 17.8px;
+    left: 15px;
+    top: 0px;
+}
+
+@media (max-width:300px) {
+    .affiliate-text p{
+        font-size: 9px;
+    }
+
+    
+    .affiliate-step{
+        margin-bottom: 10px;
+    }
+
+    .affiliate-third-component{
+        background-size: cover;
+        padding: 70px 0.5rem 30px;
+    }
+
+    .affiliate-third-component-container h2{
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .affiliate-number{
+        margin-right: 10px;
+    }
+
+    .affiliate-number p{
+        padding-top: 10px;
+        height: 38px;
+        width: 38px;
+    }
+
+    .affiliate-thirdComponent-vertical{
+        width: 11.8px;
+    }
+}
+
+@media (max-width:210px) {
+    .affiliate-third-component{
+        background-position: 100%;
+    }
+
+    
+}

@@ -1,0 +1,79 @@
+.affiliate-fifth-component{
+    padding: 40px 0.5rem 40%;
+    background-color: rgba(26, 29, 74, 1);
+    color: #FFFF;
+}
+
+.affiliate-fifth-component-div-h2{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: rgba(107, 124, 243, 1)
+}
+
+.affiliate-fifth-component .accordion button{
+    background-color: rgba(26, 29, 74, 1);
+    border: 0!important;
+    color: #FFFF;
+    padding-left: 0;
+}
+
+.affiliate-fifth-component .accordion-item{
+    border: 0;
+}
+
+.affiliate-fifth-component .accordion-body {
+    background-color: rgba(26, 29, 74, 1);
+    color: #FFFF;
+}
+
+.affiliate-fifth-component .accordion-button:focus{
+    box-shadow:none
+}
+
+.affiliate-fifth-component .accordion-button::after {
+    background-image: url("../../../public/img/add-light.png")!important;
+    margin-right: 20px;
+}
+
+.affiliate-fifth-component .accordion-header{
+    --bs-accordion-border-color: none;
+}
+
+.affiliate-fifth-component .accordion-item:last-of-type .accordion-collapse{
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.affiliate-fifth-container{
+    color: rgba(255, 255, 255, 1);
+}
+
+.affiliate-fifth-component p a{
+        text-decoration: none;
+        color:rgba(107, 124, 243, 1);
+}
+
+.accordion{
+        --bs-accordion-btn-icon-transform: rotate(0);
+}
+
+@media (max-width:300px) {
+    .affiliate-fifth-component-div-h2{
+        font-size: 15px;
+        margin-bottom: 7px;
+    }
+
+    .affiliate-fifth-component button, .affiliate-fifth-component p, .affiliate-fifth-component div{
+        font-size: 9px;
+    }
+    
+    .affiliate-fifth-component .accordion-button::after {
+        margin-right: 10px;
+    }
+
+    .affiliate-fifth-component hr{
+        margin: 0 auto;
+    }
+    
+}

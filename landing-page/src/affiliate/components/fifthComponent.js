@@ -1,4 +1,4 @@
-import "../../styles/affliate/fifthComponent.css"
+import "../../styles/affiliate/fifthComponent.css"
 
 
 let questions = [
@@ -31,6 +31,7 @@ let questions = [
 function Questions(props){
     return(
         <div class="accordion accordion-flush" id={props.target + "-div"}>
+            <hr/>
             <div class="accordion-item">
                 <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target={"#" + props.target}>
@@ -48,14 +49,17 @@ function Questions(props){
     )
 }
 
-
 function FifthComponent(){
     return(
-        <div className="fifth-component-div container-c">
-            <h2 className="fifth-component-div-h2">Affiliate FAQ</h2>
-            <div className="fifth-component-div-questions">
-                {questions.map(question => <Questions head={question.head}  body={question.body}  target={question.target}/>)}
-            </div>
+        <div className="affiliate-fifth-component">
+            <div className="affiliate-fifth-container container-md">
+            <h2 className="affiliate-fifth-component-div-h2 ">Affiliate FAQ</h2>
+            <p>If we don’t answer your question here, please <a href="/">contact us</a></p>
+                <div className="affiliate-fifth-component-div-questions">
+                    {questions.map(question => <Questions head={question.head}  body={question.body}  target={question.target}/>)}
+                    <hr/>
+                </div>
+            </div>   
         </div>
     )
 }

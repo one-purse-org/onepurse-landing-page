@@ -7,7 +7,7 @@ import SixthComponent from "./sixthComponent";
 import Navbar from "../../reusable/components/Navbar"
 import Footer from "../../reusable/components/footer"
 
-function Affliate(){
+function Affiliate(){
     return(
         <div>
             <Navbar color="white"/>
@@ -22,4 +22,4 @@ function Affliate(){
     )
 }
 
-export default Affliate
+export default Affiliate

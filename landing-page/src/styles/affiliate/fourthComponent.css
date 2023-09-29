@@ -1,0 +1,76 @@
+.affliate-fourth-component{
+    background-color: rgba(241, 243, 245, 1);
+    padding: 50px 0.5rem 20px;
+    text-align: center;
+}
+
+.affliate-fourth-component h2{
+    font-size: 24px;
+    font-weight: 600;
+    color: rgba(26, 29, 74, 1);
+    margin-bottom: 30px
+}
+
+.affliate-fourth-component-card {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 1rem;
+    border-radius: 16px;
+    margin-bottom: 14px;
+    background-color: #ffff;
+}
+
+
+.affliate-fourth-card-content h4{
+    color: rgba(15, 15, 15, 1);
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.affliate-fourth-card-content p{
+    font-size: 16px;
+    color:rgba(128, 128, 128, 1);
+    line-height: 24px;
+}
+
+.affliate-fourth-card-image{
+    width: 25%;
+    margin-right: 20px;
+}
+
+.affliate-fourth-card-image img{
+    width: 100%;
+}
+
+.affliate-fourth-card-content{
+    width:75%
+}
+
+
+@media (max-width:300px) {
+    .affliate-fourth-card-image{
+    margin-right: 10px;
+}
+.affliate-fourth-component h2{
+    font-size: 14px;
+    margin-bottom: 15px
+}
+
+.affliate-fourth-component-card {
+    padding: 1.5rem 0.5rem;
+    margin-bottom: 9px;
+}
+
+
+.affliate-fourth-card-content h4{
+    font-size: 14px;
+}
+
+.affliate-fourth-card-content p{
+    font-size: 8px;
+    line-height: 16px;
+}
+
+}
