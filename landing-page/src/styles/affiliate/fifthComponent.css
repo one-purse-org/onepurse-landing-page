@@ -58,6 +58,26 @@
         --bs-accordion-btn-icon-transform: rotate(0);
 }
 
+@media (min-width:760px) {
+    .affiliate-fifth-component-div-p{
+        margin-bottom: 50px;
+    }
+    .affiliate-fifth-component{
+        padding: 80px 1rem 10%;
+        background-color: rgba(26, 29, 74, 1);
+        color: #FFFF;
+    }
+}
+
+@media (min-width:1280px) {
+    .affiliate-fifth-component{
+        padding: 80px 2rem 10%;
+    }
+    .affiliate-fifth-component-div-h2{
+        font-size: 48px;
+    }
+}
+
 @media (max-width:300px) {
     .affiliate-fifth-component-div-h2{
         font-size: 15px;

@@ -5,7 +5,7 @@ function ThirdComponent(){
         <div className="contact-third-component">
         <div className="container">
             <div className="contact-contact">
-                <div className="mb-3 me-4">
+                <div className="mb-3">
                     <p className="contact-title">
                         Phone number
                     </p>
@@ -13,7 +13,7 @@ function ThirdComponent(){
                         +17205463284 
                     </p>
                 </div>
-                <div className="mb-3 me-4">
+                <div className="mb-3">
                     <p className="contact-title">
                         Email address
                     </p>
@@ -21,7 +21,7 @@ function ThirdComponent(){
                         support@onepurse.co 
                     </p>
                 </div>
-                <div className="mb-3 me-4">
+                <div className="mb-3">
                     <p className="contact-title">
                         Address
                     </p>

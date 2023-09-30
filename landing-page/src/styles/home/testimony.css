@@ -92,6 +92,10 @@
 }
 
 @media (min-width:760px) {
+    .testimony-container{
+        padding-top: 75px;
+    }
+
     .carousel-mobile{
         display: none;
     }
@@ -104,12 +108,34 @@
     }
 
     .testimony .footer, #about .footer{
-        padding-top: 12%;
+        padding-top: 17%;
         padding-bottom: 0px;
     }
 
     .testimony .footer-cta-content h1 {
         width: 70%;
+    }
+    .testimony .footer-cta-content a{
+        margin: 20px 10px;
+    } 
+}
+
+@media (min-width:1280px) {
+    .testimony h2 {
+        font-size: 40px;
+        margin-bottom: 40px;
+        width: 100%;
+    }
+    .testimony .footer-cta-content h1 {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+    .testimony .footer-cta-button img{
+        width: 140%;
+    }
+
+    .testimony .footer-cta-content a {
+        margin: 20px 60px;
     }
 }
 

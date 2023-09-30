@@ -29,11 +29,11 @@ let card = [
 
 function Card(props){
     return(
-        <div className="affliate-fourth-component-card">
-            <div className="affliate-fourth-card-image" >
+        <div className="affiliate-fourth-component-card">
+            <div className="affiliate-fourth-card-image" >
                 <img src={props.image}></img>  
             </div>
-            <div className="affliate-fourth-card-content">
+            <div className="affiliate-fourth-card-content">
                 <h4>{props.head}</h4>
                 <p>{props.body}</p>
             </div>
@@ -45,10 +45,10 @@ function Card(props){
 
 function FourthComponent(){
     return(
-        <div className="affliate-fourth-component">
-        <div className="container affliate-fourth-component-container">
+        <div className="affiliate-fourth-component">
+        <div className="container-lg affiliate-fourth-component-container">
             <h2>What’s in it for you?</h2>
-            <div className="affliate-fourth-component-card-div">
+            <div className="affiliate-fourth-component-card-div">
                 {card.map(cardText => <Card head={cardText.head} body={cardText.body} image={cardText.image}/>)}
             </div>
         </div>

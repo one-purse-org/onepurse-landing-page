@@ -142,6 +142,22 @@
     }
 }
 
+@media (min-width:1280px) {
+    .procedure .big-div h2 {
+        font-size: 48px;
+    }
+    .procedure .big-div .steps{
+        font-size: 24px;
+    }
+
+    .phone-numbers .numberings .number p {
+        font-size: 24px;
+    }
+    .phone-numbers .numberings .text {
+        font-size: 20px;
+    }
+}
+
 @media (max-width:300px) {
     .procedure .big-div .steps {
         font-size: 10px;

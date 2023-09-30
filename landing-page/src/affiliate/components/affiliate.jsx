@@ -9,7 +9,7 @@ import Footer from "../../reusable/components/footer"
 
 function Affiliate(){
     return(
-        <div>
+        <div id="affiliate">
             <Navbar color="white"/>
             <FirstComponent/>
             <SecondComponent/>

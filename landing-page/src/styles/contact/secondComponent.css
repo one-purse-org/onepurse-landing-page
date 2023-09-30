@@ -48,7 +48,7 @@
 }
 
 .form-div textarea{
-    height: 200px;
+    height: 250px;
 }
 
 .contact-form-button-div{
@@ -137,6 +137,10 @@
 
 
 @media (min-width:760px){
+
+    .customer-support .hours-p {
+        margin-bottom: 60px;
+    }
     .form-customersupport-absolute{
         position: absolute;
         top: -65px;
@@ -147,7 +151,7 @@
     }
 
     .form-customersupport{
-        height: 1150px;
+        height: 1250px;
     }
 
     .form-div{
@@ -162,11 +166,12 @@
         width: 215px;
     }
     .form-div textarea{
-        height: 300px;
+        height: 400px;
     }
 
     .customer-support{
         width: 70%;
+        padding-top:40px ;
     }
 
     .customer-support button{

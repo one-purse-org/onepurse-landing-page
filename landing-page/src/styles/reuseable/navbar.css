@@ -22,9 +22,12 @@
 
   .navbar-white{
     background-color: rgba(245, 245, 245, 1);
-    color: black; 
-  }
   
+  }
+ .navbar-white .links a{
+    color: rgba(15, 15, 15, 1);
+ }
+
   .links{
     font-family: 'Inter', sans-serif;
     width: auto;
@@ -39,6 +42,12 @@
     border-width: thin;
     color: white;
     border-style: groove;
+}
+
+.navbar-white .button1{
+    border: 1px solid rgba(107, 124, 243, 1);
+    background-color: #FFFF;
+    color: rgba(15, 15, 15, 1);
 }
 
 .links a:hover{

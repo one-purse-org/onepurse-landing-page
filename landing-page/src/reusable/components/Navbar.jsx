@@ -15,15 +15,16 @@ function close(){
 }
 
 
+
 function Navbar(props){
     return(
         <div className={props.color==="white"?"navbar-white _navbar container-fluid":"_navbar container-fluid"}>
         <div className=' div-container'>
-                <Link className="logo" to="/">
+                <Link onClick={close} className="logo" to="/">
                     <img src={props.color==="white"?"img/Logo-white.png":"img/Logo.png"} alt="logo"/>
                 </Link>
                 
-                <div className="links">
+                <div className="links" >
                     <Link onClick={close} to="/affiliate">Become an affiliate</Link>
                     <Link onClick={close} to="/faq">Faq</Link>
                     <Link onClick={close} to="/contact">Contact Us</Link>
@@ -33,7 +34,7 @@ function Navbar(props){
                     <img src={props.color==="white"?'img/hamburger-black.svg':'img/hamburger.svg'} className='hamburger-menu-img'></img>
                 </div>
                 <div className="nav-btn">
-                    <button type="button" className={props.color==="white"?"button1 button1-white" : "button1"}>affiliate Dashboard</button>
+                    <button type="button" className={props.color==="white"?"button1 button1-white" : "button1"}>Affiliate Dashboard</button>
                     <button type="button" className="button2">&nbsp;&nbsp;&nbsp;Download App&nbsp;&nbsp;&nbsp;</button>
                 </div>
                 <div className='cover-screen no-cover'>
@@ -48,8 +49,8 @@ function Navbar(props){
                                 </div>
                             </div>
                             <div className="links-sm">
-                                <Link onClick={close} to="/affiliate">Become an affiliate</Link>
-                                <Link onClick={close} to="/faq">Faq</Link>
+                                <Link onClick={close} to="/affiliate">Become an Affiliate</Link>
+                                <Link onClick={close} to="/faq">FAQ</Link>
                                 <Link onClick={close} to="/contact">Contact Us</Link>
                                 <Link onClick={close} to="/about">About</Link>
                             </div>

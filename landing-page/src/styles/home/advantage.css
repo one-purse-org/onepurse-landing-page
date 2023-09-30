@@ -52,7 +52,7 @@
     .advantage{
         background-image: url("../../../public/img/advantage-lg.png");
         background-position-x: 100%;
-        padding: 13% 1rem 5%
+        padding: 13% 3rem 4%
     }
 
     .advantage h1{
@@ -96,6 +96,10 @@
     .advantage .advantage-container{
         margin-left: auto;
     }
+}
+
+@media (min-width:1280px) {
+    
 }
 
 @media (max-width:300px) {

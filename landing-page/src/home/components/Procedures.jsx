@@ -109,9 +109,9 @@ function Procedure(){
                             </div>
                             <div className="phone-images" style={{height:imageHeight+"px"}} onLoad={updateImageHeight} onScroll={handleScroll}>
                                 <img src="img/phone1.png" className="procedure-img1"></img>
-                                <img src="img/phone1.png" className="procedure-img2"></img>
-                                <img src="img/phone1.png" className="procedure-img3"></img>
-                                <img src="img/phone1.png" className="procedure-img4"></img>
+                                <img src="img/phone2.png" className="procedure-img2"></img>
+                                <img src="img/phone3.png" className="procedure-img3"></img>
+                                <img src="img/phone4.png" className="procedure-img4"></img>
                             </div>
                         </div>
                         <div className="phone-numbers position-relative">

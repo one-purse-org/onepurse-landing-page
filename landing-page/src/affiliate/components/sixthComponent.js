@@ -12,9 +12,11 @@ function SixthComponent(){
                         Become An Affiliate
                     </button></a>
                 </div>
+                <div className="position-relative affiliate-cta-img-container">
                 <div className="affiliate-cta-img">
-                    <img src="img/our-story.png" alt="phone"></img>
-                    <img src="img/our-story.png" alt="phone"></img>
+                    <img className="our-story" src="img/our-story.png" alt="phone"></img>
+                    <img className="our-story-2" src="img/our-story-2.png" alt="phone"></img>
+                </div>
                 </div>
             </div>
         </div>

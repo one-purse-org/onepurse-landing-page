@@ -22,7 +22,7 @@ function SecondComponent(){
                     
                 </div>
                 <div className="affliate-second-component-image">
-                    <img src="img/image-of-smiling-women.png" alt="two women smiling"></img>
+                    <img src="img/women-talking.png" alt="two women smiling"></img>
                 </div>
             </div>
         </div>

@@ -71,10 +71,6 @@
         margin-top: 2px;
     }
 
-    .footer-cta-content a{
-        margin: 20px 20px;
-    } 
-
     .footer-cta .footer-cta-image{
         left: 12.5vw;
     }
@@ -108,13 +104,3 @@
         font-size: 16px;
     }
 }
-
-/* .footer-cta-content button{
-    background-color: rgba(0, 0, 0, 1);
-    color: #ffff;
-    display: flex;
-    border-radius: 8px;
-    margin: 10px auto;
-    padding: 0px 30px;
-    align-items: center;
-} */

@@ -54,7 +54,7 @@ function FifthComponent(){
         <div className="affiliate-fifth-component">
             <div className="affiliate-fifth-container container-md">
             <h2 className="affiliate-fifth-component-div-h2 ">Affiliate FAQ</h2>
-            <p>If we don’t answer your question here, please <a href="/">contact us</a></p>
+            <p className="affiliate-fifth-component-div-p">If we don’t answer your question here, please <a href="/">contact us</a></p>
                 <div className="affiliate-fifth-component-div-questions">
                     {questions.map(question => <Questions head={question.head}  body={question.body}  target={question.target}/>)}
                     <hr/>

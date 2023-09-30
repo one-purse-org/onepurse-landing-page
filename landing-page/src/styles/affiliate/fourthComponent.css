@@ -1,17 +1,17 @@
-.affliate-fourth-component{
+.affiliate-fourth-component{
     background-color: rgba(241, 243, 245, 1);
     padding: 50px 0.5rem 20px;
     text-align: center;
 }
 
-.affliate-fourth-component h2{
+.affiliate-fourth-component h2{
     font-size: 24px;
     font-weight: 600;
     color: rgba(26, 29, 74, 1);
     margin-bottom: 30px
 }
 
-.affliate-fourth-component-card {
+.affiliate-fourth-component-card {
     text-align: left;
     display: flex;
     align-items: center;
@@ -23,54 +23,96 @@
 }
 
 
-.affliate-fourth-card-content h4{
+.affiliate-fourth-card-content h4{
     color: rgba(15, 15, 15, 1);
     font-weight: 600;
     font-size: 24px;
 }
 
-.affliate-fourth-card-content p{
+.affiliate-fourth-card-content p{
     font-size: 16px;
     color:rgba(128, 128, 128, 1);
     line-height: 24px;
 }
 
-.affliate-fourth-card-image{
+.affiliate-fourth-card-image{
     width: 25%;
     margin-right: 20px;
 }
 
-.affliate-fourth-card-image img{
-    width: 100%;
+.affiliate-fourth-card-image img{
+    width: 80%;
 }
 
-.affliate-fourth-card-content{
+.affiliate-fourth-card-content{
     width:75%
+}
+
+@media (min-width:760px) {
+    .affiliate-fourth-component{
+        padding: 100px 1rem 85px;
+    }
+    .affiliate-fourth-component-card-div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .affiliate-fourth-component-card {
+        width: 48%;
+        padding-left: 5%;
+        margin-bottom: 30px;
+    }
+
+    .affiliate-fourth-component h2{
+        margin-bottom: 60px;
+     }
+}
+
+@media (min-width:1280px) {
+
+    .affiliate-fourth-component{
+        padding: 100px 2rem 85px;
+    }
+    .affiliate-fourth-component h2{
+        font-size: 48px;
+    }
+
+    .affiliate-fourth-card-content h4{
+        font-size: 32px;
+    }
+    
+    .affiliate-fourth-card-content p{
+        font-size: 20px;
+    }
+    .affiliate-fourth-card-image img{
+        width: 60%;
+    }
 }
 
 
 @media (max-width:300px) {
-    .affliate-fourth-card-image{
+    .affiliate-fourth-card-image{
     margin-right: 10px;
 }
-.affliate-fourth-component h2{
+.affiliate-fourth-component h2{
     font-size: 14px;
     margin-bottom: 15px
 }
 
-.affliate-fourth-component-card {
+.affiliate-fourth-component-card {
     padding: 1.5rem 0.5rem;
     margin-bottom: 9px;
 }
 
 
-.affliate-fourth-card-content h4{
+.affiliate-fourth-card-content h4{
     font-size: 14px;
 }
 
-.affliate-fourth-card-content p{
+.affiliate-fourth-card-content p{
     font-size: 8px;
     line-height: 16px;
 }
-
 }
+

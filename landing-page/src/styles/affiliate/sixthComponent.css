@@ -33,13 +33,93 @@
 .affiliate-cta-img{
     display: flex;
     position: absolute;
-    bottom: 135%;
+    bottom: 50px;
+    align-items: center;
 }
 
-.affiliate-cta-img img{
-    width: 50%;
+.affiliate-cta-img .our-story-2{
+    width: 51%;
 }
 
+.affiliate-cta-img .our-story{
+    width: 49%;
+}
+
+.affiliate-cta-text a{
+    display: block;
+    width: 213px;
+}
+
+@media (min-width:760px) {
+
+    .affiliate-cta-img{
+        bottom: -76px;
+    }
+
+
+    
+    #affiliate .footer{
+        padding-top: 150px;
+    }
+
+    .affiliate-cta-img-container{
+        width: 50%;
+    }
+
+    .affliate-cta-container{
+        flex-direction: row;
+    }
+
+    .affiliate-cta-text{
+        width: 50%;
+    }
+
+    .affiliate-sixth-component-div{ 
+        padding: 80px 1rem 60px;
+        text-align: left;
+    }
+
+    .affiliate-cta-text h2{
+        margin-left: 0;
+        width: 70%;
+    }
+}
+
+@media (min-width:992px) {
+
+    .affiliate-cta-img{
+        bottom: -135px;
+    }
+}
+
+@media (min-width:1200px) {
+    .affiliate-cta-img{
+        bottom: -170px;
+    }
+}
+
+@media (min-width:1280px) {
+    .affiliate-cta-text h2{
+        font-size: 48px;
+    }
+
+    .affiliate-cta-img{
+        bottom: -100px;
+    }
+}
+
+@media (min-width:1400px) {
+    .affiliate-cta-img{
+        bottom: -150px;
+    }
+    .affiliate-cta-text button{
+        height: 60px;
+        width: 250px;
+    }
+    .affiliate-cta-text a{
+        width: 250px;
+    }
+}
 
 @media (max-width:300px) {
     .affiliate-sixth-component-div{
