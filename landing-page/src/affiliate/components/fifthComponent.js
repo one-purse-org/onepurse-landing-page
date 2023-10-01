@@ -22,7 +22,7 @@ let questions = [
     },
     {
         key:4,
-        head: "How do I earn up to 80% in commissions from my referrals transactions?",
+        head: "How do I earn up to 70% in commissions from my referrals transactions?",
         body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at",
         target: "accordionFour"
     }

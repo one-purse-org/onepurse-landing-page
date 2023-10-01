@@ -1,190 +1,130 @@
 let questions = [
     {
         key:1,
-        head: "security",
-        body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at",
+        head: "How do I get a OnePurse account?",
+        body: "You can download One purse from the Google play store or the iOS App Store.",
         target: "accordion1",
         
     },
     {
         key:2,
-        head:  "security",
-        body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at",
+        head:  "What does it require to be verified on OnePurse?",
+        body: "Your full name, identity card, date of birth, email address, and resident address.",
         target: "accordion2",
         
     },
     {
         key:3,
-        head: "security",
-        body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at",
+        head: "Do I need a smartphone to download Onepurse?",
+        body: "Yes, You do.",
         target: "accordion3",
     },
     {
         key:4,
-        head: "security",
-        body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at",
+        head: "Why do I need to verify my account?",
+        body: "You need to verify your account in line with KYC (Know Your Customer) compliance requirements to verify a customer’s identity, assess and monitor customer risk.",
         target: "accordion4",
     },
     {
         key:5,
-        head:"security",
-        body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at",
+        head:"How do I verify my account?",
+        body: "The easiest way to verify your OnePurse account is when you are signing up on the app, just fill in your details and follow the instructions on the screen. Please note that you’ll need a valid piece of government-issued ID such as a passport, or driver’s license, and proof of address to verify your account.",
         target: "accordion5",
     },
     {
         key:6,
-        head:"security",
-        body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at",
+        head:"How do I recover my password?",
+        body: "You can make use of the forgot password and follow the instructions on your screen.",
         target: "accordion6",
     },
     {
         key:7,
-        head: "security",
-        body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at",
+        head: "What can I do with OnePurse?",
+        body: "You can use OnePurse to send money(USD) to Kenya in their respective currencies",
         target: "accordion7",
     },
     {
         key:8,
-        head: "security",
-        body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at",
+        head: "How does the app work for remittances?",
+        body: "The app allows you to transfer money from the USA to Kenya using your mobile device along with your email address and that of your recipient. You can create an account, and add your debit card to transact.",
         target: "accordion8"
     },
     {
         key:9,
-        head: "security",
-        body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at",
+        head: "Are there any fees for using the One purse app?",
+        body: "You won’t be charge any fee for sending money on OnePurse",
         target: "accordion9"
     },
     {
         key:10,
-        head: "security",
-        body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at",
+        head: "How long does it take for the money to be received by the recipient?",
+        body: "Our Technology allows your recipient to receive transfers within minutes.",
         target: "accordion10"
     },
     {
         key:11,
-        head: "sending money",
-        body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at",
+        head: "Can I track my transfer?",
+        body: "Yes, the app allows you to track transfers in real-time and receive notifications when the money has been received by the recipient.",
         target: "accordion11"
     },
     {
         key:12,
-        head: "sending money",
-        body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at",
+        head: "Can I transfer money to any country?",
+        body: "OnePurse currently facilitates transfers from the USA to Kenya. However, we are growing rapidly and will be adding more countries soon. Please keep an eye out for communications in this regard on our website and social media channels.",
         target: "accordion12"
     },
     {
         key:13,
-        head: "sending money",
-        body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at",
+        head: "Does my recipient need to take any action steps to receive funds from me?",
+        body: "Your recipients do not need to take any steps as their accounts are credited instantly.",
         target: "accordion13"
     },
     {
         key:14,
-        head: "sending money",
-        body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at",
+        head: "How much money can I send at once?",
+        body: "This is totally dependent on your KYC level, the higher the level the more money you can send. Click here to view the KYC levels and requirements.",
         target: "accordion14"
     },
     {
         key:15,
-        head: "sending money",
-        body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at",
+        head: "How do I know if the Money has been sent to the recipient?",
+        body: "Upon completion of the transaction, you will receive a receipt and an email notification informing you of the status of your transaction.",
         target: "accordion15"
     },
     {
         key:16,
-        head: "sending money",
-        body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at",
+        head: "How does the exchange rate work?",
+        body: "Exchange rates may initially appear complex, but they are, in fact, quite simple to understand. An exchange rate represents the value of one currency relative to another.",
         target: "accordion16"
     },{
         key:17,
-        head: "sending money",
-        body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at",
+        head: "What do I do when I lose my phone?",
+        body: "We hope this doesn’t happen but if it does, reach out to us to restrict the account. When you get another phone, please let us know to enable – download OnePurse and log in to pick up from where you stopped.",
         target: "accordion17"
     },
     {
         key:18,
-        head:  "sending money",
-        body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at",
+        head:  "What do I do if my account is restricted?        ",
+        body: "Tell us how it happened and we will take a look and get back to you as soon as possible.",
         target: "accordion18"
     },
     {
         key:19,
-        head: "sending money",
-        body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at",
+        head: "Is my personal and financial information secure on the app?",
+        body: "The app uses industry-standard security measures, such as encryption, to protect users’ personal and financial information. So yes, your information is secure.",
         target: "accordion19"
     },
     {
         key:20,
-        head: "sending money",
-        body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at",
+        head: " Can I cancel or reverse a transfer after it’s been initiated?",
+        body: "Transactions are processed instantly and cannot be reversed.",
         target: "accordion20"
     },
     {
         key:21,
-        head:"Why do you require my ID?",
-        body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at",
+        head:"How do I make a complaint?",
+        body: "If you are dissatisfied with the service provided by OnePurse, we encourage you to contact us. We will make every effort to respond promptly, so we kindly request your patience while awaiting our reply.",
         target: "accordion21"
-    },
-    {
-        key:22,
-        head:"How do I verify my email or phone?",
-        body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at",
-        target: "accordion22"
-    },
-    {
-        key:23,
-        head: "What information do I need to add a new recipient?",
-        body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at",
-        target: "accordion23"
-    },
-    {
-        key:24,
-        head:"How do I verify my email or phone?",
-        body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at",
-        target: "accordion24"
-    },
-    {
-        key:25,
-        head: "What information do I need to add a new recipient?",
-        body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at",
-        target: "accordion25"
-    },
-    {
-        key:26,
-        head: "Why do you require my ID?",
-        body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at",
-        target: "accordion26"
-    },
-    {
-        key:27,
-        head: "What information do I need to add a new recipient?",
-        body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at",
-        target: "accordion27"
-    },
-    {
-        key:28,
-        head:"How do I add a new recipient?",
-        body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at",
-        target: "accordion28"
-    },
-    {
-        key:29,
-        head:"How do I add a new recipient?",
-        body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at",
-        target: "accordion29"
-    },
-    {
-        key:30,
-        head: "What information do I need to add a new recipient?",
-        body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at",
-        target: "accordion30"
-    },
-    {
-        key:31,
-        head: "sending money",
-        body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at",
-        target: "accordion8"
     }
 ]
 

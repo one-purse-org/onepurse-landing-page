@@ -48,7 +48,6 @@ function Questions(){
         let questionContainerTwo = document.querySelector(".faqQuestionTwo");
         let questionContainerThree = document.querySelector(".faqQuestionThree");
         if (theScrolledOne === "one"){
-            console.log("worl")
             questionContainerTwo.classList.add("active-scroll")
             questionContainerOne.classList.remove("active-scroll")
             questionContainerThree.classList.remove("active-scroll")
@@ -57,7 +56,6 @@ function Questions(){
             questionContainerOne.classList.remove("active-scroll")
             questionContainerTwo.classList.remove("active-scroll")
         }else{
-            console.log("also-work")
             questionContainerThree.classList.remove("active-scroll")
             questionContainerOne.classList.add("active-scroll")
             questionContainerTwo.classList.remove("active-scroll")
@@ -74,13 +72,13 @@ function Questions(){
                 </div>
                 <div className="question-container" onScroll={handleScroll}>
                     <div className="first-question">
-                        {questions.slice(0, 10).map(question=> <Accordion key={question.key} head={question.head} body={question.body} target={question.target} /> )}
+                        {questions.slice(0, 6).map(question=> <Accordion key={question.key} head={question.head} body={question.body} target={question.target} /> )}
                     </div>
                     <div className="second-question">
-                        {questions.slice(10, 20).map(question=> <Accordion key={question.key} head={question.head} body={question.body} target={question.target} /> )}
+                        {questions.slice(6, 16).map(question=> <Accordion key={question.key} head={question.head} body={question.body} target={question.target} /> )}
                     </div>
                     <div className="third-question">
-                        {questions.slice(20, 30).map(question=> <Accordion key={question.key} head={question.head} body={question.body} target={question.target} /> )}
+                        {questions.slice(16, 21).map(question=> <Accordion key={question.key} head={question.head} body={question.body} target={question.target} /> )}
                     </div>
                 </div>
             </div>

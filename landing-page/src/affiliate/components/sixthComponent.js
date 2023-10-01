@@ -8,7 +8,7 @@ function SixthComponent(){
                     <h2>
                         Promote Onepurse & Get paid. Simple right?
                     </h2>
-                    <a src="/"><button>
+                    <a href="/" ><button>
                         Become An Affiliate
                     </button></a>
                 </div>

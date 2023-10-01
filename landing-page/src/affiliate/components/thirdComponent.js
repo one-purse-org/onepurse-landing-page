@@ -19,7 +19,7 @@ let affiliateSteps = [
     {
         key:4,
         number:4,
-        text: "Earn up to 80% in commissions from transactions made by users you onboard"
+        text: "Earn up to 70% in commissions from transactions made by users you onboard"
     }
 ]
 

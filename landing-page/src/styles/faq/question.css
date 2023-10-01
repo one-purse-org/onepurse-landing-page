@@ -6,7 +6,7 @@
 
 .questions .question-container{
     width: 100%;
-    height: 500px;
+    height: 300px;
     overflow-y: auto;
     scrollbar-width: thin; /* "thin" or "none" to hide the scrollbar */
     -ms-overflow-style: none; /* Hide scrollbar in IE and Edge */
@@ -106,7 +106,7 @@
 
     .questions .question-container{
         border-radius: 16px;
-        height: 400px;
+        height: 330px;
     }
 
     .questions-container{
