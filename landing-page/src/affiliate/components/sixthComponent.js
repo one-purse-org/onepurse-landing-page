@@ -9,7 +9,7 @@ function SixthComponent(){
                         Promote Onepurse & Get paid. Simple right?
                     </h2>
                     <a href="/" ><button>
-                        Become An Affiliate
+                        Get Started
                     </button></a>
                 </div>
                 <div className="position-relative affiliate-cta-img-container">

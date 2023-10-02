@@ -23,15 +23,17 @@ function Footer(props){
         <div className='footer-container container-fluid'>
             <div className= "footer-links">
                 <div className="footer-logo" >
-                        <img src="img/Logo.png" alt="logo"/>
+                <a href='/'>
+                    <img src="img/Logo.png" alt="logo"/>
+                </a>
                 </div>
                 <div className='nav-links'>
-                    <Link onClick={scrollToTop} to="/">About</Link>
-                    <Link onClick={scrollToTop} to="/">Business</Link>
-                    <Link onClick={scrollToTop} to="/">FAQ</Link>
-                    <Link onClick={scrollToTop} to="/">Privacy Policy</Link>
-                    <Link onClick={scrollToTop} to="/">Terms of Use</Link>
-                    <Link onClick={scrollToTop} to="/">Support</Link>
+                    <Link onClick={scrollToTop} to="/about">About</Link>
+                    <Link onClick={scrollToTop} to="/affiliate">Become an Affiliate</Link>
+                    <Link onClick={scrollToTop} to="/faq">FAQ</Link>
+                    <Link onClick={scrollToTop} to="/contact">Contact Us</Link>
+                    <Link onClick={scrollToTop} to="/terms-of-use">Terms of Use</Link>
+                    <Link onClick={scrollToTop} to="/privacy-policy">Privacy Policy</Link>
                 </div>
                 <div className='social-links'>
                     <a href='https://whatsapp.com'><i class="fa-brands fa-whatsapp"></i></a>

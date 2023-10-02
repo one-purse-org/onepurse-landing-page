@@ -7,7 +7,7 @@
 .questions .question-container{
     width: 100%;
     height: 300px;
-    overflow-y: auto;
+    overflow-y: scroll;
     scrollbar-width: thin; /* "thin" or "none" to hide the scrollbar */
     -ms-overflow-style: none; /* Hide scrollbar in IE and Edge */
     scrollbar-color: transparent transparent; /* Optional: Set scrollbar color to transparent in Firefox */
@@ -76,6 +76,10 @@
 
 .active-scroll {
     border-bottom: 2px solid rgba(107, 124, 243, 1);
+}
+
+.faqQuestions:hover{
+    cursor: pointer;
 }
 
 @media (min-width:760px) {

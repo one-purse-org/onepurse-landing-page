@@ -5,7 +5,7 @@
 }
 
 .first-div-container{
-  padding: 0 1rem;
+  padding: 40px 1rem 0;
 }
 
 
@@ -40,6 +40,7 @@
     .first-div-container{
         display: flex;
         align-items: flex-end;
+        padding-top: 0;
     }
 
     .first-div-container .first-div-text{

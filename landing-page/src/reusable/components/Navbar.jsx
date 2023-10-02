@@ -24,11 +24,11 @@ function Navbar(props){
                     <img src={props.color==="white"?"img/Logo-white.png":"img/Logo.png"} alt="logo"/>
                 </Link>
                 
-                <div className="links" >
+                <div className="links">
+                    <Link onClick={close} to="/about">About</Link>
                     <Link onClick={close} to="/affiliate">Become an affiliate</Link>
                     <Link onClick={close} to="/faq">Faq</Link>
                     <Link onClick={close} to="/contact">Contact Us</Link>
-                    <Link onClick={close} to="/about">About</Link>
                 </div>
                 <div className='hamburger-menu' onClick={hamburger}>
                     <img src={props.color==="white"?'img/hamburger-black.svg':'img/hamburger.svg'} className='hamburger-menu-img'></img>
@@ -41,7 +41,7 @@ function Navbar(props){
                     <div className="container-fluid cover-screen-div">
                      
                             <div className='cover-screen-top'>
-                                <Link className="logo" to="/">
+                                <Link onClick={close} className="logo" to="/">
                                     <img src="img/Logo-white.png" alt="logo"/>
                                 </Link>
                                 <div onClick={close}>
@@ -49,10 +49,10 @@ function Navbar(props){
                                 </div>
                             </div>
                             <div className="links-sm">
+                                <Link onClick={close} to="/about">About</Link>
                                 <Link onClick={close} to="/affiliate">Become an Affiliate</Link>
                                 <Link onClick={close} to="/faq">FAQ</Link>
                                 <Link onClick={close} to="/contact">Contact Us</Link>
-                                <Link onClick={close} to="/about">About</Link>
                             </div>
                     </div>  
                     <hr className='cover-screen-horizontal-rule'/>

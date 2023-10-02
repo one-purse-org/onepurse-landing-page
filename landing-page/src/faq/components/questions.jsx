@@ -62,13 +62,36 @@ function Questions(){
         }
     }
 
+    function handleClick(number){
+        let questionsContainer = document.querySelector(".question-container");
+
+        if (number==="one"){
+            let questionContainerHeight = 0
+            questionsContainer.scrollTop = questionContainerHeight
+            performChange()
+        }else  if (number==="two"){
+            let questionContainer = document.querySelector(".first-question");
+            let questionContainerHeight = questionContainer.clientHeight
+            questionsContainer.scrollTop = questionContainerHeight
+            performChange("one")
+        }else  if (number==="three"){
+            let questionContainerOne = document.querySelector(".second-question");
+            let questionContainerTwo = document.querySelector(".first-question")
+            let questionContainerHeight = questionContainerOne.clientHeight + questionContainerTwo.clientHeight
+            questionsContainer.scrollTop = questionContainerHeight
+            performChange("two")
+        }
+
+        
+    }
+
     return(
         <div className="questions">
             <div className="container questions-container">
                 <div className="link">
-                    <p  className='faqQuestions active-scroll faqQuestionOne'>Account Setup</p>
-                    <p  className='faqQuestions faqQuestionTwo'>Sending Money</p>
-                    <p  className='faqQuestions faqQuestionThree'>Security</p>
+                    <p onClick={()=>{handleClick("one")}} className='faqQuestions active-scroll faqQuestionOne'>Account Setup</p>
+                    <p onClick={()=>{handleClick("two")}} className='faqQuestions faqQuestionTwo'>Sending Money</p>
+                    <p onClick={()=>{handleClick("three")}} className='faqQuestions faqQuestionThree'>Security</p>
                 </div>
                 <div className="question-container" onScroll={handleScroll}>
                     <div className="first-question">
