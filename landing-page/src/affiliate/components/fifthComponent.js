@@ -5,25 +5,25 @@ let questions = [
     {
         key:1,
         head: "What is the Onepurse Affiliate Program?",
-        body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at",
+        body: "The affiliate program is designed to help you generate passive income. All you need to do is inform individuals about OnePurse for sending money, and you'll earn a commission each time they use the service.",
         target: "accordionOne"
     },
     {
         key:2,
         head: "What are the requirements to be a Onepurse Affiliate?",
-        body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at",
+        body: "You need a smartphone and the enthusiasm to spread the word about what we do at OnePurse.",
         target: "accordionTwo"
     },
     {
         key:3,
         head: "How do I earn up to $1,000 in passive income?",
-        body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at",
+        body: "Get paid every time a user you onboard sends money using the Onepurse App, with no limit on your earnings and a lifetime cashout for your referrals.",
         target: "accordionThree"
     },
     {
         key:4,
         head: "How do I earn up to 70% in commissions from my referrals transactions?",
-        body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at",
+        body: "You can earn up to 70% by onboarding 91-100 customers which puts you at the platinum tier",
         target: "accordionFour"
     }
 ]

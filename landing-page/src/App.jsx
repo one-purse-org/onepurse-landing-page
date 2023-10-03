@@ -4,6 +4,8 @@ import About from './about/components/about';
 import Faq from "./faq/components/faq"
 import Affiliate from './affiliate/components/affiliate';
 import Contact from './contact/components/contact';
+import PrivacyPolicy from './privacyPolicy/privacyPolicy';
+import TermsOfUse from './termsOfUse/termsOfUse';
 
 function App() {
 
@@ -14,6 +16,8 @@ function App() {
         <Route path="/faq" element={<Faq/>} />
         <Route path="/affiliate" element={<Affiliate/>}/>
         <Route path="/contact" element={<Contact />} />
+        <Route path='/privacy-policy' element={<PrivacyPolicy/>}/>
+        <Route path='/terms-of-use' element={<TermsOfUse/>}/>
       </Routes>
     </Router>
     );
