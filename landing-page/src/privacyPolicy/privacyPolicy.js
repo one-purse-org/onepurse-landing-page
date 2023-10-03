@@ -19,7 +19,7 @@ function PrivacyPolicy(){
                     </nav>
                     
                     <div data-bs-spy="scroll" data-bs-target="#privacy-policy-scrollspy" data-bs-offset="0" className="privacy-policies col scrollspy-example">
-                        <div id="first-privacy-text" className="first-privacy-text mt-5">
+                        <div id="first-privacy-text" className="first-privacy-text">
                             <h4>Overview</h4>
                             <p className="my-0">
                                 OnePurse has developed this Privacy Statement to explain how we may collect, 

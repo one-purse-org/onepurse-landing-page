@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
 .privacy-policy-container .privacy-link{
     list-style: none;
 }
@@ -10,7 +13,7 @@
 }
 
 .privacy strong{
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 .privacy-policy{
@@ -24,28 +27,31 @@
 
 .privacy-policy h2{
     font-size: 2rem;
-    font-weight: bolder;
+    font-weight: 600;
 }
 
 .privacy-policy h4{
     font-size: 1.5rem;
     color: rgba(107, 124, 243, 1);
-    font-weight:bold
+    font-weight:500
 }
 
-.privacy-policy p, .privacy-policy a{
+.privacy-policy p{
     font-size: 15px;
-    font-weight: lighter;
+    font-weight: 300;
     line-height: 1.7;
+}
+
+.privacy-policy li a{
+    display: inline-block;
+    color: #333;
+    font-size: 14px;
 }
 
 #privacy-policy-scrollspy{
     position: -webkit-sticky;
     position: sticky;
     top: 50px;
-    align-content: flex-start;
-    flex-direction: column;
-    flex-wrap: nowrap;
 }
 
 .privacy-policy .nav-pills{
@@ -54,4 +60,10 @@
     --bs-nav-pills-link-active-bg: #FFFF;
     --bs-nav-link-color: #000;
     --bs-nav-link-hover-color: rgba(107, 124, 243, 1);
+}
+
+.privacy-policy nav{
+    align-content: flex-start;
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
