@@ -11,7 +11,7 @@ function TermsOfUse(){
                 <h2 className="text-center">TERMS OF USE</h2>
                 <div className="mt-5">
                     <h4 className="mb-4">ABOUT</h4>
-                    <ul>
+                    <ul className="terms-ul">
                         <li>
                             This Application is operated by OnePurse, Inc.  (hereinafter referred to as ‘OnePurse’, ‘the Company’, ‘we’, ‘us’ or ‘our’).
                         </li>

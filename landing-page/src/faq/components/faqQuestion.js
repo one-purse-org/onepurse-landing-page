@@ -2,7 +2,7 @@ let questions = [
     {
         key:1,
         head: "How do I get a OnePurse account?",
-        body: "You can download One purse from the Google play store or the iOS App Store.",
+        body: "You can download OnePurse from the Google play store or the iOS App Store.",
         target: "accordion1",
         
     },
@@ -15,7 +15,7 @@ let questions = [
     },
     {
         key:3,
-        head: "Do I need a smartphone to download Onepurse?",
+        head: "Do I need a smartphone to download OnePurse?",
         body: "Yes, You do.",
         target: "accordion3",
     },
@@ -40,18 +40,18 @@ let questions = [
     {
         key:7,
         head: "What can I do with OnePurse?",
-        body: "You can use OnePurse to send money(USD) to Kenya in their respective currencies",
+        body: "You can use OnePurse to send money(USD) to Africa in their respective currencies",
         target: "accordion7",
     },
     {
         key:8,
         head: "How does the app work for remittances?",
-        body: "The app allows you to transfer money from the USA to Kenya using your mobile device along with your email address and that of your recipient. You can create an account, and add your debit card to transact.",
+        body: "The app allows you to transfer money from the USA to Africa using your mobile device along with your email address and that of your recipient. You can create an account, and add your debit card to transact.",
         target: "accordion8"
     },
     {
         key:9,
-        head: "Are there any fees for using the One purse app?",
+        head: "Are there any fees for using the OnePurse app?",
         body: "You won’t be charge any fee for sending money on OnePurse",
         target: "accordion9"
     },

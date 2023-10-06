@@ -15,7 +15,7 @@ let footerContent = <div className='home-footer-cta-content footer-cta-content p
 let text = [
     {
         key: 1,
-        body: "I have been using Onepurse since inception and it is a reliable platform for sending money. The exchange rates are great and the transfers are sent quickly to my recipients. I trust OnePurse and I am always at ease using their services.",
+        body: "I have been using OnePurse since inception and it is a reliable platform for sending money. The exchange rates are great and the transfers are sent quickly to my recipients. I trust OnePurse and I am always at ease using their services.",
         name: "Olayinka Arije - Aurora, Colorado.",
         icon: "img/customer3.svg",
         tag:"Olayinka Arije"

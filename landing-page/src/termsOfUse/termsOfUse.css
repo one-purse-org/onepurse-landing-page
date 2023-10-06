@@ -22,7 +22,7 @@
     font-weight:600
 }
 
-.terms li{
+.terms .terms-ul li{
     font-size: 15px;
     font-weight: 300;
     line-height: 1.7;
