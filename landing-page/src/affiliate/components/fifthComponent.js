@@ -23,7 +23,7 @@ let questions = [
     {
         key:4,
         head: "How do I earn up to 70% in commissions from my referrals transactions?",
-        body: "You can earn up to 70% by onboarding 91-100 customers which puts you at the platinum tier",
+        body: "You can earn up to 70% commissions on every transaction sent by the customers you onboard on OnePurse Application",
         target: "accordionFour"
     }
 ]
