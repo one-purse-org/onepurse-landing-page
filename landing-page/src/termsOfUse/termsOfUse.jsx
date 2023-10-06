@@ -13,7 +13,7 @@ function TermsOfUse(){
                     <h4 className="mb-4">ABOUT</h4>
                     <ul>
                         <li>
-                            This Application is operated by OnePurse LTD (hereinafter referred to as ‘OnePurse’, ‘the Company’, ‘we’, ‘us’ or ‘our’).
+                            This Application is operated by OnePurse, Inc.  (hereinafter referred to as ‘OnePurse’, ‘the Company’, ‘we’, ‘us’ or ‘our’).
                         </li>
                         <li>
                             We provide currency (fiat and virtual) exchange services via a chat-based platform, web-based platform, Android application, and iOS application.  
