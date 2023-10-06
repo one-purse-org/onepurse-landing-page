@@ -49,6 +49,13 @@
 }
 
 @media (min-width:760px) {
+    .home-footer-cta-content.footer-cta-content .home-footer-cta-h1{
+        font-size: 20px!important;
+    }
+    .about-footer-cta-content.footer-cta-content .about-footer-cta-h1{
+        font-size: 24px!important;
+    }
+
     .footer-cta .footer-cta-image .footer-cta-image-lg{
         display:block;
     }
@@ -78,6 +85,100 @@
     .footer-cta .footer-cta-image img{
         width: 75vw;
     }
+}
+
+@media (min-width:992px) {
+    .home-footer-cta-content.footer-cta-content .home-footer-cta-h1{
+        font-size: 24px!important;
+    }
+
+    .about-footer-cta-content.footer-cta-content .about-footer-cta-h1{
+        font-size: 28px!important;
+        margin-bottom: 0!important;
+    }
+
+    #about .footer-cta .about-footer-cta-content.footer-cta-content p{
+        width: 60%;
+    }
+
+}
+
+@media (min-width:1280px) {
+    .home-footer-cta-content.footer-cta-content .home-footer-cta-h1{
+        font-size: 28px!important;
+    }
+    .footer-cta .footer-cta-image {
+        left: 18.5vw;
+    }
+
+    .footer-cta .footer-cta-image img {
+        width: 63vw;
+    }
+    .footer-cta-content {
+        height: 190%;
+    }
+    .home-footer-cta-content.footer-cta-content .home-footer-cta-h1{
+        margin-bottom: 0;
+    }
+
+    #about .footer-cta .footer-cta-content {
+        top: -38%!important;
+    }
+
+    #about .footer-cta .footer-cta-image img {
+        width: 65vw!important;
+    }
+
+    #about .footer-cta .footer-cta-image {
+        left: 18vw!important;
+    }
+
+    .about-footer-cta-content.footer-cta-content .about-footer-cta-h1{
+        font-size: 32px!important;
+        margin-bottom: 0!important;
+    }
+
+    #about .footer-cta .about-footer-cta-content.footer-cta-content p{
+        font-size: 18px!important;
+    }
+    
+    
+}
+
+@media (min-width:1800px) {
+    .footer-cta {
+        height: 8vw;
+    }
+    .footer-cta-content {
+        height: 175%;
+    }
+    .footer-cta .footer-cta-image {
+        left: 25vw;
+    }
+
+    .footer-cta .footer-cta-image img {
+        width: 50vw;
+    }
+    .testimony .footer, #about .footer {
+        padding-top: 10%;
+    }
+
+    #about .footer-cta .about-footer-cta-content.footer-cta-content p{
+        width: 40%;
+    }
+
+    #about .footer-cta .footer-cta-image img {
+        width: 50vw!important;
+    }
+
+    #about .footer-cta .footer-cta-image {
+        left: 25vw!important;
+    }
+
+    #about .footer-cta .footer-cta-content {
+        top: -46%!important;
+    }
+    
 }
 
 @media (min-width:480px) {

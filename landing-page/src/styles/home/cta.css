@@ -50,15 +50,6 @@
     align-items: baseline;
 }
 
-@media (min-width:1027px) {
-    .cta-text h1{
-        font-size: 50px;
-    }
-
-    .background{
-        padding-top: 5%;
-    }
-}
 
 @media (min-width:760px) {
     .map .map-1{
@@ -99,6 +90,16 @@
 
     .map{
         width: 50%;
+    }
+}
+
+@media (min-width:1027px) {
+    .background{
+        padding-top: 5%;
+    }
+
+    .cta-container{
+        padding-right: 0;
     }
 }
 

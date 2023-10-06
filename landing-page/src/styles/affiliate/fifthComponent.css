@@ -32,7 +32,7 @@
 }
 
 .affiliate-fifth-component .accordion-button::after {
-    background-image: url("../../../public/img/add-light.png")!important;
+    background-image: url("../../../public/img/add-plus-white.svg")!important;
     margin-right: 20px;
 }
 

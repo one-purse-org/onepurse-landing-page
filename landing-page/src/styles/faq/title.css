@@ -62,10 +62,6 @@
         padding: 65px 4rem 60px;
     }
 
-    .title-div-container .title-h1 h1{
-        font-size: 64px;
-    }
-
 }
 
 @media (max-width:290px) {

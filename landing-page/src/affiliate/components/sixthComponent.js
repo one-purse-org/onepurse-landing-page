@@ -3,10 +3,10 @@ import "../../styles/affiliate/sixthComponent.css"
 function SixthComponent(){
     return(
         <div className="affiliate-sixth-component-div">
-            <div className="container-md affliate-cta-container">
+            <div className="container-md affiliate-cta-container">
                 <div className="affiliate-cta-text">
                     <h2>
-                        Promote Onepurse & Get paid. Simple right?
+                        Promote OnePurse & Get paid. <br/> Simple right?
                     </h2>
                     <a href="/" ><button>
                         Get Started

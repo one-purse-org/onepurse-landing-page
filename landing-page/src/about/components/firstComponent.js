@@ -11,7 +11,7 @@ function First(){
                             <span>Seamless</span> Global Money Transfers
                         </h1>
                         <p>
-                            Onepurse was born from the desire to empower individuals to send money to Africa with 
+                            OnePurse was born from the desire to empower individuals to send money to Africa with 
                             unmatched affordability. We deeply understand the significance of supporting your loved 
                             ones back home, which is why we crafted OnePurse just for you. Our mission revolves around your needs.
                         </p>

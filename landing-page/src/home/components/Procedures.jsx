@@ -99,7 +99,7 @@ function Procedure(){
             <div className=" container">
                 <div className="big-div">
                     <h2>Start sending <span>money</span> today</h2>
-                    <p className="steps">Create your Onepurse account in 4 easy steps via our mobile app!</p>
+                    <p className="steps">Create your OnePurse account in 4 easy steps via our mobile app!</p>
                 </div>
 
                 <div className="phone-procedure">

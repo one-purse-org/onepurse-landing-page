@@ -15,7 +15,7 @@
     text-align: left;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 1.5rem 1rem;
     border-radius: 16px;
     margin-bottom: 14px;
@@ -32,16 +32,15 @@
 .affiliate-fourth-card-content p{
     font-size: 16px;
     color:rgba(128, 128, 128, 1);
-    line-height: 24px;
 }
 
 .affiliate-fourth-card-image{
-    width: 25%;
+    width: 15%;
     margin-right: 20px;
 }
 
 .affiliate-fourth-card-image img{
-    width: 80%;
+    width: 100%;
 }
 
 .affiliate-fourth-card-content{
@@ -86,7 +85,7 @@
         font-size: 20px;
     }
     .affiliate-fourth-card-image img{
-        width: 60%;
+        width: 90%;
     }
 }
 

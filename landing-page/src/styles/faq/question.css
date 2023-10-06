@@ -69,9 +69,13 @@
 .accordion-button::after{
     margin-left: 0;
     margin-right: 10px;
-    background-image: url("../../../public/img/plus-accordion.png")!important;
+    background-image: url("../../../public/img/add-plus-black.svg")!important;
     background-repeat: no-repeat;
     background-position-y: -1px;
+}
+
+.accordion-button:not(.collapsed)::after {
+    transform: rotate(45deg);
 }
 
 .active-scroll {

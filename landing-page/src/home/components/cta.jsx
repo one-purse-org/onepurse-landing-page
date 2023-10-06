@@ -7,7 +7,7 @@ function Cta(){
         <div className="cta">
             <Navbar/>
             <div>
-                <div className="cta-container container-xxl">
+                <div className="cta-container container-fluid">
                     <div className="map">
                         <img className="map-1" src="img/map-sm.png" alt="map"/>
                         <img className="map-2"src="img/map-lg.png"/>

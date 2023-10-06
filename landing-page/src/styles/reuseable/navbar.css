@@ -32,8 +32,9 @@
     font-family: 'Inter', sans-serif;
     width: auto;
     width: 40%;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 0 17px;
+    flex-direction: row;
 }
 
 .nav-btn .button1{
@@ -88,7 +89,7 @@
     font-weight: 400;
     text-decoration: none;
     color: #fff;
-    margin: 0 9px;
+    margin: 0 18px;
 }
 
 .div-container{
@@ -222,7 +223,7 @@
     }
 }
 
-@media (min-width:992px) {
+@media (min-width:1024px) {
     .hamburger-menu{
         display: none;
     }

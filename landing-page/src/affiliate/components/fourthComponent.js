@@ -4,26 +4,26 @@ let card = [
     {
         key:1,
         head: "Earn passive Income",
-        image:"img/passive-income.png",
-        body: "Get paid every time a user you onboard sends money using the Onepurse App, with no limit on your earnings and a lifetime cashout for your referrals."
+        image:"img/passive-income.svg",
+        body: "Get paid every time a user you onboard sends money using the OnePurse App, with no limit on your earnings and a lifetime cashout for your referrals."
     },
     {
         key:2,
         head: "Dedicated account manager",
-        image:"img/account-manager.png",
-        body: "Gain access to professional support, marketing materials, and a dedicated Onepurse Affiliate manager."
-    },
+        image:"img/account-manager.svg",
+        body: "Gain access to professional support, marketing materials, and a dedicated OnePurse Affiliate manager."
+    }, 
     {
         key:3,
         head: "Exclusive exchange rates",
-        image:"img/exchange-rate.png",
+        image:"img/exchange-rate.svg",
         body: "If you need to send money, get an even higher exchange rate for your transactions. "
     },
     {
         key:4,
-        head: "Onepurse Branded Items",
-        image:"img/merchandise.png",
-        body: "Onepurse Affiliates will get brandedOnepurse merchandise to show off and share with their family & friends"
+        head: "OnePurse Branded Items",
+        image:"img/merchandise.svg",
+        body: "OnePurse Affiliates will get brandedOnePurse merchandise to show off and share with their family & friends"
     }
 ]
 

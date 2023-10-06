@@ -24,7 +24,7 @@
     margin: 0 auto;
 }
 
-.affliate-cta-container{
+.affiliate-cta-container{
     display: flex;
     flex-direction: column-reverse;
     position: relative;
@@ -52,9 +52,12 @@
 }
 
 @media (min-width:760px) {
+    #affiliate p{
+        line-height: 24px!important;
+    }
 
     .affiliate-cta-img{
-        bottom: -80px;
+        bottom: -73px;
     }
 
     .affiliate-cta-text a{
@@ -69,7 +72,7 @@
         width: 50%;
     }
 
-    .affliate-cta-container{
+    .affiliate-cta-container{
         flex-direction: row;
     }
 
@@ -84,21 +87,38 @@
 
     .affiliate-cta-text h2{
         margin-left: 0;
-        width: 70%;
+        width: 80%;
     }
+    .affiliate-cta-text h2{
+        font-size: 30px;
+    }
+    
 }
 
 @media (min-width:992px) {
 
     .affiliate-cta-img{
-        bottom: -135px;
+        bottom: -115px;
     }
+    .affiliate-cta-text h2{
+        font-size: 36px;
+    }
+
+    #affiliate p{
+        line-height: 28px!important;
+    }
+    
 }
 
 @media (min-width:1200px) {
     .affiliate-cta-img{
-        bottom: -170px;
+        bottom: -145px;
     }
+
+    .affiliate-cta-text h2{
+        font-size: 42px;
+    }
+    
 }
 
 @media (min-width:1280px) {
@@ -107,13 +127,17 @@
     }
 
     .affiliate-cta-img{
-        bottom: -100px;
+        bottom: -130px;
+    }
+
+    #affiliate p{
+        line-height: 32px!important;
     }
 }
 
 @media (min-width:1400px) {
     .affiliate-cta-img{
-        bottom: -150px;
+        bottom: -170px;
     }
     .affiliate-cta-text button{
         height: 60px;

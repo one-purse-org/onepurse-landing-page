@@ -36,7 +36,7 @@ function ThirdComponent(){
     return(
         <div className="affiliate-third-component">
         <div className="container-md affiliate-third-component-container">
-            <h2>How does the <span>Onepurse  <br/> Affiliate Program</span> Work?</h2>
+            <h2>How does the <span>OnePurse  <br/> Affiliate Program</span> Work?</h2>
            <div className="affiliate-steps  position-relative" >
                 <img className="affiliate-thirdComponent-vertical " src="img/affiliate-container-vertical-lg.png"></img>
                 <img className="affiliate-thirdComponent-vertical position-absolute" src="img/affiliate-container-vertical.png"></img>

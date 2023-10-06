@@ -1,15 +1,5 @@
-import { BrowserRouter as Router, Link } from 'react-router-dom';
-import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import "../../styles/reuseable/footer.css"
-
-
-const toShow = {
-    display: "block"
-}
-
-const noShow = {
-    display: "none"
-}
 
 function scrollToTop(){
         window.scrollTo(0,0)      
@@ -24,7 +14,7 @@ function Footer(props){
             <div className= "footer-links">
                 <div className="footer-logo" >
                 <a href='/'>
-                    <img src="img/Logo.png" alt="logo"/>
+                    <img src="img/logo.svg" alt="logo"/>
                 </a>
                 </div>
                 <div className='nav-links'>
@@ -34,6 +24,7 @@ function Footer(props){
                     <Link onClick={scrollToTop} to="/contact">Contact Us</Link>
                     <Link onClick={scrollToTop} to="/terms-of-use">Terms of Use</Link>
                     <Link onClick={scrollToTop} to="/privacy-policy">Privacy Policy</Link>
+                   
                 </div>
                 <div className='social-links'>
                     <a href='https://whatsapp.com'><i class="fa-brands fa-whatsapp"></i></a>

@@ -10,11 +10,11 @@ function Third(){
                         <div className="ourmissioncontent">
                             <h2>Our Mission</h2>
                             <p>
-                                At Onepurse, our mission is to revolutionize how you send money abroad. 
+                                At OnePurse, our mission is to revolutionize how you send money abroad. 
                                 We've established strategic collaborations with global banks and esteemed payment 
                                 partners, all in the pursuit of enabling you to effortlessly transfer funds to Africa at 
                                 unparalleled affordability. Beyond the cost savings, we are dedicated to ensuring the 
-                                secure and timely delivery of your hard-earned funds. With Onepurse, your financial 
+                                secure and timely delivery of your hard-earned funds. With OnePurse, your financial 
                                 transactions are in safe hands.
                             </p>
                         </div>

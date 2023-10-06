@@ -1,8 +1,8 @@
-.affliate-first-component{
+.affiliate-first-component{
     padding: 50px 1rem 0; 
 }
 
-.affliate-first-component-tag h1{
+.affiliate-first-component-tag h1{
     font-size: 32px;
     font-weight: 700;
     margin-bottom: 30px;
@@ -10,7 +10,7 @@
     rgba(38, 41, 73, 1);
 }
 
-.affliate-first-component-tag p{
+.affiliate-first-component-tag p{
     font-size: 16px;
     font-weight: 400;
     color: 
@@ -18,7 +18,7 @@
     margin-bottom: 40px;
 }
 
-.affliate-first-component-tag button{
+.affiliate-first-component-tag button{
     padding: 10px 28px;
     color: #FFFF;
     background-color: rgba(107, 124, 243, 1);
@@ -27,64 +27,61 @@
     margin-bottom: 20px;
 }
 
-.affliate-first-component-tag span{
+.affiliate-first-component-tag span{
     color: rgba(107, 124, 243, 1);
 }
 
-.affliate-first-component-img{
+.affiliate-first-component-img{
     text-align: center;
 }
   
-.affliate-first-component-img img{
+.affiliate-first-component-img img{
     width: 100%;
 }
 
 @media (min-width:760px) {
-    .container-xxl.affliate-first-component-container {
+    .container-xxl.affiliate-first-component-container {
         display: flex;
         align-items: center;
     }
-    .affliate-first-component-tag {
+    .affiliate-first-component-tag {
         width: 50%;
     }
-    .affliate-first-component-img {
+    .affiliate-first-component-img {
         width: 50%;
     }
-    .affliate-first-component{
+    .affiliate-first-component{
         padding: 50px 2rem 0; 
     }
 }
 
 @media (min-width:1280px) {
-    .affliate-first-component-tag h1{
-        font-size: 64px;
-    }
-    .affliate-first-component{
+    .affiliate-first-component{
         padding: 50px 3rem 0; 
     }
     
-    .affliate-first-component-tag p{
+    .affiliate-first-component-tag p{
         font-size: 20px;
     }
 }
 
 @media (max-width:300px) {
-    .affliate-first-component{
+    .affiliate-first-component{
         padding: 30px 0.5rem 0; 
     }
     
-    .affliate-first-component-tag h1{
+    .affiliate-first-component-tag h1{
         font-size: 19px;
         font-weight: 700;
         margin-bottom: 20px;
     }
     
-    .affliate-first-component-tag p{
+    .affiliate-first-component-tag p{
         font-size: 9px;
         margin-bottom: 20px;
     }
 
-    .affliate-first-component-tag button{
+    .affiliate-first-component-tag button{
         padding: 7px 18px;
         border-radius: 8px;
         font-size: 9px;

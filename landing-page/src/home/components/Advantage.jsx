@@ -4,7 +4,7 @@ let text = [
     {
         key: 1,
         title: "Zero Fees",
-        body: "We provide competitive exchange rates and do not charge you any fee to send on the Onepurse app.",
+        body: "We provide competitive exchange rates and do not charge you any fee to send on the OnePurse app.",
         icon: <img src='img/advantage-fees.svg' className='icon-img' alt='zero fees'/>
     },
     {
@@ -16,7 +16,7 @@ let text = [
     {
         key:3,
         title: "Fast Payouts",
-        body: "Send money to your loved ones with Onepurse and they will receive it in minutes.",
+        body: "Send money to your loved ones with OnePurse and they will receive it in minutes.",
         icon: <img src='img/advantage-payouts.svg' className='icon-img' alt='rocket-icon'/>
     },
     {
@@ -47,7 +47,7 @@ function Card(props){
 function Advantage(){
     return(
         <div className="advantage">
-                <h1 className="heading container">Why Choose Onepurse</h1>
+                <h1 className="heading container">Why Choose OnePurse</h1>
                 <div className="container advantage-container">
                     <div className="position-relative">
                             <img src="img/advantage-vertical.svg" className="position-absolute advantage-vertical"></img>

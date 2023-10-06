@@ -6,7 +6,7 @@ import Fourth from "./fourthComponent";
 import FooterCta from "../../reusable/components/footer-cta";
 let ctaImgMd = "img/footer-cta-about-sm.png"
 let ctaImgLg = "img/footer-cta-lg.svg";
-let footerContent = <div className='footer-cta-content position-absolute'><h1>Send money to your loved ones today</h1>
+let footerContent = <div className='about-footer-cta-content footer-cta-content position-absolute'><h1 className="about-footer-cta-h1">Send money to your loved ones today</h1>
 <p>Experience the Onepurse App now and unlock swift, hassle-free money transfers to your friends and loved ones. It's simplicity redefined.</p>
 <div className="footer-cta-button">
     <a href="/"><img src="img/googleplay.svg"></img></a>

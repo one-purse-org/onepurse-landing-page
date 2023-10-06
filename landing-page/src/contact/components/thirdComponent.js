@@ -3,7 +3,7 @@ import Footer from "../../reusable/components/footer";
 function ThirdComponent(){
     return(
         <div className="contact-third-component">
-        <div className="container">
+        <div className="container-md">
             <div className="contact-contact">
                 <div className="mb-3">
                     <p className="contact-title">
