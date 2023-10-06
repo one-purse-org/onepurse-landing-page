@@ -70,7 +70,7 @@ let questions = [
     {
         key:12,
         head: "Can I transfer money to any country?",
-        body: "OnePurse currently facilitates transfers from the USA to Kenya. However, we are growing rapidly and will be adding more countries soon. Please keep an eye out for communications in this regard on our website and social media channels.",
+        body: "OnePurse currently facilitates transfers from the USA to Africa. However, we are growing rapidly and will be adding more countries soon. Please keep an eye out for communications in this regard on our website and social media channels.",
         target: "accordion12"
     },
     {
