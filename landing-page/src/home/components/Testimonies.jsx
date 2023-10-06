@@ -74,7 +74,7 @@ function Testimony(){
             <div className="container">
                 <h2>Here's what our <span>customers</span> <br/> say about OnePurse</h2>
                 <div className="carousel-mobile">
-                    <Carousel preventMovementUntilSwipeScrollTolerance={true} infiniteLoop={true} autoPlay={true} swipeScrollTolerance={100} interval={3000}>
+                    <Carousel preventMovementUntilSwipeScrollTolerance={true} infiniteLoop={true} autoPlay={true} swipeScrollTolerance={50} interval={2500}>
                         <Card icon={text[0].icon} name={text[0].name} body={text[0].body} tag={text[0].tag}/>
                         <Card icon={text[1].icon} name={text[1].name} body={text[1].body} tag={text[1].tag}/>
                         <Card icon={text[2].icon} name={text[2].name} body={text[2].body} tag={text[2].tag}/>

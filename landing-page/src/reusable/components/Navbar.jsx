@@ -23,13 +23,6 @@ function Navbar(props){
                 <Link onClick={close} className="logo" to="/">
                     <img src={props.color==="white"?"img/logo-white-bg.svg":"img/logo.svg"} alt="logo"/>
                 </Link>
-                
-                {/* <div className="links">
-                    <Link onClick={close} to="/affiliate">Become an Affiliate</Link>
-                    <Link onClick={close} to="/about">About</Link>
-                    <Link onClick={close} to="/faq">FAQ</Link>
-                    <Link onClick={close} to="/contact">Contact Us</Link>
-                </div> */}
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0 links">
                         <li className="nav-item">
                             <Link className='nav-link' to="/about">About</Link>
@@ -43,7 +36,7 @@ function Navbar(props){
                         <li className="nav-item">
                             <Link className='nav-link' to="/contact">Contact Us</Link>
                         </li>
-                    </ul>
+                </ul>
                 <div className='hamburger-menu' onClick={hamburger}>
                     <img src={props.color==="white"?'img/hamburger-black.svg':'img/hamburger.svg'} className='hamburger-menu-img'></img>
                 </div>

@@ -1,5 +1,6 @@
 .footer-links{
     text-align: left;
+    padding-bottom: 40px;
 }
 
 .footer-links .nav-links a{ 
@@ -39,6 +40,12 @@
     padding: 65px 1rem 30px;
 }
 
+@media (min-width:760px) {
+    .testimony .footer{
+        padding: 150px 1rem 30px;
+    }
+}
+
 
 
 @media (min-width:1024px) {
@@ -47,17 +54,19 @@
         vertical-align: center;
         display: flex;
         align-items: baseline;
+        padding-bottom: 0px;
     }
 
     .footer-links .nav-links{
         display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
         width: 60%;
         margin: 0 auto;
     }
 
     .footer-links .nav-links a{
-        width: 20%;
-        margin-right: 20px;
+        margin: 0 18px 20px;
     }
 
     .footer-links .social-links{

@@ -17,15 +17,26 @@ function Footer(props){
                     <img src="img/logo.svg" alt="logo"/>
                 </a>
                 </div>
-                <div className='nav-links'>
-                    <Link onClick={scrollToTop} to="/about">About</Link>
-                    <Link onClick={scrollToTop} to="/affiliate">Become an Affiliate</Link>
-                    <Link onClick={scrollToTop} to="/faq">FAQ</Link>
-                    <Link onClick={scrollToTop} to="/contact">Contact Us</Link>
-                    <Link onClick={scrollToTop} to="/terms-of-use">Terms of Use</Link>
-                    <Link onClick={scrollToTop} to="/privacy-policy">Privacy Policy</Link>
-                   
-                </div>
+                <ul className="nav-links navbar-nav me-auto mb-2 mb-lg-0">
+                    <li className="nav-item">
+                        <Link onClick={scrollToTop} to="/about">About</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link onClick={scrollToTop} to="/affiliate">Become an Affiliate</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link onClick={scrollToTop} to="/faq">FAQ</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link onClick={scrollToTop} to="/contact">Contact Us</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link onClick={scrollToTop} to="/terms-of-use">Terms of Use</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link onClick={scrollToTop} to="/privacy-policy">Privacy Policy</Link> 
+                    </li>
+                </ul>
                 <div className='social-links'>
                     <a href='https://whatsapp.com'><i class="fa-brands fa-whatsapp"></i></a>
                     <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
