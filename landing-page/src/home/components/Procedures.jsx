@@ -28,18 +28,18 @@ let text = [
     }
 ]
 
-function Card(props){
-    return(<div className="phone">
-        <h2>{props.number}</h2>
-        <p>{props.text}</p>
-        <img src={props.image} alt=""/>
-    </div>)
-}
+// function Card(props){
+//     return(<div className="phone">
+//         <h2>{props.number}</h2>
+//         <p>{props.text}</p>
+//         <img src={props.image} alt=""/>
+//     </div>)
+// }
 
 function Numbers(props){
     return(
         <div className="numberings">
-            <div className= {`${props.class} number`}>
+            <div onClick={()=>{props.handleClick(props.clickedNumber)}} className= {`${props.class} number`}>
                 <p> {props.number}</p>
             </div>
             <div className="text">
@@ -56,7 +56,6 @@ function Procedure(){
     const targetDiv2 = document.querySelector('.procedure-number-2');
     const targetDiv3 = document.querySelector('.procedure-number-3');
     const targetDiv4 = document.querySelector('.procedure-number-4'); 
-    console.log(overscrollContainer)
   useEffect(() => {
     // Function to update image height
     function updateImageHeight() {
@@ -78,14 +77,27 @@ function Procedure(){
 
     function handleScroll(){
         let scrolled = overscrollContainer.scrollTop
-
+        console.log(overscrollContainer.scrollTop, targetDiv2.clientHeight)
         scrolled >= imageHeight ? targetDiv2.classList.add("procedure-active-number") : targetDiv2.classList.remove("procedure-active-number")
         scrolled >= imageHeight * 2 ? targetDiv3.classList.add("procedure-active-number") : targetDiv3.classList.remove("procedure-active-number")
         scrolled + 30 >= imageHeight * 3 ? targetDiv4.classList.add("procedure-active-number") : targetDiv4.classList.remove("procedure-active-number")
     }
 
+    function handleClick(numberOfClicked){
+        const overscrollContainer = document.querySelector('.phone-images');
+        const imgHeight = document.querySelector('.procedure-img1').clientHeight + 5;
+        if(numberOfClicked==="one"){
+            overscrollContainer.scrollTop = 0
+        }else if(numberOfClicked==="two"){
+            overscrollContainer.scrollTop = imgHeight
+        }else if(numberOfClicked==="three"){
+            overscrollContainer.scrollTop = imgHeight * 2
+        }else if(numberOfClicked==="four"){
+            overscrollContainer.scrollTop = imageHeight * 3
+        }
+    }
+
     function updateImageHeight() {
-        console.log("change")
       const procedureImage = document.querySelector(".procedure-img1");
       if (procedureImage) {
         const heightOfImage = procedureImage.clientHeight ;
@@ -116,10 +128,10 @@ function Procedure(){
                         </div>
                         <div className="phone-numbers position-relative">
                             <img src="img/numbers-vertical.svg" className="position-absolute numbers-vertical" />
-                            <Numbers class="procedure-active-number procedure-number-1" number="1." text="Sign up with your details"/>
-                            <Numbers class="procedure-number-2" number="2." text="Enter your Affiliate code"/>
-                            <Numbers class="procedure-number-3" number="3." text="Enter Beneficiary Information"/>
-                            <Numbers class="procedure-number-4" number="4." text="Send Money" />
+                            <Numbers class="procedure-active-number procedure-number-1" handleClick={handleClick} clickedNumber="one" number="1." text="Sign up with your details"/>
+                            <Numbers class="procedure-number-2" handleClick={handleClick} clickedNumber="two" number="2." text="Enter your Affiliate code"/>
+                            <Numbers class="procedure-number-3" handleClick={handleClick} clickedNumber="three" number="3." text="Enter Beneficiary Information"/>
+                            <Numbers class="procedure-number-4" handleClick={handleClick} clickedNumber="four" number="4." text="Send Money" />
                         </div>
                 </div>
             </div>
