@@ -78,6 +78,10 @@
     position: relative;
 }
 
+.phone-numbers .numberings .number:hover{
+    cursor: pointer;
+}
+
 .phone-numbers .numberings .number{
     border-radius: 12px;
     width: 41px;
