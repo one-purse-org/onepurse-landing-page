@@ -1,10 +1,15 @@
 import React from "react";
 import "../../styles/home/cta.css"
 import Navbar  from "../../reusable/components/Navbar";
+import { useState } from "react";
 
 function Cta(){
+    let [height, setHeight] = useState()
+    function setBackgroundHeight(){
+         setHeight(document.querySelector(".cta").clientHeight)
+    }
     return(
-        <div className="cta">
+        <div className="cta" onLoad={setBackgroundHeight} style={{backgroundSize:`100vw ${height}px`}}>
             <Navbar/>
             <div>
                 <div className="cta-container container-fluid">

@@ -40,7 +40,7 @@ function Questions(){
 
         scrolled < questionContainerOneHeight && performChange()
         scrolled >= questionContainerOneHeight && performChange("one");
-        scrolled >= questionContainerOneHeight + questionContainerTwoHeight && performChange("two")
+        scrolled >= questionContainerOneHeight + questionContainerTwoHeight - 10 && performChange("two")
     }
 
     function performChange(theScrolledOne){
@@ -80,9 +80,7 @@ function Questions(){
             let questionContainerHeight = questionContainerOne.clientHeight + questionContainerTwo.clientHeight
             questionsContainer.scrollTop = questionContainerHeight
             performChange("two")
-        }
-
-        
+        }   
     }
 
     return(
@@ -95,13 +93,13 @@ function Questions(){
                 </div>
                 <div className="question-container" onScroll={handleScroll}>
                     <div className="first-question">
-                        {questions.slice(0, 6).map(question=> <Accordion key={question.key} head={question.head} body={question.body} target={question.target} /> )}
+                        {questions.accountSetup.map(question=> <Accordion key={question.key} head={question.head} body={question.body} target={question.target} /> )}
                     </div>
                     <div className="second-question">
-                        {questions.slice(6, 16).map(question=> <Accordion key={question.key} head={question.head} body={question.body} target={question.target} /> )}
+                        {questions.sendingMoney.map(question=> <Accordion key={question.key} head={question.head} body={question.body} target={question.target} /> )}
                     </div>
                     <div className="third-question">
-                        {questions.slice(16, 21).map(question=> <Accordion key={question.key} head={question.head} body={question.body} target={question.target} /> )}
+                        {questions.security.map(question=> <Accordion key={question.key} head={question.head} body={question.body} target={question.target} /> )}
                     </div>
                 </div>
             </div>

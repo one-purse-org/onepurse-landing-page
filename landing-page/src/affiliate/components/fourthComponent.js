@@ -23,7 +23,7 @@ let card = [
         key:4,
         head: "OnePurse Branded Items",
         image:"img/merchandise.svg",
-        body: "OnePurse Affiliates will get brandedOnePurse merchandise to show off and share with their family & friends"
+        body: "OnePurse Affiliates will get branded OnePurse merchandise to show off and share with their family & friends"
     }
 ]
 
