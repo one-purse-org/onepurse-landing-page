@@ -13,7 +13,8 @@ function FirstComponent(){
                 </div>
 
                 <div className='affiliate-first-component-img'>
-                    <img src="img/lady_with_phone.png" alt="image-of-lady" />
+                    <img className="lady-with-phone" src="img/lady_with_phone.png" alt="image-of-lady" />
+                    <img className="lady-with-phone-sm" src="img/lady_with_phone_sm.png" /> 
                 </div>
             </div>
         </div>

@@ -1,5 +1,9 @@
 .affiliate-first-component{
     padding: 50px 1rem 0; 
+    background-image: url("../../../public/img/affiliate-cta-bg-sm.png");
+    background-color:rgba(26, 29, 74, 1);
+    background-repeat: no-repeat;
+    background-size: 100vw 90vw;
 }
 
 .affiliate-first-component-tag h1{
@@ -39,6 +43,10 @@
     width: 100%;
 }
 
+.affiliate-first-component-img .lady-with-phone{
+    display: none;
+}
+
 @media (min-width:760px) {
     .container-xxl.affiliate-first-component-container {
         display: flex;
@@ -50,6 +58,15 @@
     .affiliate-first-component-img {
         width: 50%;
     }
+
+    .affiliate-first-component-img .lady-with-phone{
+        display: inline-block;
+    }
+
+    .affiliate-first-component-img .lady-with-phone-sm{
+        display: none;
+    }
+
     .affiliate-first-component{
         padding: 50px 2rem 0; 
     }
