@@ -6,6 +6,7 @@ import Affiliate from './affiliate/components/affiliate';
 import Contact from './contact/components/contact';
 import PrivacyPolicy from './privacyPolicy/privacyPolicy';
 import TermsOfUse from './termsOfUse/termsOfUse';
+import Tier from './faq/components/faqTier';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path='/privacy-policy' element={<PrivacyPolicy/>}/>
         <Route path='/terms-of-use' element={<TermsOfUse/>}/>
+        <Route path='/tiers' element={<Tier/>} />
       </Routes>
     </Router>
     );

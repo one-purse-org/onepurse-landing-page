@@ -1,7 +1,7 @@
 .affiliate-first-component{
     padding: 50px 1rem 0; 
     background-image: url("../../../public/img/affiliate-cta-bg-sm.png");
-    background-color:rgba(26, 29, 74, 1);
+    background-color:rgba(255, 255, 255, 1);
     background-repeat: no-repeat;
     background-size: 100vw 90vw;
 }
