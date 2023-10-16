@@ -6,16 +6,14 @@ let questions = {
         {
             key:1,
             head: "How do I get a OnePurse account?",
-            body: <span>You can download OnePurse from the <a href="" style={linkStyle}> Google play store </a> or the <a href="/" style={linkStyle}> iOS App Store.</a></span>,
+            body: <span>You can download OnePurse from the <a href="/" style={linkStyle}> Google play store </a> or the <a href="/" style={linkStyle}> iOS App Store.</a></span>,
             target: "accordion1",
-            
         },
         {
             key:2,
             head:  "What does it require to be verified on OnePurse?",
-            body: "Your full name, date of birth, phone number, gender, email address, and resident address.",
+            body: <span>Your full name, date of birth, phone number, gender, email address, and resident address. <a href="/tiers">Link</a></span>,
             target: "accordion2",
-    
         },
         {
             key:3,
