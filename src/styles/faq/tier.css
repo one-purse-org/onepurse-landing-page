@@ -27,6 +27,7 @@
     color: #FFFF;
     display: block;
     padding: 20px 10px;
+    margin-bottom: 0;
 }
 
 .tiers-div table td{
