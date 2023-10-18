@@ -42,7 +42,7 @@ function Navbar(props){
                 </div>
                 <div className="nav-btn">
                     <button type="button" className={props.color==="white"?"button1 button1-white" : "button1"}>Affiliate Dashboard</button>
-                    <button type="button" className="button2">&nbsp;&nbsp;&nbsp;Download App&nbsp;&nbsp;&nbsp;</button>
+                    {/* <button type="button" className="button2">&nbsp;&nbsp;&nbsp;Affiliate Dashboard&nbsp;&nbsp;&nbsp;</button> */}
                 </div>
                 <div className='cover-screen no-cover'>
                     <div className="container-fluid cover-screen-div">
@@ -65,8 +65,8 @@ function Navbar(props){
                     <hr className='cover-screen-horizontal-rule'/>
                     <div className="container-fluid cover-screen-div">
                             <div className="nav-btn-sm">
-                                    <button type="button" className={props.color==="white"?"button1 button1-white" : "button1"}>Affiliate Dashboard</button>
-                                    <button type="button" className="button2">&nbsp;&nbsp;&nbsp;Download App&nbsp;&nbsp;&nbsp;</button>
+                                    {/* <button type="button" className={props.color==="white"?"button1 button1-white" : "button1"}>Affiliate Dashboard</button> */}
+                                    <button type="button" className="button2">&nbsp;&nbsp;&nbsp;Affiliate Dashboard&nbsp;&nbsp;&nbsp;</button>
                             </div>
                     </div>
                         

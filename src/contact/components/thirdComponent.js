@@ -10,7 +10,7 @@ function ThirdComponent(){
                         Phone number
                     </p>
                     <p className="contact-details">
-                        +17205463284 
+                        +19706166825 
                     </p>
                 </div>
                 <div className="mb-3">

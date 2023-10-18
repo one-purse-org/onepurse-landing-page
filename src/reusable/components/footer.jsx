@@ -39,9 +39,9 @@ function Footer(props){
                 </ul>
                 <div className='social-links'>
                     <a href='https://whatsapp.com'><i class="fa-brands fa-whatsapp"></i></a>
-                    <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
-                    <a href='https://instagram.com'><i class="fa-brands fa-instagram"></i></a>
-                    <a href='https://twitter.com'><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://facebook.com/OnepurseGlobal"><i class="fa-brands fa-facebook"></i></a>
+                    <a href='https://instagram.com/OnepurseGlobal'><i class="fa-brands fa-instagram"></i></a>
+                    <a href='https://twitter.com/OnepurseGlobal'><i class="fa-brands fa-twitter"></i></a>
                 </div>
             </div>
             </div>

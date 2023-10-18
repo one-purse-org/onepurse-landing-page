@@ -1,0 +1,47 @@
+.tier{ 
+    color: rgba(15, 15, 15, 1);
+}
+
+.tier ._navbar{
+    padding-bottom: 30px;
+}
+
+.tier .tier-h2{
+    font-weight:600;
+    font-size:36px;
+    color:rgba(15, 15, 15, 1);
+}
+
+.tiers-div h5{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.tiers-div h6{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.tiers-div thead{
+    background-color: rgba(107, 124, 243, 1);
+    color: #FFFF;
+    display: block;
+    padding: 20px 30px;
+}
+
+.tiers-div table td{
+    padding: 20px 30px;
+}
+
+table, th, td {
+    border: 0.4px solid rgba(128, 128, 128, 1);
+    border-collapse: collapse;
+}
+
+td{
+    vertical-align: baseline;
+}
+
+.tiers-div table{
+    width: 100%;
+}
