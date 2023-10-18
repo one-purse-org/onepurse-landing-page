@@ -12,7 +12,7 @@ let questions = {
         {
             key:2,
             head:  "What does it require to be verified on OnePurse?",
-            body: <span>Your full name, date of birth, phone number, gender, email address, and resident address. <a href="/tiers">Link</a></span>,
+            body: "Your full name, date of birth, phone number, gender, email address, and resident address.",
             target: "accordion2",
         },
         {
@@ -87,7 +87,7 @@ let questions = {
         {
             key:8,
             head: "How much money can I send at once?",
-            body: "This is totally dependent on your KYC level, the higher the level the more money you can send. Click here to view the KYC levels and requirements.",
+            body: <span>This is totally dependent on your KYC level, the higher the level the more money you can send. Click <a href="/tiers">here</a> to view the KYC levels and requirements.</span>,
             target: "accordion14"
         },
         {

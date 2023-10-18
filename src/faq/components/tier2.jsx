@@ -2,10 +2,9 @@ export default function Tier2(){
     return(
         <div className="tiers-div mt-5">
             <h5>Tier 2</h5>
-            <table className="mt-3">
-                <thead>
-                    <h6>A. KYC Information</h6>
-                </thead>
+            <div className="table mt-3">
+            <h6 className="thead">A. KYC Information</h6>
+            <table>      
                 <tbody>
                     <tr>
                         <td><p>Basic Information</p></td>
@@ -46,11 +45,12 @@ export default function Tier2(){
                     </tr>
                 </tbody>
             </table>
+
+            </div>
+            <div className="table">
+            <h6 className="thead">B. Transaction Limits</h6>
             <table className="mt-3">
-                <thead>
-                    <tr><td colSpan={"2"}><h6>B. Transaction Limits</h6></td></tr>
-                    
-                </thead>
+                
                 <tbody>
                     <tr>
                     <td >Per Transaction Limit </td>
@@ -74,6 +74,8 @@ export default function Tier2(){
                     </tr>
                 </tbody>
             </table>
+            </div>
+            
         </div>
     )
 }

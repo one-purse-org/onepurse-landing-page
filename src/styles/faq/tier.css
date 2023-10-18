@@ -8,29 +8,29 @@
 
 .tier .tier-h2{
     font-weight:600;
-    font-size:36px;
+    font-size:24px;
     color:rgba(15, 15, 15, 1);
 }
 
 .tiers-div h5{
-    font-size: 24px;
-    font-weight: 600;
-}
-
-.tiers-div h6{
     font-size: 20px;
     font-weight: 600;
 }
 
-.tiers-div thead{
+.tiers-div h6{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.tiers-div .thead{
     background-color: rgba(107, 124, 243, 1);
     color: #FFFF;
     display: block;
-    padding: 20px 30px;
+    padding: 20px 10px;
 }
 
 .tiers-div table td{
-    padding: 20px 30px;
+    padding: 20px 10px;
 }
 
 table, th, td {
@@ -44,4 +44,24 @@ td{
 
 .tiers-div table{
     width: 100%;
+}
+
+@media (min-width:760px) {
+    .tier .tier-h2{
+        font-weight:600;
+        font-size:36px;
+    }
+    .tiers-div h5{
+        font-size: 24px;
+    }
+    .tiers-div h6{
+        font-size: 20px;
+    }
+    .tiers-div .thead{
+        padding: 20px 30px;
+    }
+    
+    .tiers-div table td{
+        padding: 20px 30px;
+    }
 }
