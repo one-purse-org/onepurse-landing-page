@@ -25,6 +25,12 @@ let questions = [
         head: "How do I earn up to 70% in commissions from my referrals transactions?",
         body: "You can earn up to 70% commissions on every transaction sent by the customers you onboard on OnePurse Application",
         target: "accordionFour"
+    },
+    {
+        key:5,
+        head:"Why do I need an Associate Code to create an Affiliate account?",
+        body:<span>Before creating your Affiliate account, you need orientation from a OnePurse Associate. To schedule your orientation, <a className="demo">click here</a>.  Let's succeed together!</span>,
+        target: "accordionFive"
     }
 ]
 

@@ -15,6 +15,8 @@ function First(){
                             unmatched affordability. We deeply understand the significance of supporting your loved 
                             ones back home, which is why we crafted OnePurse just for you. Our mission revolves around your needs.
                         </p>
+                        <a href="/" className="apple cta-download"><img src="img/apple-sm.png"></img></a>
+                        <a href="/" className="cta-download"><span><img src="img/googleplay-sm.png"></img></span></a>
                     </div>
                     <div className="first-div-img">
                         <img className="guywithphone" src="img/guywithphone.png" alt="count-money"></img>

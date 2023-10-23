@@ -23,7 +23,7 @@
 }
 
 .background{
-    height: 400px; 
+    height: 500px; 
 }
 
 .cta-text h1{
@@ -43,6 +43,15 @@
     margin-top: 10px;
 }
 
+a.cta-download{
+    display: inline-block;
+    margin: 5px 0;
+}
+
+.apple.cta-download{
+    margin-right: 10px;
+}
+
 .cta .div-container{
     padding-bottom: 40px;
     padding-top: 20px;
@@ -53,8 +62,8 @@
 @media (min-width:760px) {
     .cta{
         background-image: url("../../../public/img/cta-bg.png");
-        background-size: 100vw 65vw !important;
-        height: 65vw;
+        background-size: 100vw 540px !important;
+        height: 64vw;
     }
     .map .map-1{
         display: none;
@@ -82,6 +91,15 @@
         position: static!important;
     }
     
+    a.cta-download{
+        width: 40%;
+        margin: 10px 0;
+    }
+
+    a.cta-download img{
+        width: 100%;
+    }
+
     .background{
         width: 50%;
         height: auto;
@@ -100,7 +118,8 @@
 @media (min-width:960px) {
     .cta{ 
         background-size: 100vw 51vw !important;
-        height: 51vw;}
+        height: 51vw;
+    }
 }
 
 @media (min-width:1027px) {
@@ -111,11 +130,31 @@
     .cta-container{
         padding-right: 0;
     }
+
+    .cta{ 
+        background-size: 100vw 60vw !important;
+        height: 60vw;
+    }
+}
+
+@media (min-width:1600px)  {
+    .cta{ 
+        background-size: 100vw 48vw !important;
+        height: 50vw;
+    }
 }
 
 @media (max-width:300px) {
     .cta-text h1 {
         font-size: 23px;
+    }
+
+    a.cta-download{
+        width: 100px;
+    }
+
+    a.cta-download img{
+        width: 100%;
     }
     
     
@@ -130,7 +169,7 @@
     }
 
     .background{
-        height: 250px;
+        height: 320px;
     }
 }
 
@@ -138,6 +177,10 @@
     .cta-text h1 {
         font-size: 16px;
         margin-bottom: 8px;
+    }
+
+    .cta-text a{
+        width: 60px;
     }
 
     .cta-text p{
@@ -151,7 +194,7 @@
         border: 3px;
     }
     .background{
-        height: 150px;
+        height: 200px;
     }
 }
 
