@@ -1,4 +1,3 @@
-import Navbar from "../../reusable/components/Navbar";
 import Footer from "../../reusable/components/footer"
 import Title from "./title";
 import Questions from "./questions";

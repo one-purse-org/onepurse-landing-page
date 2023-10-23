@@ -6,7 +6,7 @@ import Footer from "../reusable/components/footer";
 function TermsOfUse(){
     return(
         <div className="terms  bg-white">
-            <Navbar/>
+            <Navbar downloadBtn={true}/>
             <div className="py-5 px-3 container">
                 <h2 className="text-center">TERMS OF USE</h2>
                 <div className="mt-5">

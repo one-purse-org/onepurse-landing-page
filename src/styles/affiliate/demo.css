@@ -4,6 +4,7 @@
     color: rgba(15, 15, 15, 1);
     background-color: rgb(105 105 105 / 20%);
     position: fixed;
+    z-index: 2;
     top: 0;
     left: 0;
     height: 100%;

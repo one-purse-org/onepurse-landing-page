@@ -7,7 +7,7 @@ import Tier3 from "./tier3";
 function Tier(){
     return (
     <div className="tier">
-        <Navbar/>
+        <Navbar downloadBtn={true}/>
         <div className="container-fluid px-md-5 py-md-5 px-sm-2 py-sm-3">
             <h2 className="tier-h2 mt-3">
                 KYC tiers limits and document requirement

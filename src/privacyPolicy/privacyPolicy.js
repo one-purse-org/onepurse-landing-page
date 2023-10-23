@@ -6,7 +6,7 @@ import Footer from "../reusable/components/footer";
 function PrivacyPolicy(){
     return(
         <div className="privacy">
-            <Navbar/>
+            <Navbar downloadBtn={true}/>
             <div className="privacy-policy py-5 px-5 container-fluid bg-white">
                 <h2 className="mb-5 text-center">Privacy Policy</h2>
                 <div className="privacy-policy-container row">

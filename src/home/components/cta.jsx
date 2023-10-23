@@ -10,7 +10,7 @@ function Cta(){
     }
     return(
         <div className="cta" onLoad={setBackgroundHeight} style={{backgroundSize:`110vw ${height}px`}}>
-            <Navbar/>
+            <Navbar downloadBtn={false}/>
             <div>
                 <div className="cta-container container-fluid">
                     <div className="map">

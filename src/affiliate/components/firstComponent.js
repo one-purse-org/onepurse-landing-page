@@ -5,7 +5,7 @@ import Demo, {demo} from "./demo"
 function FirstComponent(){
     return(
         <div style={{color:"#FFFF"}}>
-            <Navbar color="white"/>
+            <Navbar color="white" downloadBtn={false}/>
             <div className="affiliate-first-component">
                 <Demo />
                 <div className="container-xxl affiliate-first-component-container">

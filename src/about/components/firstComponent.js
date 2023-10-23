@@ -3,7 +3,7 @@ import Navbar from "../../reusable/components/Navbar"
 function First(){
     return (
         <div className="first-div">
-            <Navbar/>
+            <Navbar downloadBtn={true}/>
             <div className="container-md ms-sm-0 ms-md-auto pt-sm-5 pt-lg-0"> 
                 <div className="first-div-container">
                     <div className="first-div-text">

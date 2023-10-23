@@ -1,5 +1,5 @@
-import "../../styles/affiliate/fifthComponent.css"
-
+import "../../styles/affiliate/fifthComponent.css";
+import Demo, {demo} from "./demo"
 
 let questions = [
     {
@@ -29,7 +29,7 @@ let questions = [
     {
         key:5,
         head:"Why do I need an Associate Code to create an Affiliate account?",
-        body:<span>Before creating your Affiliate account, you need orientation from a OnePurse Associate. To schedule your orientation, <a className="demo">click here</a>.  Let's succeed together!</span>,
+        body:<span>Before creating your Affiliate account, you need orientation from a OnePurse Associate. To schedule your orientation, <a className="demo-link" onClick={demo}>click here</a>.  Let's succeed together!</span>,
         target: "accordionFive"
     }
 ]

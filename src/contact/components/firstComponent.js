@@ -4,7 +4,7 @@ import Navbar from "../../reusable/components/Navbar";
 function FirstComponent(){
     return(
         <div style={{backgroundColor:"#1A1D4A"}}>
-            <Navbar/>
+            <Navbar downloadBtn={true}/>
             <div className="firstComponent-div">
                 <div className="firstComponent-div-container container">
                     <div className="firstComponent-div-container-img">

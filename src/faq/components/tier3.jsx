@@ -4,8 +4,7 @@ export default function Tier3(){
             <h5>Tier 3</h5>
             <div className="table">
             <h6 className="thead">A. KYC Information</h6>
-            <table className="mt-3">
-                    
+            <table>  
                 <tbody>
                     <tr>
                         <td><p>Basic Information</p></td>

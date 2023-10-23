@@ -4,7 +4,7 @@ import Navbar from "../../reusable/components/Navbar";
 function Title(){
     return(
         <div className="title-div">
-            <Navbar/>
+            <Navbar downloadBtn={true}/>
             <div className="title-div-container">
                 <div className="container">
                     <div className="title-img">

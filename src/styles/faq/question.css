@@ -7,24 +7,6 @@
 .questions .question-container{
     width: 100%;
 }
-/* .questions .question-container{
-    width: 100%;
-    height: 300px;
-    overflow-y: scroll;
-    scrollbar-width: thin;
-    -ms-overflow-style: none;
-    scrollbar-color: transparent transparent; 
-}
-
-
-.questions .question-container::-webkit-scrollbar {
-    display: none;
-  }
-  
-.questions .question-container {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-} */
 
 .questions .link{
     width: 100%;
