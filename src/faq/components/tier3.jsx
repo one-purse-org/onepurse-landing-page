@@ -52,9 +52,7 @@ export default function Tier3(){
             </div>
             <div className="table">
             <h6 className="thead">B. Transaction Limits</h6>
-            <table className="mt-3">
-            
-                
+            <table>
                 <tbody>
                     <tr>
                     <td >Per Transaction Limit </td>
