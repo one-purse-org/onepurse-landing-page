@@ -11,6 +11,9 @@
     font-size:24px;
     color:rgba(15, 15, 15, 1);
 }
+.tiers-div{
+    padding-top: 1rem;
+}
 
 .tiers-div h5{
     font-size: 20px;
@@ -28,6 +31,7 @@
     display: block;
     padding: 20px 10px;
     margin-bottom: 0;
+    margin-top: 40px;
 }
 
 .tiers-div table td{
