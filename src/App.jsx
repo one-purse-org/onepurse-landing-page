@@ -9,7 +9,6 @@ import TermsOfUse from './termsOfUse/termsOfUse';
 import Tier from './faq/components/faqTier';
 
 function App() {
-
     return( <Router>
       <Routes>
         <Route path="/" element={<Home />} />
