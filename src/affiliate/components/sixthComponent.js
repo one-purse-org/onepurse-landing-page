@@ -1,6 +1,10 @@
 import "../../styles/affiliate/sixthComponent.css"
+import AmplitudeAnalytics from "../../utils/analytics"
 
 function SixthComponent(){
+    function affiliateButton(){
+        AmplitudeAnalytics.trackEvent("LandingPage: BecomeAffiliate", null )
+    }
     return(
         <div className="affiliate-sixth-component-div">
             <div className="container-md affiliate-cta-container">
@@ -8,7 +12,7 @@ function SixthComponent(){
                     <h2>
                         Promote OnePurse & Get paid. <br/> Simple right?
                     </h2>
-                    <a href="/" ><button>
+                    <a href="/" onClick={affiliateButton}><button>
                         Get Started
                     </button></a>
                 </div>

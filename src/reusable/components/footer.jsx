@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import "../../styles/reuseable/footer.css"
 
 function scrollToTop(){
-        window.scrollTo(0,0)      
+    window.scrollTo(0,0)      
 }
 
 function Footer(props){
