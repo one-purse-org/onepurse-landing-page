@@ -13,7 +13,7 @@ function SecondComponent(){
                             Unlock the potential of the OnePurse Affiliate program – a pathway to teaming up 
                             with us and generating passive income through our app. OnePurse Affiliates are 
                             the dynamic driving force behind the OnePurse App, propelling its adoption across 
-                            diverse African communities in the US. By collaborating with us, you help 
+                            diverse African communities in North America. By collaborating with us, you help 
                             establish robust customer relationships, building an unshakable foundation of 
                             trust and confidence. Your influence matters, shaping the future of seamless 
                             money transfers to Africa.

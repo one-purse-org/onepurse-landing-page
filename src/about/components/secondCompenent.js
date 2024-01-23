@@ -8,7 +8,7 @@ function Second(){
                     <div className="text">
                         <h2>Who We Are</h2>
                         <p>
-                            At OnePurse, we're not just a company – we're a cutting-edge US financial 
+                            At OnePurse, we're not just a company – we're a cutting-edge financial 
                             technology powerhouse that simplifies the intricate process of international 
                             money transfers. Our mission revolves around making global money transfers 
                             effortless, accessible, and seamless for you.
