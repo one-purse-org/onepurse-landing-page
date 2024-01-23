@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700@400&display=swap');
 
-.demo{
+.waitlist{
     color: rgba(15, 15, 15, 1);
     background-color: rgb(105 105 105 / 20%);
     position: fixed;
@@ -16,52 +16,52 @@
     display: none;
 }
 
-.active-demo{
+.active-waitlist{
     display: flex;
 }
 
-.demo-container{
+.waitlist-container{
     width: 500px;
     border-radius: 16px;
     background-color: rgba(255, 255, 255,  1);
     padding: 1rem 2rem;
 }
 
-.demo h3{
+.waitlist h3{
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 60px;
 }
 
-.demo-form div{
+.waitlist-form div{
     display: inline-flex;
     flex-direction: column;
     width: 100%;
     margin: 10px 0;
 }
 
-.demo-form label{
+.waitlist-form label{
     font-size: 14px;
     margin-bottom: 7px;
 }
 
-.demo-form .firstName{
+.waitlist-form .firstName{
     width: 49%;
     margin-right: 2%;
 }
 
-.demo-form .lastName{
+.waitlist-form .lastName{
     width: 49%;
 }
 
-.demo-form input, .demo-form  select{
+.waitlist-form input, .waitlist-form  select{
     padding: 10px, 16px, 10px, 16px;
     border-radius: 8px;
     border: 0.5px solid rgba(211, 211, 211, 1);
     height: 40px;
 }
 
-.demo-form button{
+.waitlist-form button{
     width:169px;
     height:48px;
     border-radius: 8px;
@@ -70,27 +70,27 @@
     border: 0;
 }
 
-.demo-form-header{
+.waitlist-form-header{
     display: flex;
     justify-content: space-between;
 }
 
-.demo-form-header img{
+.waitlist-form-header img{
     width: 25px;
     height: 25px;
 }
 
-.demo-form-button{
+.waitlist-form-button{
     display: flex;
     align-items: flex-end;
 }
 
 @media (max-width:500px) {
-    .demo h3{
+    .waitlist h3{
         font-size: 20px;
         margin-bottom: 40px;
     }
-    .demo-form button{
+    .waitlist-form button{
         width:140px;
         height:40px;
         border-radius: 8px;
@@ -101,13 +101,13 @@
 }
 
 @media (max-width:400px) {
-    .demo-form button{
+    .waitlist-form button{
         width:120px;
     }
 }
 
 @media (max-width:300px) {
-    .demo-form button{
+    .waitlist-form button{
         width:110px;
     }
 }

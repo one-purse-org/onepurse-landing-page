@@ -2,12 +2,17 @@ import "../../styles/affiliate/firstComponent.css";
 import Navbar from "../../reusable/components/Navbar.jsx"
 import Demo, {demo} from "./demo"
 
+import { useContext } from "react";
+import { WaitlistRef } from "../../App.jsx";
+
 function FirstComponent(){
+    let {addWaitlist, Waitlist} = useContext(WaitlistRef)
     return(
         <div style={{color:"#FFFF"}}>
             <Navbar color="white" downloadBtn={false}/>
             <div className="affiliate-first-component">
                 <Demo />
+                <Waitlist />
                 <div className="container-xxl affiliate-first-component-container">
                     <div className="affiliate-first-component-tag">
                         <h1>
@@ -15,8 +20,8 @@ function FirstComponent(){
                         </h1>
                         <p>Monetize your network and earn commissions when you share OnePurse with your community. Earn commissions and special rewards on every transaction made by the people you onboard on OnePurse for life.</p>
                         <div className="nav-btn">
-                                    <button type="button" className="button2">&nbsp;&nbsp;&nbsp;Join Waitlist&nbsp;&nbsp;&nbsp;</button>
-                                </div>
+                            <button onClick={addWaitlist} type="button" className="button2">&nbsp;&nbsp;&nbsp;Join Waitlist&nbsp;&nbsp;&nbsp;</button>
+                        </div>
                     </div>
 
                     <div className='affiliate-first-component-img'>

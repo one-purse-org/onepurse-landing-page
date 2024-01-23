@@ -1,21 +1,23 @@
 import React from "react";
 import "../../styles/home/cta.css"
 import Navbar  from "../../reusable/components/Navbar";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import AmplitudeAnalytics from "../../utils/analytics"
+import { WaitlistRef } from "../../App";
 
 function Cta(){
+    let {addWaitlist, Waitlist} = useContext(WaitlistRef)
     let [height, setHeight] = useState()
     function setBackgroundHeight(){
          setHeight(document.querySelector(".cta").clientHeight + 20)
     }
     function downloadButton(platform){
-        console.log(platform)
         AmplitudeAnalytics.trackEvent("LandingPage: DownloadApp", `Platform: ${platform}` )
     }
     return(
         <div className="cta" onLoad={setBackgroundHeight} style={{backgroundSize:`110vw ${height}px`}}>
             <Navbar downloadBtn={false}/>
+            <Waitlist/>
             <div>
                 <div className="cta-container container-fluid">
                     <div className="map">
@@ -28,7 +30,7 @@ function Cta(){
                                 <h1>Send money home in just a few clicks without <span style={{color:"#6B7CF3"}}>hassle.</span></h1>
                                 <p className="p">You might be miles away from home but getting money across to your loved ones shouldn't be a hassle.</p>
                                 <div className="nav-btn">
-                                    <button type="button" className="button2">&nbsp;&nbsp;&nbsp;Join Waitlist&nbsp;&nbsp;&nbsp;</button>
+                                    <button onClick={addWaitlist} type="button" className="button2">&nbsp;&nbsp;&nbsp;Join Waitlist&nbsp;&nbsp;&nbsp;</button>
                                 </div>
                             </div>
                         </div>

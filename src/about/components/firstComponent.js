@@ -1,10 +1,14 @@
 import "../../styles/about/first.css"
 import Navbar from "../../reusable/components/Navbar"
 import AmplitudeAnalytics from "../../utils/analytics"
+import { useContext } from "react";
+import { WaitlistRef } from "../../App";
+
 function First(){
     function downloadButton(platform){
         AmplitudeAnalytics.trackEvent("LandingPage: DownloadApp", `Platform: ${platform}` )
     }
+    let {addWaitlist, Waitlist} = useContext(WaitlistRef)
     return (
         <div className="first-div">
             <Navbar downloadBtn={true}/>
@@ -19,8 +23,9 @@ function First(){
                             unmatched affordability. We deeply understand the significance of supporting your loved 
                             ones back home, which is why we crafted OnePurse just for you. Our mission revolves around your needs.
                         </p>
+                        <Waitlist/>
                         <div className="nav-btn">
-                                    <button type="button" className="button1">&nbsp;&nbsp;&nbsp;Join Waitlist&nbsp;&nbsp;&nbsp;</button>
+                            <button onClick={addWaitlist} type="button" className="button1">&nbsp;&nbsp;&nbsp;Join Waitlist&nbsp;&nbsp;&nbsp;</button>
                         </div>
                     </div>
                     <div className="first-div-img">

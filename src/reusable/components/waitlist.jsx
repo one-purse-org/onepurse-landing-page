@@ -1,37 +1,39 @@
-import "../../styles/affiliate/demo.css";
+import "../../styles/reuseable/waitlist.css";
 
-function Demo(){
+function Waitlist(){
+    function removeWaitlist(){
+        document.querySelector(".waitlist").classList.remove("active-waitlist")
+    }
     return(
-        <div className="demo">
-            <div className="demo-container">
-                <div className="demo-form-header">
-                    <h3>Request a demo </h3>
-                    <img onClick={removeDemo} src="img/close.png"></img>
+        
+        <div className="waitlist">
+            <div className="waitlist-container">
+                <div className="waitlist-form-header">
+                    <h3>Join Waitlist</h3>
+                    <img onClick={removeWaitlist} src="img/close.png"></img>
                 </div>
                 
-                <form className="demo-form" method="POST" action="/">
+                <form className="waitlist-form" method="POST" action="https://formspree.io/f/mgegokek">
                     <div className="firstName">
                         <label for="">First Name</label>
-                        <input id="first_name" ></input>
+                        <input id="first_name" name="firstName"></input>
                     </div>
 
                     <div className="lastName">
                         <label>Last Name</label>
-                        <input id="last_name"></input>
+                        <input id="last_name" name="lastName"></input>
                     </div>
 
                     <div>
                         <label>Email</label>
-                        <input id="email"></input>
+                        <input id="email" name="email"></input>
                     </div>
 
                     <div>
-                        <label>Country</label>
-                        <select id="country">
-                            <option>Nigeria</option>
-                        </select>
+                        <label>Phone Number</label>
+                        <input name="phoneNumber"></input>
                     </div>
-                    <div className="demo-form-button"><button type="button">Submit</button></div>
+                    <div className="waitlist-form-button"><button type="submit">Submit</button></div>
                     
                 </form>
             </div>
@@ -39,13 +41,11 @@ function Demo(){
     ) 
 }
 
-function demo(){
-    document.querySelector(".demo").classList.add("active-demo")
+function addWaitlist(){
+    document.querySelector(".waitlist").classList.add("active-waitlist")
 }
 
-function removeDemo(){
-    document.querySelector(".demo").classList.remove("active-demo")
-}
 
-export default Demo;
-export {demo};
+
+export default Waitlist;
+export {addWaitlist};

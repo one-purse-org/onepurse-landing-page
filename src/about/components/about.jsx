@@ -5,6 +5,8 @@ import Third from "./thirdComponent";
 import Fourth from "./fourthComponent";
 import FooterCta from "../../reusable/components/footer-cta";
 import AmplitudeAnalytics from "../../utils/analytics"
+import Waitlist, { addWaitlist } from "../../reusable/components/waitlist";
+import { useContext } from "react";
 let ctaImgMd = "img/footer-cta-about-sm.png"
 let ctaImgLg = "img/footer-cta-lg.svg";
 
@@ -17,9 +19,10 @@ function FooterContent(){
             <h1 className="about-footer-cta-h1">Send money to your loved ones today</h1>
             <p>Experience the OnePurse App now and unlock swift, hassle-free money transfers to your friends and loved ones. It's simplicity redefined.</p>
             <div className="footer-cta-button">
-            <div className="nav-btn">
-                                    <button type="button" className="button1">&nbsp;&nbsp;&nbsp;Join Waitlist&nbsp;&nbsp;&nbsp;</button>
-                                </div>
+                <Waitlist/>
+                <div className="nav-btn">
+                    <button onClick={addWaitlist} type="button" className="button1">&nbsp;&nbsp;&nbsp;Join Waitlist&nbsp;&nbsp;&nbsp;</button>
+                </div>
             </div>
         </div>
     )

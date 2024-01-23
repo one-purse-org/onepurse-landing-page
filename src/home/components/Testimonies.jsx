@@ -4,6 +4,8 @@ import { Carousel } from 'react-responsive-carousel';
 import Footer from "../../reusable/components/footer";
 import FooterCta from "../../reusable/components/footer-cta";
 import AmplitudeAnalytics from "../../utils/analytics"
+import { useContext } from "react";
+import { WaitlistRef } from "../../App";
 
 let ctaImgMd = "img/footer-cta.svg"
 let ctaImgLg = "img/footer-cta-lg.svg";
@@ -40,6 +42,7 @@ let text = [
 ]
 
 function Card(props){
+    
     return(
     <div className="person position-relative">
         <div className="testimony-text">
@@ -68,12 +71,15 @@ function Testimony(){
         function downloadButton(platform){
             AmplitudeAnalytics.trackEvent("LandingPage: DownloadApp", `Platform: ${platform}` )
         }
+        let {addWaitlist, Waitlist} = useContext(WaitlistRef)
         return (
             <div className='home-footer-cta-content footer-cta-content position-absolute'>
+                
                 <h1 className="home-footer-cta-h1">Let <span>OnePurse</span> handle your foreign exchange, seamlessly</h1>
                 <div className="footer-cta-button">
                     <div className="nav-btn">
-                        <button type="button" className="button1">&nbsp;&nbsp;&nbsp;Join Waitlist&nbsp;&nbsp;&nbsp;</button>
+                        <Waitlist/>
+                        <button onClick={addWaitlist} type="button" className="button1">&nbsp;&nbsp;&nbsp;Join Waitlist&nbsp;&nbsp;&nbsp;</button>
                     </div>
                 </div>
             </div>

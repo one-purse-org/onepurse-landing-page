@@ -1,5 +1,6 @@
 import "../../styles/affiliate/sixthComponent.css"
 import AmplitudeAnalytics from "../../utils/analytics"
+import Waitlist, {addWaitlist} from "../../reusable/components/waitlist";
 
 function SixthComponent(){
     function affiliateButton(){
@@ -12,9 +13,10 @@ function SixthComponent(){
                     <h2>
                         Promote OnePurse & Get paid. <br/> Simple right?
                     </h2>
+                    <Waitlist/>
                     <div className="nav-btn">
-                                    <button type="button" className="button1">&nbsp;&nbsp;&nbsp;Join Waitlist&nbsp;&nbsp;&nbsp;</button>
-                                </div>
+                        <button onClick={addWaitlist} type="button" className="button1">&nbsp;&nbsp;&nbsp;Join Waitlist&nbsp;&nbsp;&nbsp;</button>
+                    </div>
                 </div>
                 <div className="position-relative affiliate-cta-img-container">
                 <div className="affiliate-cta-img">

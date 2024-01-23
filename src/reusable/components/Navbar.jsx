@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom';
 import "../../styles/reuseable/navbar.css"
 import AmplitudeAnalytics from "../../utils/analytics"
 import $ from "jquery"
+import { useContext } from 'react';
+import { WaitlistRef } from "../../App";
 
 function hamburger(){
         $(".cover-screen").addClass("to-cover")
@@ -19,6 +21,8 @@ function Navbar(props){
     function affiliateButton(){
         AmplitudeAnalytics.trackEvent("LandingPage: BecomeAffiliate", null )
     }
+    let {addWaitlist, Waitlist} = useContext(WaitlistRef)
+
     return(
         <div className={props.color==="white"?"navbar-white _navbar container-fluid":"_navbar container-fluid"}>
         <div className=' div-container'>
@@ -46,7 +50,8 @@ function Navbar(props){
                     <img src={props.color==="white"?'img/hamburger-black.svg':'img/hamburger.svg'} className='hamburger-menu-img'></img>
                 </div>
                 <div className="nav-btn">
-                        <button type="button" className="button1" onClick={affiliateButton}>&nbsp;&nbsp;&nbsp;Join Waitlist&nbsp;&nbsp;&nbsp;</button>
+                    <Waitlist/>
+                    <button type="button" className="button1" onClick={()=>{affiliateButton(); addWaitlist()}}>&nbsp;&nbsp;&nbsp;Join Waitlist&nbsp;&nbsp;&nbsp;</button>
                 </div>
                 <div className='cover-screen no-cover'>
                     <div className="container-fluid cover-screen-div">
@@ -67,11 +72,11 @@ function Navbar(props){
                             </div>
                     </div>  
                     <hr className='cover-screen-horizontal-rule'/>
-                    <div className="container-fluid cover-screen-div">
-                                    
-                                    <div className="nav-btn-sm">
-                                            <button type="button" className="button2" onClick={affiliateButton}>&nbsp;&nbsp;&nbsp;Join Waitlist&nbsp;&nbsp;&nbsp;</button>
-                                    </div>
+                    <div className="container-fluid cover-screen-div"> 
+                        <Waitlist/>  
+                        <div className="nav-btn-sm">
+                                <button type="button" className="button2" onClick={()=>{affiliateButton(); addWaitlist()}}>&nbsp;&nbsp;&nbsp;Join Waitlist&nbsp;&nbsp;&nbsp;</button>
+                        </div>
                     </div>
                 </div>
             </div>    
