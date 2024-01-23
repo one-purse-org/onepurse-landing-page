@@ -2,11 +2,14 @@ import "./termsOfUse.css";
 import React from "react";
 import Navbar from "../reusable/components/Navbar";
 import Footer from "../reusable/components/footer";
+import Waitlist from "../reusable/components/waitlist";
 
 function TermsOfUse(){
+    
     return(
         <div className="terms  bg-white">
             <Navbar downloadBtn={true}/>
+            <Waitlist/>
             <div className="py-5 px-3 container">
                 <h2 className="text-center">TERMS OF USE</h2>
                 <div className="mt-5">

@@ -19,7 +19,6 @@ function FooterContent(){
             <h1 className="about-footer-cta-h1">Send money to your loved ones today</h1>
             <p>Experience the OnePurse App now and unlock swift, hassle-free money transfers to your friends and loved ones. It's simplicity redefined.</p>
             <div className="footer-cta-button">
-                <Waitlist/>
                 <div className="nav-btn">
                     <button onClick={addWaitlist} type="button" className="button1">&nbsp;&nbsp;&nbsp;Join Waitlist&nbsp;&nbsp;&nbsp;</button>
                 </div>
@@ -31,6 +30,7 @@ function FooterContent(){
 function About(){
     return (
         <div id="about">
+            <Waitlist/>
             <First/>
             <Second/>
             <Third/>

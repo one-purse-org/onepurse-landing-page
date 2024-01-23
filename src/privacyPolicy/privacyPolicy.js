@@ -2,11 +2,13 @@ import "./privacyPolicy.css";
 import React from "react";
 import Navbar from "../reusable/components/Navbar";
 import Footer from "../reusable/components/footer";
+import Waitlist from "../reusable/components/waitlist";
 
 function PrivacyPolicy(){
     return(
         <div className="privacy">
             <Navbar downloadBtn={true}/>
+            <Waitlist/>
             <div className="privacy-policy py-5 px-5 container-fluid bg-white">
                 <h2 className="mb-5 text-center">Privacy Policy</h2>
                 <div className="privacy-policy-container row">
