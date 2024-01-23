@@ -72,8 +72,9 @@ function Testimony(){
             <div className='home-footer-cta-content footer-cta-content position-absolute'>
                 <h1 className="home-footer-cta-h1">Let <span>OnePurse</span> handle your foreign exchange, seamlessly</h1>
                 <div className="footer-cta-button">
-                    <a href="/" onClick={()=>{downloadButton("android")}}><img src="img/googleplay.svg"></img></a>
-                    <a href="/" onClick={()=>{downloadButton("iOS")}}><img src="img/appstorebuttton.svg"></img></a>
+                    <div className="nav-btn">
+                        <button type="button" className="button1">&nbsp;&nbsp;&nbsp;Join Waitlist&nbsp;&nbsp;&nbsp;</button>
+                    </div>
                 </div>
             </div>
         )

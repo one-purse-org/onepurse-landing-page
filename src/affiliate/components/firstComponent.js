@@ -14,7 +14,9 @@ function FirstComponent(){
                             Earn up to <span>$1000 in passive income</span> as a OnePurse Affiliate.
                         </h1>
                         <p>Monetize your network and earn commissions when you share OnePurse with your community. Earn commissions and special rewards on every transaction made by the people you onboard on OnePurse for life.</p>
-                        <button onClick={demo}>Get a demo</button>
+                        <div className="nav-btn">
+                                    <button type="button" className="button2">&nbsp;&nbsp;&nbsp;Join Waitlist&nbsp;&nbsp;&nbsp;</button>
+                                </div>
                     </div>
 
                     <div className='affiliate-first-component-img'>

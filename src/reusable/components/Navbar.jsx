@@ -45,18 +45,9 @@ function Navbar(props){
                 <div className='hamburger-menu' onClick={hamburger}>
                     <img src={props.color==="white"?'img/hamburger-black.svg':'img/hamburger.svg'} className='hamburger-menu-img'></img>
                 </div>
-                {
-                    props.downloadBtn
-                    ?
-                    <div className="nav-btn">
-                        <button type="button" className={props.color==="white"?"button1 button1-white" : "button1"} onClick={affiliateButton}>Affiliate Dashboard</button>
-                        <button type="button" className="button2">&nbsp;&nbsp;&nbsp;Download App&nbsp;&nbsp;&nbsp;</button>
-                    </div>
-                    :
-                    <div className="nav-btn">
-                        <button type="button" className="button2" onClick={affiliateButton}>&nbsp;&nbsp;&nbsp;Affiliate Dashboard&nbsp;&nbsp;&nbsp;</button>
-                    </div>
-                }
+                <div className="nav-btn">
+                        <button type="button" className="button1" onClick={affiliateButton}>&nbsp;&nbsp;&nbsp;Join Waitlist&nbsp;&nbsp;&nbsp;</button>
+                </div>
                 <div className='cover-screen no-cover'>
                     <div className="container-fluid cover-screen-div">
                             <div className='cover-screen-top'>
@@ -77,18 +68,10 @@ function Navbar(props){
                     </div>  
                     <hr className='cover-screen-horizontal-rule'/>
                     <div className="container-fluid cover-screen-div">
-                                    {
-                                        props.downloadBtn
-                                        ?
-                                        <div className="nav-btn-sm">
-                                            <button type="button" className={props.color==="white"?"button1 button1-white" : "button1"} onClick={affiliateButton}>Affiliate Dashboard</button>
-                                            <button type="button" className="button2">&nbsp;&nbsp;&nbsp;Download App&nbsp;&nbsp;&nbsp;</button>
-                                        </div>
-                                        :
-                                        <div className="nav-btn-sm">
-                                            <button type="button" className="button2" onClick={affiliateButton}>&nbsp;&nbsp;&nbsp;Affiliate Dashboard&nbsp;&nbsp;&nbsp;</button>
-                                        </div>
-                                    }
+                                    
+                                    <div className="nav-btn-sm">
+                                            <button type="button" className="button2" onClick={affiliateButton}>&nbsp;&nbsp;&nbsp;Join Waitlist&nbsp;&nbsp;&nbsp;</button>
+                                    </div>
                     </div>
                 </div>
             </div>    

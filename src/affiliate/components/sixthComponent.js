@@ -12,9 +12,9 @@ function SixthComponent(){
                     <h2>
                         Promote OnePurse & Get paid. <br/> Simple right?
                     </h2>
-                    <a href="/" onClick={affiliateButton}><button>
-                        Get Started
-                    </button></a>
+                    <div className="nav-btn">
+                                    <button type="button" className="button1">&nbsp;&nbsp;&nbsp;Join Waitlist&nbsp;&nbsp;&nbsp;</button>
+                                </div>
                 </div>
                 <div className="position-relative affiliate-cta-img-container">
                 <div className="affiliate-cta-img">

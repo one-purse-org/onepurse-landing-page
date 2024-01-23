@@ -19,8 +19,9 @@ function First(){
                             unmatched affordability. We deeply understand the significance of supporting your loved 
                             ones back home, which is why we crafted OnePurse just for you. Our mission revolves around your needs.
                         </p>
-                        <a href="/" className="apple cta-download" onClick={()=>{downloadButton("iOS")}}><img src="img/apple-sm.png"></img></a>
-                        <a href="/" className="cta-download" onClick={()=>{downloadButton("android")}}><span><img src="img/googleplay-sm.png"></img></span></a>
+                        <div className="nav-btn">
+                                    <button type="button" className="button1">&nbsp;&nbsp;&nbsp;Join Waitlist&nbsp;&nbsp;&nbsp;</button>
+                        </div>
                     </div>
                     <div className="first-div-img">
                         <img className="guywithphone" src="img/guywithphone.png" alt="count-money"></img>
