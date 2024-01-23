@@ -27,6 +27,9 @@ function Navbar(props){
                 </Link>
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0 links">
                         <li className="nav-item">
+                            <Link className='nav-link' to="/">Home</Link>
+                        </li>
+                        <li className="nav-item">
                             <Link className='nav-link' to="/about">About</Link>
                         </li>
                         <li className="nav-item">
@@ -65,6 +68,7 @@ function Navbar(props){
                                 </div>
                             </div>
                             <div className="links-sm">
+                                <Link onClick={close} to="/">Home</Link>
                                 <Link onClick={close} to="/about">About</Link>
                                 <Link onClick={close} to="/affiliate">Become an Affiliate</Link>
                                 <Link onClick={close} to="/faq">FAQ</Link>
