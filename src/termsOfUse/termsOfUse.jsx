@@ -145,11 +145,100 @@ function TermsOfUse(){
                     </ul>
                 </div>
                 <div  className="mt-5">
-                    <h4></h4>
+                    <h4>CANCELLATION AND TRANSACTION REFUND</h4>
                     <ul className="terms-ul">
-
+                        <li>Your Transaction details cannot be changed once you’ve submitted your Transaction. Please read the Transaction details carefully before submitting your Transaction to avoid misdirection of the Transaction or unsuccessful payment.
+</li>
+                        <li>You acknowledge that OnePurse might not be able to cancel an already executed Transaction. If you wish to cancel your Transaction, please contact us send an email to support@onepurse.co ; We will attempt to cancel the Transaction, however, the success of the cancellation and the amount of any refund might depend on any of the following: (i) the Transaction status; (ii) availability of any relevant Service Provider; (iii) the Transaction being on hold for compliance review; or (iv) the reason for the cancellation. In case we are able to refund you your money, we reserve the right to keep the Fees charged for executing your Transaction as well as any additional fees associated with the cancellation.</li>
+                        <li>In the event of a successful refund, your funds will be credited back to the Payment Method you used in initiating the Transaction. We reserve the right to refuse to refund to a Payment Method different to the one used for the Transaction.
+</li>
+                        <li>You acknowledge that refunds may take up five (5) to seven (7) Business Days depending on your bank.
+</li>
                     </ul>
                 </div>
+                <div  className="mt-5">
+                    <h4>INTELLECTUAL PROPERTY OWNERSHIP
+</h4>
+                    <ul className="terms-ul">
+                        <li>You agree that we retain ownership of all content included on the App including but not limited to text, graphics, video, software, data, page layout, images, and any other information capable of being stored in a computer, other than content uploaded by users.
+</li>                   
+                        <li>You are granted a limited license only, subject to the restrictions provided in this Terms & Conditions, nothing on the App shall be construed as granting license or right to use any trademark or logo displayed on the App without obtaining prior written consent from us.</li>
+                        <li>You hereby agree not to reproduce or distribute the intellectual property made available by us in connection with the use of the App, or to use the intellectual property for any unlawful purpose.
+</li>
+                    </ul>
+                </div>
+                <div  className="mt-5">
+                    <h4>Communication</h4>
+                    <ul className="terms-ul">
+                        <li>You agree that email will be the main method of communication between you and us.</li>
+                        <li>You must have access to a valid email address that belongs to you in order to receive any relevant information concerning your use of the App and our Services.</li>
+                        <li>You have a right to request for a copy of these Terms and Conditions to be sent to you via email.
+</li>
+                        <li>These Terms and Conditions are in the English language. Any communication in relation to the Services and any other communication will be in the English language.
+</li>
+                        <li>Any notice or other communication shall be deemed to have been duly received the next Business Day following the notice being communicated.
+</li>
+                    </ul>
+                </div>
+                <div  className="mt-5">
+                    <h4>COMPLAINTS</h4>
+                    <ul className="terms-ul">
+                        <li>If you wish to make a complaint about any aspect of our Services, please send your complaint in writing to the address as shown on the App.
+</li>
+                        <li>We will acknowledge receipt of your complaint promptly. We will investigate your complaint and come back to you with the results of our investigation as soon as reasonably practicable after the receipt of our acknowledgement of your complaint.
+</li>
+                    </ul>
+                </div>
+                <div  className="mt-5">
+                    <h4>GENERAL</h4>
+                    <ul className="terms-ul">
+                        <li>Governing law: These Terms and Conditions, and our communications with you prior to you entering into this Agreement, will be governed by the United States law.</li>
+                        <li>No Waiver: Our failure to exercise or enforce any right or provision of the Terms and Conditions will not constitute a waiver of such right or provision.</li>
+                        <li>Transfer of rights: You cannot transfer any of your rights under these Terms and Conditions to any other person. We can assign all or any of our rights under these Terms and Conditions to another person. We may also transfer all or any of our obligations, but only to someone we reasonably consider capable of performing them. </li>
+                        <li>Entire Agreement: These Terms and Conditions constitutes the entire agreement between the parties and supersedes all prior understandings or agreements relating to the subject matter of this Agreement.</li>
+                        <li>Severability: If any provision of the these Terms and Conditions is found by an arbitrator or court of competent jurisdiction to be invalid, the parties nevertheless agree that the arbitrator or court should endeavor to give appropriately valid effect to the intention of the Agreement as reflected in the provision, and the other provisions of the Agreement will remain in full force and effect. 
+</li>
+                    </ul>
+                </div>
+                <div  className="mt-5">
+                    <h4>DISCLAIMER AND LIMITATION OF LIABILITY</h4>
+                    <ul className="terms-ul">
+                        <li>We do not exclude or limit in any way our liability to you where it would be unlawful to do so. This includes liability for death or personal injury caused by our negligence, fraud or fraudulent misrepresentation or for breach of your legal rights in relation to the Services including the right to receive services which are as described and supplied with reasonable skill and care.
+</li>
+                        <li>You understand and agree that under no circumstances shall we be liable for any loss or damage, whether in contract, tort (including negligence) or otherwise, even if foreseeable, arising under or in connection with the use of, or inability to use the App or Services or the use of or reliance on any content displayed on the App.
+</li>
+                        <li>We do not guarantee that the App, or any content on it, will always be available or be uninterrupted or that the App will be secure or free from bugs or viruses. You are responsible for configuring your information technology, computer programs and platform to access the App. You should use your own virus protection software.</li>
+                        <li>Access to the App is permitted on a temporary basis. We may suspend, withdraw, discontinue or change all or part of the App without notice. We will not be liable to you if for any reason the App is unavailable at any time or for any period.
+</li>
+                        <li>The App may contain omissions, inaccuracies and typographical errors and, although we use all reasonable efforts to keep content up to date, we are under no obligation to update it. We do not make any representations, warranties or guarantees, whether express implied as to the accuracy or completeness of any content on the App.
+</li>
+                    </ul>
+                </div>
+                <div  className="mt-5">
+                    <h4>TERMINATION AND ACCOUNT DEACTIVATION
+</h4>
+                    <ul className="terms-ul">
+                        <li>You can deactivate your account and discontinue use of our service by sending an email to our contact address support@onepurse.co, using the email address first registered and/or associated with your Account, indicating your full name, address, phone number, date of birth and reason for deactivation, and such deactivation will deny you future access to the account. 
+</li>
+                        <li> Upon deactivation of your Account, we will continue to store your personal data in accordance with the relevant Data Protection Legislations.</li>
+                        <li>Notwithstanding the above provisions in this section, we reserve the right to suspend or deactivate your Account and/or otherwise discontinue providing you with the Services at any time and without notice if:
+                            <ul className="ps-5">
+                                <li>We have reasonable grounds to believe you are in breach of any of the provisions contained in these Terms and Conditions or in any documents referred to herein;
+</li>
+                                <li>We have reasonable grounds to believe you have used our Services for Prohibited Purposes;
+</li>
+                                <li>We have reasonable grounds to believe you are in breach of any applicable law or regulation; 
+</li>
+                                <li>We are requested to do so by any relevant law or government agencies, and/or a court of competent jurisdiction;
+</li>
+                                <li>You intimidate, harass or threaten our employees or the employees of a Service Provider; or
+</li>
+                                <li>We have reasonable grounds to suspect the security of your Account has been breached or unauthorized or fraudulent use of your Account.</li>
+                            </ul>        
+                        </li>
+                    </ul>
+                </div>
+
             </div>
             <Footer/>
         </div>
