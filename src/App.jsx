@@ -7,8 +7,14 @@ import Contact from './contact/components/contact';
 import PrivacyPolicy from './privacyPolicy/privacyPolicy';
 import TermsOfUse from './termsOfUse/termsOfUse';
 import Tier from './faq/components/faqTier';
+import AmplitudeAnalytics from "./utils/analytics"
+import { useEffect } from 'react';
 
 function App() {
+    useEffect(()=>{
+      AmplitudeAnalytics.initialise()
+    }, [])
+
     return( <Router>
       <Routes>
         <Route path="/" element={<Home />} />

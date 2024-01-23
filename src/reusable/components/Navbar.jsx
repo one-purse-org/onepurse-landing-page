@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import "../../styles/reuseable/navbar.css"
+import AmplitudeAnalytics from "../../utils/analytics"
 import $ from "jquery"
 
 function hamburger(){
@@ -14,9 +15,10 @@ function close(){
         $("body").removeClass("noScroll")
 }
 
-
-
 function Navbar(props){
+    function affiliateButton(){
+        AmplitudeAnalytics.trackEvent("LandingPage: BecomeAffiliate", null )
+    }
     return(
         <div className={props.color==="white"?"navbar-white _navbar container-fluid":"_navbar container-fluid"}>
         <div className=' div-container'>
@@ -44,17 +46,16 @@ function Navbar(props){
                     props.downloadBtn
                     ?
                     <div className="nav-btn">
-                        <button type="button" className={props.color==="white"?"button1 button1-white" : "button1"}>Affiliate Dashboard</button>
+                        <button type="button" className={props.color==="white"?"button1 button1-white" : "button1"} onClick={affiliateButton}>Affiliate Dashboard</button>
                         <button type="button" className="button2">&nbsp;&nbsp;&nbsp;Download App&nbsp;&nbsp;&nbsp;</button>
                     </div>
                     :
                     <div className="nav-btn">
-                        <button type="button" className="button2">&nbsp;&nbsp;&nbsp;Affiliate Dashboard&nbsp;&nbsp;&nbsp;</button>
+                        <button type="button" className="button2" onClick={affiliateButton}>&nbsp;&nbsp;&nbsp;Affiliate Dashboard&nbsp;&nbsp;&nbsp;</button>
                     </div>
                 }
                 <div className='cover-screen no-cover'>
                     <div className="container-fluid cover-screen-div">
-                     
                             <div className='cover-screen-top'>
                                 <Link onClick={close} className="logo" to="/">
                                     <img src="img/logo-white-bg.svg" alt="logo"/>
@@ -76,17 +77,15 @@ function Navbar(props){
                                         props.downloadBtn
                                         ?
                                         <div className="nav-btn-sm">
-                                            <button type="button" className={props.color==="white"?"button1 button1-white" : "button1"}>Affiliate Dashboard</button>
+                                            <button type="button" className={props.color==="white"?"button1 button1-white" : "button1"} onClick={affiliateButton}>Affiliate Dashboard</button>
                                             <button type="button" className="button2">&nbsp;&nbsp;&nbsp;Download App&nbsp;&nbsp;&nbsp;</button>
                                         </div>
                                         :
                                         <div className="nav-btn-sm">
-                                            <button type="button" className="button2">&nbsp;&nbsp;&nbsp;Affiliate Dashboard&nbsp;&nbsp;&nbsp;</button>
+                                            <button type="button" className="button2" onClick={affiliateButton}>&nbsp;&nbsp;&nbsp;Affiliate Dashboard&nbsp;&nbsp;&nbsp;</button>
                                         </div>
                                     }
                     </div>
-                        
-                    
                 </div>
             </div>    
         </div>

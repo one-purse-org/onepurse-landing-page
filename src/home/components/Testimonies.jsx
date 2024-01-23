@@ -3,14 +3,10 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from 'react-responsive-carousel';
 import Footer from "../../reusable/components/footer";
 import FooterCta from "../../reusable/components/footer-cta";
+import AmplitudeAnalytics from "../../utils/analytics"
 
 let ctaImgMd = "img/footer-cta.svg"
 let ctaImgLg = "img/footer-cta-lg.svg";
-let footerContent = <div className='home-footer-cta-content footer-cta-content position-absolute'><h1 className="home-footer-cta-h1">Let <span>OnePurse</span> handle your foreign exchange, seamlessly</h1>
-<div className="footer-cta-button">
-    <a href="/"><img src="img/googleplay.svg"></img></a>
-    <a href="/"><img src="img/appstorebuttton.svg"></img></a>
-</div></div>
 
 let text = [
     {
@@ -68,6 +64,20 @@ function Card(props){
 
 
 function Testimony(){
+    function FooterContent(){
+        function downloadButton(platform){
+            AmplitudeAnalytics.trackEvent("LandingPage: DownloadApp", `Platform: ${platform}` )
+        }
+        return (
+            <div className='home-footer-cta-content footer-cta-content position-absolute'>
+                <h1 className="home-footer-cta-h1">Let <span>OnePurse</span> handle your foreign exchange, seamlessly</h1>
+                <div className="footer-cta-button">
+                    <a href="/" onClick={()=>{downloadButton("android")}}><img src="img/googleplay.svg"></img></a>
+                    <a href="/" onClick={()=>{downloadButton("iOS")}}><img src="img/appstorebuttton.svg"></img></a>
+                </div>
+            </div>
+        )
+    }
    return(
     <div className="testimony">
         <div className=" testimony-container">
@@ -100,7 +110,7 @@ function Testimony(){
                 </div>
             </div>
         </div>
-        <FooterCta ctaImgMd={ctaImgMd} footerContent={footerContent} ctaImgLg={ctaImgLg}/>
+        <FooterCta ctaImgMd={ctaImgMd} footerContent={<FooterContent/>} ctaImgLg={ctaImgLg}/>
         <Footer/>
     </div>
     

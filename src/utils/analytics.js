@@ -28,7 +28,7 @@ import {
       identify(user)
     }
   
-    trackEvent(eventName, params = null) {
+    trackEvent(eventName, params) {
       track(`LandingPage: ${eventName}`, params);
     }
   
@@ -37,5 +37,4 @@ import {
       reset();
     }
   }
-  
-  export default new AmplitudeAnalytics();
+export default new AmplitudeAnalytics();
