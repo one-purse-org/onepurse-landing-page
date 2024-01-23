@@ -21,15 +21,7 @@ function ThirdComponent(){
                         support@onepurse.co 
                     </p>
                 </div>
-                <div className="mb-3">
-                    <p className="contact-title">
-                        Address
-                    </p>
-                    <p className="contact-details">
-                        4800 Dahlia St, Denver, CO 80216
-                    </p>
-                    
-                </div>
+               
             </div>
             <div>
                 <hr/>

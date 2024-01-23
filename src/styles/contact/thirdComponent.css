@@ -44,8 +44,8 @@ hr{
 @media (min-width:760px) {
     .contact-contact{
         flex-direction: row;
-        justify-content: space-between;
-        width: 88%;
+        width: 100%;
+        justify-content: space-evenly;
     }
 
     .contact-third-component .machnet {
