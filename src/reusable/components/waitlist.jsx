@@ -37,7 +37,7 @@ function Waitlist(){
                     <div>
                         <label>Phone Number</label>
                         <PhoneInput
-                            country={"us"}
+                            country={"ca"}
                             enableSearch={true}
                             value={phone}
                             onChange={(phone) => setPhone(phone)}
