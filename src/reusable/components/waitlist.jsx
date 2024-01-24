@@ -1,9 +1,14 @@
 import "../../styles/reuseable/waitlist.css";
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/bootstrap.css";
+import { useState } from "react";
+
 
 function Waitlist(){
     function removeWaitlist(){
         document.querySelector(".waitlist").classList.remove("active-waitlist")
     }
+    const [phone, setPhone] = useState("");
     return(
         
         <div className="waitlist">
@@ -31,7 +36,15 @@ function Waitlist(){
 
                     <div>
                         <label>Phone Number</label>
-                        <input name="phoneNumber"></input>
+                        <PhoneInput
+                            country={"us"}
+                            enableSearch={true}
+                            value={phone}
+                            onChange={(phone) => setPhone(phone)}
+                            inputProps={{
+                                name: 'phonenumber',
+                            }}
+                        />
                     </div>
                     <div className="waitlist-form-button"><button type="submit">Submit</button></div>
                     

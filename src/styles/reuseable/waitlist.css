@@ -75,6 +75,15 @@
     justify-content: space-between;
 }
 
+.react-tel-input .form-control {
+    width: 100%!important;
+}
+
+
+.react-tel-input .flag-dropdown {
+    width: 10%;
+}
+
 .waitlist-form-header img{
     width: 25px;
     height: 25px;
