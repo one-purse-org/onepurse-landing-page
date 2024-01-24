@@ -36,8 +36,21 @@
     .first-div-img .guywithphone{
         display: none;
     }
+/* 
+    .first-div-container{
+
+    } */
+
+    
+}
+
+@media (min-width:992px) {
+    .first-div-container .first-div-text{
+        padding-bottom: 7%;
+    }
 
     .first-div-container{
+        align-items: end;
         display: flex;
         align-items: flex-end;
         padding-top: 0;
@@ -51,17 +64,7 @@
         margin-left: auto;
         width: 55%;
     }
-}
 
-@media (min-width:992px) {
-    .first-div-container .first-div-text{
-        padding-bottom: 7%;
-    }
-
-    .first-div-container{
-
-        align-items: end;
-    }
 
 }
 

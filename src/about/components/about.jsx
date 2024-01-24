@@ -7,7 +7,7 @@ import FooterCta from "../../reusable/components/footer-cta";
 import AmplitudeAnalytics from "../../utils/analytics"
 import Waitlist, { addWaitlist } from "../../reusable/components/waitlist";
 import { useContext } from "react";
-let ctaImgMd = "img/footer-cta-about-sm.png"
+let ctaImgMd = "img/footer-cta.svg"
 let ctaImgLg = "img/footer-cta-lg.svg";
 
 function FooterContent(){
