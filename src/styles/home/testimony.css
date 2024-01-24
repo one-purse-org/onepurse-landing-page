@@ -177,6 +177,12 @@
     } 
 }
 
+@media (min-width:760px) {
+    .testimony{
+        margin-top: 160px;
+    }
+}
+
 @media (min-width:1280px) {
     .testimony h2 {
         font-size: 40px;
