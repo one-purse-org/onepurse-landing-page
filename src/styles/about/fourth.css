@@ -137,6 +137,12 @@
     }
 }
 
+@media (min-width:1280px) {
+    #about .footer-cta {
+        height: 10vw;
+    }
+}
+
 @media (max-width: 360px) {
 
     #about .footer-cta .footer-cta-content h1{
