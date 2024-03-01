@@ -29,12 +29,12 @@ function Footer(props){
                     <li className="nav-item">
                         <Link onClick={scrollToTop} to="/contact">Contact Us</Link>
                     </li>
-                    <li className="nav-item">
+                    {/* <li className="nav-item">
                         <Link onClick={scrollToTop} to="/terms-of-use">Terms of Use</Link>
                     </li>
                     <li className="nav-item">
                         <Link onClick={scrollToTop} to="/privacy-policy">Privacy Policy</Link> 
-                    </li>
+                    </li> */}
                 </ul>
                 <div className='social-links'>
                     <a href="https://facebook.com/OnepurseGlobal"><i class="fa-brands fa-facebook"></i></a>
